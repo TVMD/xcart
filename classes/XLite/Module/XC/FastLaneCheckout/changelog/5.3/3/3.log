@@ -1,0 +1,10 @@
+Version 5.3.3.3
+
+Fixes
+2017-09-08 - [Bug] Incorrect FLC behavior when the cart contains only products that do not require shipping. #BUG-5467 (Eugene Dementjev) #FastLaneCheckout
+2017-09-08 - [Bug] Incorrect behavior of FastLaneCheckout with the UK selected as country. #BUG-5462 (Eugene Dementjev) #FastLaneCheckout
+2017-09-05 - [Bug] In FLC, if a vendor did not have a shipping method available, the button place_order was still displayed; if clicked, that button simply caused a page refresh. #BUG-5443 (Eugene Dementjev) #FastLaneCheckout #MultiVendor
+2017-08-23 - [Bug] Minor refactoring of styles. #BUG-5290 (Eugene Dementjev) #Core #ThemeTweaker #FastLaneCheckout #CrispWhiteSkin
+2017-08-11 - [Bug] Fixed how the shipping method selector is displayed in FLC. #BUG-5255 (Sergey Elmanov) #FastLaneCheckout
+2017-08-01 - [Bug] Checkout could not be completed with addresses entered in a certain way. #BUG-5159 (Eugene Dementjev) #Core #FastLaneCheckout
+

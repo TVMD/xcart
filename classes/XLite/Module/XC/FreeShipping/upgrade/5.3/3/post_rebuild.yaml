@@ -1,0 +1,12 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Upgrade data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { directives: { allowedModel: 'XLite\Model\LanguageLabelTranslation' } }
+  - { name: 'Free shipping tooltip text', translations: [{ code: en, label: 'Special shipping method. Shows during checkout only if <ul><li>all the products in the cart are marked "Free shipping";</li><li>there are no other shipping methods available.</li></ul><a href="http://kb.x-cart.com/en/shipping/free_shipping_on_orders_that_meet_certain_conditions.html" target="_blank">Learn how to set up free shipping on orders that meet certain conditions</a>' },{ code: ru, label: 'Специальный способ доставки. Отображается при оформлении заказа только если <ul><li>для всех товаров в корзине включена настройка "Бесплатная доставка";</li><li>нет других доступных способов доставки.</li></ul><a href="http://kb.x-cart.com/en/shipping/free_shipping_on_orders_that_meet_certain_conditions.html" target="_blank">Узнайте, как настроить бесплатную доставку для заказов, соответствующих определенным условиям</a>' }] }
+  - { name: 'Shipping freight tooltip text', translations: [{ code: en, label: 'Special shipping method. Shows during checkout only if <ul><li>all the products in the cart have a shipping freight value defined;</li><li>there are no other shipping methods available.</li></ul>' },{ code: ru, label: 'Специальный способ доставки. Отображается при оформлении заказа только если<ul><li>для всех товаров в корзине задана фиксированная стоимость доставки;</li><li>нет других доступных способов доставки.</li></ul>' }] }
+

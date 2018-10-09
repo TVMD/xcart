@@ -1,0 +1,54 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: fields_settings_section
+    category: Email
+    type: separator
+    orderby: 1000
+    translations:
+      - code: en
+        option_name: 'FROM/REPLY-TO settings'
+      - code: ru
+        option_name: 'Настройки FROM/REPLY-TO'
+  - name: mail_from_type
+    category: Email
+    translations:
+      - code: en
+        option_name: 'Email to use for the FROM field'
+        option_comment: 'Not to be confused with Reply-to. Reply-to addresses for your emails will be selected according to the recipient of the email. See below.'
+      - code: ru
+        option_name: 'Адрес email для использования в поле FROM'
+        option_comment: 'Не путайте с Reply-to. Адреса Reply-to для ваших сообщений будут выбираться в соответствии с получателем. См. ниже.'
+  - name: reply_to_customer
+    category: Email
+    type: \XLite\View\FormField\Label\ReplyToCustomer
+    orderby: 10700
+    translations:
+      - code: en
+        option_name: 'Email to use for the REPLY-to field in customer emails'
+      - code: ru
+        option_name: 'Адрес e-mail для использования в поле REPLY-to сообщений для покупателя'
+  - name: reply_to_admin
+    category: Email
+    type: \XLite\View\FormField\Label\ReplyToAdmin
+    orderby: 10800
+    value: 'Customer email (if exist)'
+    translations:
+      - code: en
+        option_name: 'Email to use for the REPLY-to field in admin emails'
+      - code: ru
+        option_name: 'Адрес e-mail для использования в поле REPLY-to сообщений для администратора'
+  - name: smtp_section
+    category: Email
+    type: \XLite\View\FormField\Separator\Regular
+    orderby: 10950
+    translations:
+      - code: en
+        option_name: 'SMTP'
+      - code: ru
+        option_name: 'SMTP'

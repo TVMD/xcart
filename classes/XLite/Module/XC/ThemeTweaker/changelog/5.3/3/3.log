@@ -1,0 +1,6 @@
+Version 5.3.3.3
+
+Fixes
+2017-08-23 - [Bug] Minor refactoring of styles. #BUG-5290 (Eugene Dementjev) #Core #ThemeTweaker #FastLaneCheckout #CrispWhiteSkin
+2017-08-22 - [Bug] A cleared template could not be saved when editing a skin in "Template editor". Fixed. #BUG-5284 (Eugene Dementjev) #ThemeTweaker
+

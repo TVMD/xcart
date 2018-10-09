@@ -1,0 +1,65 @@
+{##
+ # Done step
+ #}
+
+<div class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+     v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+     :transition="stepTransition">
+  <div class="step-contents">
+    <h2 class="heading">{{ t("Excellent! Now you can get paid") }}</h2>
+    <p class="text">
+      {{ t("Go on, make your first sale.", {'url': this.getStorefrontUrl() })|raw }}<br>
+      {{ t("Need help setting up your store?") }}
+    </p>
+
+    <div class="links">
+      <div class="expert">
+        <div class="image">{{ svg('modules/XC/Onboarding/images/icon-contact-our-expert.svg')|raw  }}</div>
+        <div class="link">
+          <a href="{{ this.getSupportUrl() }}" target="_blank">{{ t('Contact our expert') }}</a>
+        </div>
+        <div class="note">
+          {{ t('X-Cart professionals will easily materialize just about any idea you’ve got.') }}
+        </div>
+      </div>
+
+      <div class="knowledge-base">
+        <div class="image">{{ svg('modules/XC/Onboarding/images/icon-knowledge-base.svg')|raw  }}</div>
+        <div class="link">
+          <a href="{{ this.getKBUrl() }}" target="_blank">{{ t('Knowledge base') }}</a>
+        </div>
+        <div class="note">
+          {{ t('User manuals, release notes, modules, videos and more.') }}
+        </div>
+      </div>
+
+      <div class="developer-docs">
+        <div class="image">{{ svg('modules/XC/Onboarding/images/icon-developer-docs.svg')|raw  }}</div>
+        <div class="link">
+          <a href="{{ this.getDevDocsUrl() }}" target="_blank">{{ t('Developer docs') }}</a>
+        </div>
+        <div class="note">
+          {{ t('See the tutorials and documentation about X-Cart store customization.') }}
+        </div>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <div class="phone-email text">
+        <div class="phone">
+          {{ t('Sales & Customer Service: [phone]', {phone: this.getPhoneNumber()}) }}
+        </div>
+        <div class="separator">/</div>
+        <div class="email">
+          <a href="mailto:{{ this.getSalesEmail() }}">{{ this.getSalesEmail() }}</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="next-step">
+        {{ widget('\\XLite\\View\\Button\\Link', label='Close wizard', attributes={'@click': 'closeWizard'}, style='regular-main-button', jsCode="null;") }}
+      </div>
+    </div>
+  </div>
+</div>

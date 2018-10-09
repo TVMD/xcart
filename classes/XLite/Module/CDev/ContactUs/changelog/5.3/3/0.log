@@ -1,0 +1,8 @@
+Version 5.3.3.0
+
+Improvements
+2017-03-22 - [Change] Code refactoring for the Contact Us module. #XCN-7724 (Sergey Elmanov) #ContactUs
+2017-01-10 - [Change] It is now possible to add multiple email addresses (and specify the main address) in the Contacts section. #XCN-7375 (Sergey Elmanov) #Core #ContactUs #PINCodes #ProductVariants #SagePay #ProductReviews #CrispWhiteSkin #MultiVendor #VendorMessages #NetbanxHostedPayment
+
+Fixes
+2017-04-10 - [Bug] Contact Us page improvement. #BUG-4759 (Michael Lipinski) #ContactUs #CrispWhiteSkin

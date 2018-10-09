@@ -1,0 +1,5 @@
+Version 5.3.2.1
+
+Fixes
+2017-08-02 - [Bug] Add2cart popup should be displayed only when a product has been added to the cart successfully. #BUG-5223 (Sergey Elmanov) #Core #Add2CartPopup
+

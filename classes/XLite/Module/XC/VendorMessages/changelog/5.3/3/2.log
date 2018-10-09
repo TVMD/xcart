@@ -1,0 +1,4 @@
+Version 5.3.3.2
+
+Fixes
+2017-07-13 - [Bug] Submit button on the "Order messages" page did not work properly in some cases. Fixed. #BUG-5210 (Maxim Kuznetsov) #VendorMessages

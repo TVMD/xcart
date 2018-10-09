@@ -1,0 +1,5 @@
+Version 5.3.3.3
+
+Fixes
+2017-12-22 - [Bug] Hyperlinks like http://*.x-cart.com were replaced with links like https://*.x-cart.com. #BUG-5891 (Eugene Dementjev) #Core #Egoods #FeaturedProducts #FileAttachments #Paypal #SalesTax #SimpleCMS #SocialLogin #VAT #VolumeDiscounts #Wholesale #ThemeTweaker #PINCodes #RelatedProducts #FreeShipping #BulkEditing #CustomProductTabs #UpdateInventory #Buy Button
+

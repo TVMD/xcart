@@ -1,0 +1,5 @@
+Version 5.3.3.2
+
+Fixes
+2017-07-20 - [Bug] Error "Unable to find template “items_list/product/center/grid/body.twig”" when switching the product list view from grid view to any other with the module ProductAdvisor enabled. Fixed. #BUG-5232 (Sergey Elmanov) #ProductAdvisor
+

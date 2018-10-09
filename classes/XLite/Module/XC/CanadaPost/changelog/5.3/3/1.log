@@ -1,0 +1,5 @@
+Version 5.3.3.1
+
+Fixes (1)
+2018-03-19 - [Bug] Added the button "Configure manually" onto the CanadaPost shipping method settings page. #BUG-6052 (Shevelov Alexander) #CanadaPost
+

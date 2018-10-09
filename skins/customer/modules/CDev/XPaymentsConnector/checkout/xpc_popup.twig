@@ -1,0 +1,52 @@
+{##
+ # iframe 
+ #
+ #}
+
+<div class="xpc-popup">
+
+  <div class="message">
+
+    {% if this.isUnacceptedTemplateError() %}
+      <p>{{ t('Trying to use unaccepted template change.') }}</p>
+
+      {% if this.isAdminUser() %}
+        <p>{{ t('You should accept the changes at the') }} <a href="{{ this.getDashboardLink() }}" target="_blank">{{ t('X-Payments Dashboard') }}</a></p>
+      {% endif %}
+
+      <p>{{ t('Refer to on-line manual') }}: <a href="{{ this.getManualLink(505) }}" target="_blank">{{ this.getManualTitle(505) }}</a></p>
+
+    {% else %}
+
+      {% if this.isSessionExpiredMessage() %}
+        <p>{{ t('Payment session expired. Please try to refresh the page.')}}<p>
+      {% else %}
+        <p>{{ t(this.getMessage()) }}</p>
+      {% endif %}
+
+      {% if this.isError() %}
+        <p>{{ t('If the problem still persists after refreshing the page please') }}
+          <a href="{{ this.getContactUsLink() }}" target="_blank">contact us</a>
+          {{ t('on the matter.') }}
+        </p>
+    {% endif %}
+
+    {% endif %}
+
+  </div>
+
+</div>
+
+{% if this.getButtonAction() %}
+  {% autoescape false %}
+
+    <script type="text/javascript">
+      core.bind('popup.close', function(event, data) {
+        if (xpcPopupError) {
+            {{ this.getButtonAction() }};
+        }
+      });
+    </script>
+
+  {% endautoescape %}
+{% endif %}

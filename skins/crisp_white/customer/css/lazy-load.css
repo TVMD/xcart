@@ -1,0 +1,31 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Lazy-load-related styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.lazy-load img {
+    -webkit-filter: blur(25px);
+    filter: blur(25px);
+    object-position: -99999px 99999px;
+}
+
+.lazy-load-transition img {
+    transition: 0.2s filter linear, 0.2s -webkit-filter linear !important;
+    -webkit-filter: blur(26px);
+    filter: blur(26px);
+    object-position: 0 0;
+}
+
+.lazy-load.lazy-load-transition.lazy-load-out img {
+    transition: 0.4s filter linear, 0.4s -webkit-filter linear !important;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+
+.lazy-load-loaded img {
+    background: none !important;
+}

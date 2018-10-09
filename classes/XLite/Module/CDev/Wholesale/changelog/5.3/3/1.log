@@ -1,0 +1,7 @@
+Version 5.3.3.1
+
+Fixes
+2018-01-19 - [Bug] Information on wholesale prices for memberships was not displayed on the product page. Fixed. #BUG-5933 (Sergey Elmanov) #Core #Wholesale
+2017-12-22 - [Bug] Hyperlinks like http://*.x-cart.com were replaced with links like https://*.x-cart.com. #BUG-5891 (Eugene Dementjev) #Core #Egoods #FeaturedProducts #FileAttachments #Paypal #SalesTax #SimpleCMS #SocialLogin #VAT #VolumeDiscounts #Wholesale #ThemeTweaker #PINCodes #RelatedProducts #FreeShipping #BulkEditing #CustomProductTabs #UpdateInventory #Buy Button
+2017-11-21 - [Bug] The message about wholesale prices defined for a product was displayed incorrectly. Fixed. #BUG-5750 (Sergey Elmanov) #Wholesale
+

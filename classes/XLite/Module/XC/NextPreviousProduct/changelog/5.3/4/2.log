@@ -1,0 +1,5 @@
+Version 5.3.4.2
+
+Fixes (1)
+2018-03-23 - [Bug] The next/previous product links functioned incorrectly if the product page was accessed from a search results page. Fixed. #BUG-6113 (Shevelov Alexander) #Core #ProductFilter #NextPreviousProduct
+

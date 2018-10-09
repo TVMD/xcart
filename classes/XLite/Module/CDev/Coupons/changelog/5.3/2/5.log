@@ -1,0 +1,5 @@
+Version 5.3.2.5
+
+Fixes
+2017-09-19 - [Bug] Checkout looped under certain conditions. Fixed. #BUG-5492 (Maxim Kuznetsov) #Core #Coupons #SalesTax #VAT #VolumeDiscounts #AvaTax #CanadianTaxes #ShopGate #TaxJar
+

@@ -1,0 +1,13 @@
+{##
+ # Import begin section : sections
+ #
+ # @ListChild (list="import.begin.content", weight="100")
+ #}
+
+<div class="parts">
+  <h3>{{ t('Upload files') }}</h3>
+  <input id="files" type="file" name="files[]" multiple="multiple" data-max-size="{{ this.getUploadFileMaxSize() }}" data-readable-max-size="{{ this.getReadableUploadFileMaxSize() }}" />
+  <p>{{ this.getUploadFileMessage() }}</p>
+  <a href="{{ this.getSamplesURL() }}" target="_blank">{{ this.getSamplesURLText() }}</a>
+  {{ widget_list('import.begin.content.files') }}
+</div>

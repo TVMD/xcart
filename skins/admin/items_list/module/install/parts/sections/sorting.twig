@@ -1,0 +1,14 @@
+{##
+ # ____file_title____
+ #
+ # @ListChild (list="marketplace.top-controls", weight="300")
+ #}
+{% if not this.isLandingPage() and this.isVisibleAddonFilters() %}
+  <div class="addons-sort">
+    <ul class="addons-sort-box text-selector">
+      {% for url, name in this.getSortOptionsForSelector() %}
+      <li class="sort{% if url == this.getSortOptionsValueForSelector() %} selected{% endif %}"><a href="{{ url }}">{{ name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

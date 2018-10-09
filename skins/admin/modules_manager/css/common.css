@@ -1,0 +1,622 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Modules modify page styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.modules-list .status
+{
+  white-space: nowrap;
+}
+
+.modules-list td.active {
+  text-align: center;
+}
+
+.modules-list td.enabled {
+  font-weight: bold;
+}
+
+table.data-table.modules-list tr.module-item td.module-main-section a.fa {
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 3px;
+  display: inline;
+  visibility: hidden;
+}
+
+table.data-table.modules-list tr.module-item td.module-main-section .name:hover a.fa {
+  visibility: visible;
+}
+
+table.data-table.modules-list tr.module-item td.module-main-section a.module-name.no-link,
+table.data-table.modules-list tr.module-item td.module-main-section a.module-name.no-link:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
+.modules-list tr.module-item td {
+  padding: 20px 0 20px 20px;
+  vertical-align: top;
+}
+
+.modules-list tr.module-item.active td
+{
+  background-color: #fffecd;
+  transition: background 1s;
+}
+
+.modules-list tr.module-item.active.non-active td
+{
+  transition: background 20s linear 5s;
+}
+
+.modules-list tr.module-item.active.non-active td {
+  background-color: #ffffff;
+}
+
+.modules-list tr:last-child td {
+  border-bottom: 0;
+}
+
+.modules-list tr.line.module-item.remove-mark {
+  opacity: 0.4;
+}
+
+.modules-list.data-table th,
+  .modules-list.data-table td
+{
+  padding: 20px 10px;
+}
+
+.modules-list tr td.icon {
+  width: 100px;
+  height: 120px;
+}
+
+.modules-list tr td.module-main-section {
+  width: 36%;
+  white-space: normal;
+}
+
+.modules-list tr td.module-description-section {
+  width: 66%;
+  white-space: normal;
+}
+
+.modules-list .install-section .text {
+  vertical-align: middle;
+  color: #2c5fa6;
+}
+
+.modules-list .name {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.module-tags-list {
+  margin-top: 20px;
+}
+
+.module-tags-list li {
+  display: inline-block;
+  height: 25px;
+  background-color: #f4fcff;
+  color: #6984a3;
+  margin: 0 3px 3px 0;
+  border-radius: 4px;
+  line-height: 25px;
+  padding: 0 7px;
+  position: relative;
+  font-size: 12px;
+}
+
+table.data-table td .module-tags-list li a {
+  color: #6984a3;
+  text-decoration: none;
+}
+
+.module-tags-list li:hover {
+  background: #428bca;
+}
+
+table.data-table td .module-tags-list li:hover a {
+  color: #fff;
+}
+
+.module-tags-list li .circle {
+  border-radius: 7px;
+  width: 7px;
+  height: 7px;
+  background: #ffffff;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modules-list .version,
+.modules-list .author,
+.modules-list .author-email,
+.modules-list .popularity {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.modules-list .author a {
+  text-decoration: none;
+  color: #9b9b9b;
+}
+
+.modules-list .module-main-section .version:before,
+.modules-list .module-main-section .author-email:before,
+.modules-list .module-main-section .popularity:before {
+  content: '|';
+  display: inline-block;
+  color: #ccd0d2;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.modules-list .author-email a {
+  color: #9b9b9b;
+  margin-left: 3px;
+}
+
+.modules-list .author-email a:hover {
+  color: #4a90e2;
+}
+
+.modules-list .popularity {
+  font-weight: bold;
+}
+
+.modules-list .author a:hover {
+  text-decoration: underline;
+}
+
+.modules-list .description {
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 20px;
+}
+
+.modules-list tr.disabled .addon-icon img {
+  opacity: 0.2;
+}
+
+.modules-list .note {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.modules-list .author span {
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+.modules-list .actions {
+  margin-top: 20px;
+  display: flex;
+  white-space: nowrap;
+}
+
+.modules-list .actions li {
+  display: flex;
+}
+
+.modules-list .actions li a span {
+  font-size: 13px;
+}
+
+.modules-list .actions li.main-action .onoffswitch {
+  margin-right: 8px;
+  padding-top: 0;
+  height: auto;
+}
+
+.modules-list .actions li.main-action .onoffswitch > label {
+  margin-bottom: 0;
+}
+
+.modules-list .actions li.main-action .fa {
+  vertical-align: middle;
+}
+
+.modules-list .actions li.main-action .fa.fa-exclamation-circle {
+  color: #ffee55;
+}
+
+.modules-list .actions li:after {
+  content: '';
+  width: 2px;
+  height: 22px;
+  background-image: url(../../items_list/model/table/images/line-separator.png);
+  background-repeat: repeat-y;
+  background-position: center -3px;
+  margin-right: 11px;
+  margin-left: 11px;
+}
+
+.modules-list .actions li.last:after {
+  display: none;
+}
+
+.modules-list tr.disabled .actions li.uninstall-action {
+  background-color: #ffffff;
+}
+
+.modules-list tr.disabled .actions li.uninstall-action div {
+  line-height: 14px;
+}
+
+.modules-list .actions li a.settings {
+  background-image: url(../../images/icon-settings.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 0 center;
+}
+
+.modules-list .actions li a.settings span {
+  margin-left: 22px;
+}
+
+.modules-list .actions li.uninstall-action .fa {
+  font-size: 18px;
+  color: #0055bd;
+  height: 20px;
+}
+
+.modules-list .actions li input[type='checkbox'] {
+  display: none;
+}
+
+.modules-list .actions li.uninstall-action button,
+.modules-list .actions li.uninstall-action button:hover {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modules-list .actions li.uninstall-action input {
+  display: none;
+}
+
+.modules-list .actions li:first-child {
+  padding-right: 0;
+}
+
+.modules-list tr.module-item.disabled .actions > li:not(.no-disable) a {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: .25;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.modules-list .module-url {
+  font-size: 12px;
+  float: left;
+}
+
+.modules-list .module-url a {
+  font-size: 12px;
+}
+
+.modules-list .module-url a .icon {
+  font-size: 10px;
+  margin-left: 3px;
+}
+
+.modules-list .module-url .url-value {
+  color: #8f8f8f;
+  font-size: 12px;
+}
+
+.modules-list .icon-container {
+  position: relative;
+}
+
+.modules-buttons {
+  text-align: center;
+  width: 965px;
+}
+
+/* Notes */
+
+.modules-list .module-description-section .note {
+  width: 400px;
+}
+
+.marketplace-landing .modules-list .module-description-section .note {
+  width: 265px;
+}
+
+.modules-list .module-description-section .note,
+.modules-list .module-description-section .note div {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 8px 12px;
+  white-space: normal;
+}
+
+.modules-list .module-description-section .note ul {
+  margin: 0;
+}
+
+.modules-list .module-description-section .note.dependencies,
+.modules-list .module-description-section .note.version.error,
+.modules-list .module-description-section .note div,
+.modules-list .module-description-section .xcn-module-notice,
+.modules-list .module-description-section .alert.alert-warning
+{
+  background-color: #fcf8e3;
+  color: #5d503b;
+  border: solid 1px #faebcc;
+  border-radius: 4px;
+}
+
+.modules-list .module-description-section .note.version.upgrade {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border: solid 1px #d6e9c6;
+  border-radius: 4px;
+}
+
+.modules-list .module-description-section .note div
+{
+  padding: 0;
+  border: none;
+}
+
+.target-addons-list-marketplace .modules-list .module-description-section .note.version.upgrade
+{
+  background-color: #e4f7e4;
+  color: #466444;
+  border: solid 1px #a8d6a5;
+  border-radius: 4px;
+}
+
+.marketplace-landing .modules-list .module-description-section .note.version.upgrade {
+  display: none;
+}
+
+.icon-container .addon-icon .addon-icon
+{
+  width: 84px;
+  height: 84px;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.icon-container .addon-icon .addon-default-icon {
+  background: transparent url(../../images/addon_default.png) left top no-repeat;
+}
+
+.main-text {
+  margin: 35px 0 200px 0;
+  text-align: center;
+  width: 916px;
+}
+
+.main-text .no-modules-found {
+  font-size: 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.widget-itemslist-module-saleschannels .main-text .no-modules-found {
+  text-align: center;
+}
+
+.main-text .clarify-text {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.target-addons-list-installed .list-pager {
+  width: 940px;
+}
+
+.addons-filters {
+  display: flex;
+}
+
+div.addons-filters select {
+  width: 150px;
+}
+
+div.addons-filters div.table-value {
+  padding: 0;
+}
+
+.addons-filters .addons-search-box {
+  flex-grow: 1;
+}
+
+.addons-filters .price-filter-box,
+.addons-filters .tag-filter-box,
+.addons-filters .vendor-filter-box,
+.addons-filters .addons-my-purchases
+{
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.addons-filters .addons-my-purchases a
+{
+  line-height: 35px;
+}
+
+.addons-filters .table-label,
+.addons-filters .star {
+  display: none;
+}
+
+.addons-filters .chosen-container a.chosen-single {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+}
+
+.addons-filters a.chosen-single strong {
+  font-weight: normal;
+  float: left;
+  padding-right: 5px;
+}
+
+.addons-filters .chosen-container-active.chosen-with-drop .chosen-single div b,
+.chosen-container-single .chosen-single div b
+{
+  margin-top: 2px;
+}
+
+.addons-filters .chosen-container-single .chosen-drop {
+  margin-top: -5px;
+}
+
+.addons-sort .addons-sort-box.text-selector {
+  margin: 20px 0 20px -10px;
+}
+
+.addons-sort .addons-sort-box.text-selector li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.addons-sort .addons-sort-box.text-selector li a {
+  line-height: 30px;
+  display: block;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #708692;
+  padding: 0 11px;
+}
+
+.addons-sort .addons-sort-box.text-selector li.selected a {
+  color: #4a4a4a;
+  background-color: #f6f6f6;
+  text-decoration: none;
+}
+
+/* Search box */
+
+.banner-info .addons-search-box {
+  right: -55px;
+  top: 0;
+}
+
+.addons-search-box .search-form .substring-value {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.addons-search-box .search-form .substring-value input {
+  font-size: 14px;
+  padding-left: 40px;
+  border-color: #718793;
+}
+
+.addons-search-box .search-form .substring i {
+  position: absolute;
+  z-index: 1;
+  line-height: 35px;
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #708692;
+}
+
+#substring:focus::-webkit-input-placeholder { color:transparent; }
+#substring:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+#substring:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+#substring:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+table.modules-list tr.not-available .xcn-module-notice {
+  background-color: #f5f5f5;
+  color: #aaaaaa;
+  border-color: #cccccc;
+}
+
+table.modules-list tr.avail-for-senior-plans .xcn-module-notice {
+  background-color: #e4f7e4;
+  color: #466444;
+  border-color: #a7d6a5;
+}
+
+table.modules-list .module-main-section .xcn-module-notice span {
+  font-size: 14px;
+}
+
+table.modules-list .module-main-section button.activate-key,
+table.modules-list .module-main-section button.enter-license-key {
+  border: none;
+  background: none;
+  padding: 0;
+  height: 35px;
+  min-height: 35px;
+  vertical-align: top;
+  outline: none;
+  box-shadow: none;
+}
+
+table.modules-list .module-main-section .xcn-module-notice.note button.activate-key {
+  min-height: 18px;
+  height: 18px;
+}
+
+table.modules-list .module-main-section button.activate-key:active,
+table.modules-list .module-main-section button.enter-license-key:active {
+  box-shadow: none;
+}
+
+table.modules-list .module-main-section button.activate-key span,
+table.modules-list .module-main-section button.enter-license-key span {
+  color: #0055bd;
+}
+
+table.modules-list .module-main-section button.activate-key:hover span,
+table.modules-list .module-main-section button.enter-license-key:hover span {
+  color: #4a90e2;
+  text-decoration: underline;
+}
+
+.or-activate {
+  line-height: 35px;
+  margin-left: 10px;
+  color: #9b9b9b;
+}
+
+.or-activate button {
+  margin-left: 10px;
+}
+
+.input-field-wrapper.switcher.read-only .widget .normal.fa {
+  display: none;
+}
+
+.input-field-wrapper.switcher.read-only .widget .warning.fa {
+  display: inline-block;
+}
+
+.modules-list .paid {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.modules-list .price .currency {
+  color: #ee9c3c;
+  font-size: 16px;
+  font-weight: bold;
+}

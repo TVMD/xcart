@@ -1,0 +1,12 @@
+Version 5.3.4.4
+
+Improvements
+2017-12-18 - [Change] W3C validator warning "Warning: The type attribute is unnecessary for JavaScript resources.". Fixed. #BUG-5859 (Eugene Dementjev) #Core #Paypal #ThemeTweaker #ProductFilter #Olark #Disqus #FastLaneCheckout #CrispWhiteSkin #MultiVendor #MultiCurrency #NextPreviousProduct #Buy Button #ShopperApproved
+
+Fixes
+2017-12-27 - [Bug] In CrispWhite, product images were processed incorrectly with Cloud Zoom enabled. Fixed. #BUG-5888 (Maxim Kuznetsov) #Core #CrispWhiteSkin
+2017-12-18 - [Bug] The "prev / next product" links were overlapping with breadcrumbs in CrispWhite. Fixed. #BUG-5771 (Eugene Dementjev) #CrispWhiteSkin
+2017-12-12 - [Bug] Image slider buttons were not displayed on the product details page in Crisp White skin in IE. Fixed. #BUG-5400 (Eugene Dementjev) #CrispWhiteSkin
+2017-11-28 - [Bug] A placeholder was working incorrectly in Crisp White. Fixed. #BUG-5765 (Maxim Kuznetsov) #CrispWhiteSkin
+2017-11-02 - [Bug] Add to cart button was displayed on the comparison table page for coming soon products. Fixed. #BUG-5598 (Sergey Elmanov) #ProductAdvisor #ProductComparison #CrispWhiteSkin
+

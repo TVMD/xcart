@@ -1,0 +1,12 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - { name: site_administrator, category: Company, translations: [{ code: en, option_name: 'Site administrator e-mails', option_comment: 'The first email in this field (the one marked dark blue) will be used as the "FROM:" address for most notifications about user profiles.<br/><br/>All addresses in this field will be used as the "TO:" address for information on access to your store in safe mode (Hard and Soft reset links), notifications about failed administrator login attempts, low limit warnings, etc.' }] }
+  - { name: users_department, category: Company, translations: [{ code: en, option_name: 'Customer relations e-mails', option_comment: 'The first email in this field (the one marked dark blue) will be used as the "FROM:" address for password reset messages.<br/><br/>All addresses in this field will be used as the "TO:" address for notifications about user profile related events (creation of a new user profile, deletion of a user profile, etc).' }] }
+  - { name: orders_department, category: Company, translations: [{ code: en, option_name: 'Sales department e-mails', option_comment: 'The first email in this field (the one marked dark blue) will be used as the "FROM:" address for low limit warning messages.<br/><br/>All addresses in this field will be used as the "TO:" address for notifications about orders (creation of new orders, changes of order status, etc).' }] }
+

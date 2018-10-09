@@ -1,0 +1,5 @@
+Version 5.3.2.1
+
+Fixes
+2017-05-30 - [Bug] Changed the styles of the Attachments section on the product page in the Admin area. #BUG-4985 (Sergey Elmanov) #Core #Egoods #FileAttachments
+

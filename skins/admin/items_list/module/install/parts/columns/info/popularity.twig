@@ -1,0 +1,13 @@
+{##
+ # Popularity
+ #
+ # @ListChild (list="itemsList.module.install.columns.module-main-section", weight="25")
+ # @ListChild (list="itemsList.module.sales-channels.columns.module-main-section", weight="25")
+ # @ListChild (list="itemsList.module.purchased.columns.module-main-section", weight="25")
+ #}
+{% if this.module.getDownloads() > 0 %}
+  <span class="popularity">
+    {{ this.getSVGImage('images/downloads.svg')|raw }}
+    {{ this.module.getDownloads() }}
+  </span>
+{% endif %}

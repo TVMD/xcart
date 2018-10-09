@@ -1,0 +1,15 @@
+{##
+ # Zone: zip codes masks template
+ #
+ # @ListChild (list="zones.zone.details", weight="400")
+ #}
+
+<div class="table-label zone-zipcodes-label">
+  <label>{{ t('Zip/postal code masks') }}</label>
+</div>
+
+<div class="zone-zipcodes-help">
+  <label>{{ t('Zone zipcode masks help')|raw }}</label>
+</div>
+
+{{ widget('\\XLite\\View\\FormField\\Textarea\\Simple', value=this.zone.getZoneZipCodes(1), fieldOnly=true, rows='5', cols='70', fieldName='zone_zipcodes') }}

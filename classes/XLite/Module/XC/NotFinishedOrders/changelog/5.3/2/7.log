@@ -1,0 +1,6 @@
+Version 5.3.2.7
+
+Improvements (2)
+2018-05-04 - [Change] Added a few order status change notifications that were missing. #BUG-6328 (Shevelov Alexander) #Core #NotFinishedOrders #CustomOrderStatuses
+2018-05-04 - [Change] The stock quantity of a product in a Not Finished order (NFO) was not updated after the order status was changed and the NFO order was turned into a regular order. Fixed. #BUG-6329 (Shevelov Alexander) #NotFinishedOrders
+

@@ -1,0 +1,7 @@
+Version 5.3.5.1
+
+Improvements
+2017-09-22 - [Change] Add handlers for Paypal errors which impacting sales and conversion. #BUG-5252 (Eugene Dementjev) #Paypal
+
+Fixes
+2017-09-20 - [Bug] Paypal Standard did not work properly with egoods. Fixed. #BUG-5512 (Maxim Kuznetsov) #Paypal

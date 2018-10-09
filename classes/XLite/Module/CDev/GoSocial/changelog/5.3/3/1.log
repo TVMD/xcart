@@ -1,0 +1,5 @@
+Version 5.3.3.1
+
+Fixes
+2017-06-22 - [Bug] ogMeta was not updated automatically when sending via restapi. #BUG-5094 (Sergey Elmanov) #Core #GoSocial
+

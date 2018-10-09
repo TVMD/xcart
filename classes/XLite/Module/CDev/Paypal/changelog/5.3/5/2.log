@@ -1,0 +1,6 @@
+Version 5.3.5.2
+
+Fixes
+2017-10-12 - [Bug] PayPal login was working incorrectly when the addon Social Login was disabled. Fixed. #BUG-5583 (Eugene Dementjev) #Paypal #CrispWhiteSkin
+1970-01-01 - [Bug] Scope for PayPal login was sent in a wrong format. Fixed. #BUG-5549 (Michael Lipinski) #Paypal
+

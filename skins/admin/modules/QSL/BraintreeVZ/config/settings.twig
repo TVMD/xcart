@@ -1,0 +1,168 @@
+{##
+ # Braintree payments configuration page (payment method settings)
+ #
+ #}
+
+<div id="braintree-settings-config">
+
+  {{ widget('\\XLite\\Module\\QSL\\BraintreeVZ\\View\\Config\\HTTPSWarning', useBodyTemplate='1') }}
+
+  {{ widget('\\XLite\\View\\Payment\\MethodStatus', method=this.paymentMethod) }}
+
+  <table cellspacing="1" cellpadding="5" class="settings-table">
+    <tr>
+      <td class="setting-name">
+        <label for="settings_merchantAccountId">{{ t('Merchant account ID') }}</label>
+      </td>
+      <td>
+		<input type="text" id="settings_merchantAccountId" value="{{ this.paymentMethod.getSetting('merchantAccountId') }}" name="settings[merchantAccountId]" />
+        &nbsp;{{ widget('XLite\\View\\Tooltip', id='settings_merchantAccountId_help', text=t('braintree_merchant_account_id_help')|raw, caption='', isImageTag='true', className='help-icon') }}
+      </td>
+    </tr>
+    <tr>
+      <td class="setting-name">
+        <label for="settings_isAutoSettle">{{ t('Auto settle') }}</label>
+      </td>
+      <td>
+      <select id="settings_isAutoSettle" name="settings[isAutoSettle]">
+        <option value="1" {% if this.isSelected(this.paymentMethod.getSetting('isAutoSettle'), '1') %} selected="selected" {% endif %}>{{ t('Yes') }}</option>
+        <option value="0" {% if this.isSelected(this.paymentMethod.getSetting('isAutoSettle'), '0') %} selected="selected" {% endif %}>{{ t('No') }}</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="setting-name">
+        <label for="settings_prefix">{{ t('Braintree invoice number prefix') }}</label>
+      </td>
+      <td>
+        <input type="text" id="settings_prefix" value="{{ this.paymentMethod.getSetting('prefix') }}" name="settings[prefix]" />
+      </td>
+    </tr>
+    <tr>
+      <td class="setting-name">
+        <label for="settings_kountMerchantId">{{ t('Kount merchant ID') }}</label>
+      </td>
+      <td>
+      <input type="text" id="settings_kountMerchantId" name="settings[kountMerchantId]" value="{{ this.paymentMethod.getSetting('kountMerchantId') }}" class="validate[maxSize[255]]" />
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+<div class="paypal-block">
+
+  <img src="https://s3-us-west-1.amazonaws.com/bt-partner-assets/paypal-braintree.png" alt="PayPal powered by Braintree" class="braintree-logo" />
+
+  <p>
+    {{ t('Easily accept credit and debit cards and PayPal on multiple devices with no setup or monthly fees. Click the button beloow to connect your account') }}
+    <br />
+    <a href="https://www.braintreepayments.com/partners/learn-more" target="_blank" class="paypal-info">{{ t('Get more information') }}</a>
+  </p>
+</div>
+
+<div class="clearfix"></div>
+
+<legend><h3>{{ t('PayPal') }}</h3></legend>
+
+<table cellspacing="1" cellpadding="5" class="settings-table">
+  <tr>
+    <td class="setting-name">
+      <label for="settings_isPayPal">{{ t('Accept PayPal') }}</label>
+    </td>
+    <td>
+      <select id="settings_isPayPal" name="settings[isPayPal]">
+        <option value="1" {% if this.isSelected(this.paymentMethod.getSetting('isPayPal'), '1') %} selected="selected" {% endif %}>{{ t('Yes') }}</option>
+        <option value="0" {% if this.isSelected(this.paymentMethod.getSetting('isPayPal'), '0') %} selected="selected" {% endif %}>{{ t('No') }}</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="setting-name">
+      <label for="settings_paypalButtonColor">{{ t('Button color') }}</label>
+    </td>
+    <td>
+      <select id="settings_paypalButtonColor" name="settings[paypalButtonColor]">
+        <option value="gold" {% if this.isSelected(this.paymentMethod.getSetting('paypalButtonColor'), 'gold') %} selected="selected" {% endif %}>{{ t('Gold') }}</option>
+        <option value="silver" {% if this.isSelected(this.paymentMethod.getSetting('paypalButtonColor'), 'silver') %} selected="selected" {% endif %}>{{ t('Silver') }}</option>
+        <option value="blue" {% if this.isSelected(this.paymentMethod.getSetting('paypalButtonColor'), 'blue') %} selected="selected" {% endif %}>{{ t('Blue') }}</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="setting-name">
+      <label for="settings_paypalButtonShape">{{ t('Button shape') }}</label>
+    </td>
+    <td>
+      <select id="settings_paypalButtonShape" name="settings[paypalButtonShape]">
+        <option value="pill" {% if this.isSelected(this.paymentMethod.getSetting('paypalButtonShape'), 'pill') %} selected="selected" {% endif %}>{{ t('Pill') }}</option>
+        <option value="rect" {% if this.isSelected(this.paymentMethod.getSetting('paypalButtonShape'), 'rect') %} selected="selected" {% endif %}>{{ t('Rect') }}</option>
+      </select>
+    </td>
+  </tr>
+</table>
+
+<legend><h3>{{ t('Vault') }}</h3></legend>
+
+<table cellspacing="1" cellpadding="5" class="settings-table">
+  <tr>
+    <td class="setting-name">
+      <label for="settings_isUseVault">{{ t('Use Vault') }}</label>
+    </td>
+    <td>
+    <select id="settings_isUseVault" name="settings[isUseVault]">
+      <option value="1" {% if this.isSelected(this.paymentMethod.getSetting('isUseVault'), '1') %} selected="selected" {% endif %}>{{ t('Yes') }}</option>
+      <option value="0" {% if this.isSelected(this.paymentMethod.getSetting('isUseVault'), '0') %} selected="selected" {% endif %}>{{ t('No') }}</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="setting-name">
+      <label for="settings_isShowSaveCardBox">{{ t('Ask customer to save card in vault') }}</label>
+    </td>
+    <td>
+      <select id="settings_isShowSaveCardBox" name="settings[isShowSaveCardBox]">
+        <option value="1" {% if this.isSelected(this.paymentMethod.getSetting('isShowSaveCardBox'), '1') %} selected="selected" {% endif %}>{{ t('Yes') }}</option>
+        <option value="0" {% if this.isSelected(this.paymentMethod.getSetting('isShowSaveCardBox'), '0') %} selected="selected" {% endif %}>{{ t('No') }}</option>
+      </select>
+    </td>
+  </tr>
+</table>
+
+<legend><h3>{{ t('3-D Secure') }}</h3></legend>
+
+<table cellspacing="1" cellpadding="5" class="settings-table">
+  <tr>
+    <td class="setting-name">
+      <label for="settings_is3dSecure">{{ t('3-D Secure') }}</label>
+    </td>
+    <td>
+      <select id="settings_is3dSecure" name="settings[is3dSecure]">
+        <option value="1" {% if this.isSelected(this.paymentMethod.getSetting('is3dSecure'), '1') %} selected="selected" {% endif %}>{{ t('Enabled') }}</option>
+        <option value="0" {% if this.isSelected(this.paymentMethod.getSetting('is3dSecure'), '0') %} selected="selected" {% endif %}>{{ t('Disabled') }}</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="setting-name">
+      <label for="settings_is3dSecure">{{ t('Accept card types not covered by 3-D Secure (e.g. Amex, Discover)') }}</label>
+    </td>
+    <td>
+      <select id="settings_isAcceptNo3dSecure" name="settings[isAcceptNo3dSecure]">
+        <option value="1" {% if this.isSelected(this.paymentMethod.getSetting('isAcceptNo3dSecure'), '1') %} selected="selected" {% endif %}>{{ t('Yes') }}</option>
+        <option value="0" {% if this.isSelected(this.paymentMethod.getSetting('isAcceptNo3dSecure'), '0') %} selected="selected" {% endif %}>{{ t('No') }}</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="setting-name">
+      <label for="settings_is3dSecureForVault">{{ t('Use for cards saved in vault') }}</label>
+    </td>
+    <td>
+      <select id="settings_is3dSecureForVault" name="settings[is3dSecureForVault]">
+        <option value="1" {% if this.isSelected(this.paymentMethod.getSetting('is3dSecureForVault'), '1') %} selected="selected" {% endif %}>{{ t('Yes') }}</option>
+        <option value="0" {% if this.isSelected(this.paymentMethod.getSetting('is3dSecureForVault'), '0') %} selected="selected" {% endif %}>{{ t('No') }}</option>
+      </select>
+    </td>
+  </tr>
+</table>

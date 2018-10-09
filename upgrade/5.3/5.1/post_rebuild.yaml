@@ -1,0 +1,21 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: "Your store is configured to use the secure protocol for the store back-end and checkout, sign-in and profile pages.", translations: [{ code: en, label: 'Your store is configured to use the secure protocol for both the store’s back end and customer area.' },{ code: ru, label: 'Безопасный протокол настроен для зоны управления магазином и клиентской зоны.' }]}
+
+XLite\Model\Order\Status\Shipping:
+  - { code: WFA }
+
+XLite\Model\Order\Status\Property:
+  - { paymentStatus: { code: A }, shippingStatus: { code: WFA }, incStock: false}
+  - { paymentStatus: { code: PP }, shippingStatus: { code: WFA }, incStock: false}
+  - { paymentStatus: { code: P }, shippingStatus: { code: WFA }, incStock: false}
+  - { paymentStatus: { code: D }, shippingStatus: { code: WFA }, incStock: true}
+  - { paymentStatus: { code: C }, shippingStatus: { code: WFA }, incStock: true}
+  - { paymentStatus: { code: Q }, shippingStatus: { code: WFA }, incStock: false}
+  - { paymentStatus: { code: R }, shippingStatus: { code: WFA }, incStock: true}

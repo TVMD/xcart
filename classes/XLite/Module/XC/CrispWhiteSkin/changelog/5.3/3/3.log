@@ -1,0 +1,12 @@
+Version 5.3.3.3
+
+Fixes
+2017-09-14 - [Bug] More menu operation in CrispWhite Skin improved. #BUG-5484 (Eugene Dementjev) #CrispWhiteSkin
+2017-08-24 - [Bug] Fixed some layout issues related to the credit card info entry widget for the module BlueSnap. #BUG-5424 (Eugene Dementjev) #Core #CrispWhiteSkin #BlueSnap
+2017-08-24 - [Bug] When hovering over the next/previous product links, CloudZoom made it impossible to view the contents of the quick product view dropdown. #BUG-5141 (Michael Lipinski) #CrispWhiteSkin
+2017-08-23 - [Bug] Minor refactoring of styles. #BUG-5290 (Eugene Dementjev) #Core #ThemeTweaker #FastLaneCheckout #CrispWhiteSkin
+2017-08-21 - [Bug] Fixed some layout issues related to the widget for credit card info entry in the IE and Firefox browsers. #BUG-5398 (Michael Lipinski) #Core #CrispWhiteSkin
+2017-08-11 - [Bug] On mobile devices, the phrase "Have a discount coupon" was displayed over the footer. Fixed. #BUG-5272 (Sergey Elmanov) #Core #CrispWhiteSkin
+2017-08-07 - [Bug] In mobile view, after adding a product to cart from the product details page, the tab styles were changed. #BUG-5308 (Sergey Elmanov) #CrispWhiteSkin
+2017-07-26 - [Bug] Changed the way image size is defined for the product page: now image border is added to, not subtracted from the image dimensions. #BUG-5234 (Eugene Dementjev) #CrispWhiteSkin
+

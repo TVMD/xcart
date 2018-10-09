@@ -1,0 +1,7 @@
+Version 5.3.4.0
+
+Fixes
+2017-05-18 - [Bug] The button Buy now with PayPal was not working on the product page if In-context chechout was used. #BUG-4958 (Sergey Elmanov) #Paypal
+2017-04-14 - [Bug] Moved the callback locking functionality from the module PayPal to core (for use with other modules). #BUG-4629 (Maxim Kuznetsov) #Core #Paypal #Stripe
+2017-03-24 - [Bug] Refactoring of payment system callback processing. #BUG-4628 (Sergey Elmanov) #Core #Paypal #Stripe
+2016-12-22 - [Bug] Replaced PHP_SELF in the code by SCRIPT_NAME for security. #BUG-4306 (Maxim Kuznetsov) #Core #Paypal

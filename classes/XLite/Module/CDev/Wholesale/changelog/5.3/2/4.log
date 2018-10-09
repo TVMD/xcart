@@ -1,0 +1,6 @@
+Version 5.3.2.4
+
+Fixes
+2017-10-04 - [Bug] The "Minimum purchase quantity" setting now has priority over the global setting "Maximum order quantity (per product)". #BUG-5423 (Maxim Kuznetsov) #Wholesale
+2017-09-26 - [Bug] Fatal error when cloning a product with variants and the addon MailChimp active. Fixed. #BUG-5534 (Sergey Elmanov) #Wholesale
+

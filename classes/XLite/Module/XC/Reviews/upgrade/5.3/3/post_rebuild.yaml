@@ -1,0 +1,14 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+
+XLite\Model\LanguageLabel:
+  - { name: 'Be the first and leave a feedback.', translations: [{ code: 'en', label: 'Be the first and leave feedback' },{ code: 'ru', label: 'Станьте первым, кто оставит отзыв' }] }
+  - { name: 'Score: X. Votes: Y', translations: [{ code: 'en', label: 'Score: {{score}} (votes: {{votes}})' },{ code: 'ru', label: 'Рейтинг: {{score}} (голосов: {{votes}})' }] }
+
+XLite\Model\Product\GlobalTab:
+  - {service_name: 'Reviews', position: 60}

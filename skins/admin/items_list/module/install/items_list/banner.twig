@@ -1,0 +1,14 @@
+{##
+ # Marketplace banner
+ #
+ # @ListChild (list="marketplace.top-controls", weight="200")
+ #}
+{% if this.isBannerVisible() %}
+  {{ widget('XLite\\View\\ModulesManager\\Banner') }}
+{% endif %}
+
+{% if this.promoBanner %}
+  <a href="{{ this.promoBanner.module_banner_url }}" {% if this.promoBanner.is_external_link %} target="_blank"{% endif %}>
+    <img src="{{ this.promoBanner.banner_url }}" class="promo-banner" />
+  </a>
+{% endif %}

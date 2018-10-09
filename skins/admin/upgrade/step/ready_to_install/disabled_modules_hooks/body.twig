@@ -1,0 +1,38 @@
+{##
+ # List of incompatible entries
+ #}
+
+<div class="modified-files-section disabled-modules-hooks-section">
+  <a name="modules_to_uninstall"></a>
+  <div class="modified-files-section-frame disabled-modules-hooks-section-frame">
+    <div class="disabled-modules-hooks-message">
+      <div class="head">{{ t('Disabled modules hooks message head')|raw }}</div>
+      <div class="body">{{ t('Disabled modules hooks message body', {'link':this.getDisabledModulesListLink()})|raw }}</div>
+    </div>
+
+<table class="downloaded-components disabled-modules">
+  <tr class="header">
+    <th class="module-info-header">{{ t('Component') }}</th>
+    <th class="disabled-module-action-header">{{ t('Action') }}</th>
+  </tr>
+
+  {% for entry in this.getDisabledModulesHooks() %}
+    <tr class="module-entry">
+      <td class="module-info">
+        <a href="{{ entry.getInstalledURL() }}"><span class="name">{{ entry.getModuleName() }}</span></a>
+        <span class="author">({{ entry.getAuthorName() }})</span>
+      </td>
+      <td class="disabled-module-action">
+        <span>{{ t('to be uninstalled') }}</span>
+        <select name="disabledModulesHooks[{{ entry.getMarketplaceId() }}]" disabled="disabled" class="hidden">
+          <option value="0">{{ t('Uninstall') }}</option>
+        </select>
+      </td>
+    </tr>
+  {% endfor %}
+</table>
+
+    {{ widget('XLite\\View\\Button\\Link', location=this.getDisabledModulesListLink(), label="Review modules", blank=true) }}
+
+  </div>
+</div>

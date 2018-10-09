@@ -1,0 +1,135 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Slidebar styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+.themetweaker-modal-mask {
+	position: fixed;
+	z-index: 1000000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	display: table;
+	transition: opacity .3s ease;
+}
+
+body.live-css-reloading .themetweaker-modal-container * {
+	transition: none !important;
+}
+
+.themetweaker-modal-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.themetweaker-modal-footer {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.themetweaker-modal-container {
+	width: 400px;
+	margin: 0px auto;
+	padding: 30px 30px;
+	background-color: #fff;
+	border-radius: 2px;
+	transition: all .3s ease;
+	position: relative;
+}
+
+.themetweaker-modal-button {
+	padding: 0 20px;
+	height: 100%;
+	vertical-align: middle;
+	font-size: 12px;
+	min-height: 30px;
+}
+
+.themetweaker-modal-close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.themetweaker-modal-close svg {
+	width: 12px;
+	height: 12px;
+	vertical-align: top;
+}
+
+.themetweaker-modal-close svg path {
+	fill: #000;
+}
+
+.themetweaker-modal-close:hover svg path,
+.themetweaker-modal-close:focus svg path {
+	fill: #0ba2e8;
+}
+
+.themetweaker-modal-button + .themetweaker-modal-button {
+	margin-left: 5px;
+}
+
+button.themetweaker-modal-button,
+a.themetweaker-modal-button {
+	cursor: pointer;
+	border-radius: 2px;
+	border: none;
+	background: #000;
+	min-width: 80px;
+}
+
+button.themetweaker-modal-button span,
+a.themetweaker-modal-button span {
+	color: #fff;
+}
+
+.themetweaker-modal-button:hover,
+.themetweaker-modal-button:focus {
+	background: #0ba2e8;
+}
+
+.themetweaker-modal-button.secondary {
+	background: #fff;
+	border: 2px solid #000;
+}
+
+.themetweaker-modal-button.secondary:hover,
+.themetweaker-modal-button.secondary:focus {
+	border: 2px solid #0ba2e8;
+	background: #0ba2e8;
+}
+
+.themetweaker-modal-button.secondary:hover span,
+.themetweaker-modal-button.secondary:focus span {
+	color: #fff;
+}
+
+.themetweaker-modal-button.secondary span {
+	color: #000;
+}
+
+/*
+ * the following styles are auto-applied to elements with
+ * v-transition="modal" when their visiblity is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter, .modal-leave {
+	opacity: 0;
+}
+
+.modal-enter .themetweaker-modal-container,
+.modal-leave .themetweaker-modal-container {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}

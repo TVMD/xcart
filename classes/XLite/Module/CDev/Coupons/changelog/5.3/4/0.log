@@ -1,0 +1,5 @@
+Version 5.3.4.0
+
+Fixes
+2017-11-01 - [Bug] Error "Error (code: 0): Call to a member function getId() on null" in the module Coupons. Fixed. #BUG-5625 (Sergey Elmanov) #Coupons
+

@@ -1,0 +1,13 @@
+{##
+ # Top message for the advanced mode
+ #
+ # @ListChild (list="upgrade.install_updates.sections", weight="100")
+ #}
+
+{% if this.isAdvancedMode() %}
+  <div class="upgrade-warning">{{ t('In advanced mode you can choose specific modules for upgrade.') }}</div>
+{% endif %}
+
+{% if this.isAdvancedMode() %}
+  <div class="alert alert-warning upgrade-warning">{{ t('Please be warned that proper operation of the site after an upgrade is not guaranteed if you choose to upgrade only some of the components listed below.') }}</div>
+{% endif %}

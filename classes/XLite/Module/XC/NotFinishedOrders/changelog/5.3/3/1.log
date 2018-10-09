@@ -1,0 +1,8 @@
+Version 5.3.3.1
+
+Improvements (1)
+2018-06-20 - [Change] Added an information message that NFO orders may not be exported. #BUG-6277 https://bt.x-cart.com/view.php?id=49370 (Shevelov Alexander) #Core #NotFinishedOrders
+
+Fixes (1)
+2018-05-29 - [Bug] When converting an NFO order to a regular order, an Order created notification is now sent with the correct statuses. #BUG-6370 (Maxim Kuznetsov) #NotFinishedOrders
+

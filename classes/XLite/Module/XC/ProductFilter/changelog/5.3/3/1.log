@@ -1,0 +1,5 @@
+Version 5.3.3.1
+
+Fixes
+2017-06-30 - [Bug] In the product filter on the category page, not all the available attribute values were shown. Fixed. #BUG-5149 (Eugene Dementjev) #ProductFilter
+

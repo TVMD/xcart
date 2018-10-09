@@ -1,0 +1,5 @@
+Version 5.3.4.0
+
+Fixes
+2017-10-02 - [Bug] It is now possible to sort the list of tax rates. #BUG-5437 (Michael Lipinski) #Core #SalesTax #VAT #CanadianTaxes
+

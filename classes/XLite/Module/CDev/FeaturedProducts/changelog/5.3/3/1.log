@@ -1,0 +1,5 @@
+Version 5.3.3.1
+
+Improvements
+2017-06-01 - [Change] Added the permissions to edit the front page, banners and featured products to the 'Manage catalog' permission group. #BUG-5044 (Sergey Elmanov) #Core #FeaturedProducts
+

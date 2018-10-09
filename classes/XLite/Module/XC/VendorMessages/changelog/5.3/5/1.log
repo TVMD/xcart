@@ -1,0 +1,5 @@
+Version 5.3.5.1
+
+Fixes
+2017-12-07 - [Bug] Error "Error (code: 0): Call to a member function getNameForMessages() on null" in the Order messages module. Fixed. #BUG-5779 (Michael Lipinski) #Core #VendorMessages
+

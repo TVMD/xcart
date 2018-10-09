@@ -1,0 +1,17 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: enable_signed_urls
+    category: CDev\Egoods
+    translations:
+      - code: en
+        option_name: 'Enable usage of Presigned URLs for Amazon S3 links'
+        option_comment: 'Use Amazon S3 to host your digital files on Amazon and control access to your e-goods by presigned URLs. Learn more at <a href="http://kb.x-cart.com/en/modules/egoods/" target="_blank">E-goods module</a> article at X-Cart Knowledge Base.'
+      - code: ru
+        option_name: 'Включить ссылки, подписанные ключом, для файлов на хранилище Amazon S3'
+        option_comment: 'С помощью хранилища Amazon S3 можно экономить серверное дисковое пространство и контролировать доступ к скачиваемым товарам. Подробнее о конфигурации можно узнать на странице <a href="http://kb.x-cart.com/en/modules/egoods/" target="_blank">E-goods</a> в базе знаний X-Cart.'

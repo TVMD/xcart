@@ -1,0 +1,34 @@
+{##
+ # List of incompatible entries
+ #}
+
+<div class="premium-license-modules-section">
+  <div class="incompatible-module-list-description premium-license-modules-message">
+    {{ t('Premium license modules warning', {'purchaseURL': this.getPurchaseURL(), 'installedModulesURL': url('addons_list_installed')})|raw }}
+  </div>
+
+  <div class="alert alert-warning premium-license-modules-list">
+    <table>
+      <tbody>
+      {% for entry in this.getModules() %}
+        <tr>
+          <td class="module-info">
+            <a href="{{ entry.getInstalledURL() }}">
+              <span class="name">{{ entry.getName() }}</span>
+              <span class="author">({{ t('by') }} {{ entry.getAuthor() }})</span>
+            </a>
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    <hr>
+    <div class="actions">
+      {{ widget('\\XLite\\View\\Button\\ActivateKey', location='', label=t('Register license key'), style='regular-button', blank='true') }}
+      {{ widget('\\XLite\\View\\Button\\Link', location=this.getPurchaseURL(), label=t('Purchase a premium license key'), style='regular-main-button', blank='true') }}
+      <span class="or-separator">{{ t('or') }}</span>
+      {{ widget('\\XLite\\View\\Button\\SimpleLink', location=url('addons_list_installed'), label=t('Remove module')) }}
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>

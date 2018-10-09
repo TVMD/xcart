@@ -1,0 +1,5 @@
+Version 5.3.3.1
+
+Fixes
+2017-06-19 - [Bug] When cloning a product, empty tabs were created. #BUG-5115 (Sergey Elmanov) #CustomProductTabs
+

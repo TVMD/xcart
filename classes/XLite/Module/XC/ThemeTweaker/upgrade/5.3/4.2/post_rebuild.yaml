@@ -1,0 +1,10 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: 'Flexy-to-twig converter warning', translations: [{ code: en, label: 'Converted files may not always work correctly because not all the changes can be handled automatically by conversion. Be sure to check your converted files manually to ensure that all the required changes have been implemented properly. More info about Flexy and Twig key differences is available at <a href="https://xcart.github.io/flexy-to-twig/" target="_blank">https://xcart.github.io/flexy-to-twig</a>' }, { code: ru, label: 'Сконвертированные файлы не всегда могут работать корректно поскольку не все изменения могут быть правильно выполнены при автоматической конвертации. Проверьте ваши сконвертированные файлы вручную, чтобы убедиться, что все изменения перенесены верно. Больше информации о Flexy-to-Twig конверторе доступно здесь: <a href="https://xcart.github.io/flexy-to-twig/" target="_blank">https://xcart.github.io/flexy-to-twig</a>' }]}
+  - { name: 'Webmaster Mode allows you to change the storefront design in click-and-edit mode', translations: [{ code: en, label: 'Webmaster Mode allows you to change the storefront design in click-and-edit mode.<br /><br />If the design of your store''s customer area has been messed up by a template change, try restoring the original template in the Edited Templates section. More information about design changes in X-Cart is available in <a href="https://devs.x-cart.com/en/design_changes/basic_guide_to_theme_creation.html">X-Cart''s Knowledge Base</a>.' }, { code: ru, label: 'Режим веб-мастера позволяет редактировать внешний вид сайта по месту.<br /><br />Если после внесения изменений клиентская зона выглядит неправильно, попробуйте откатить изменения в секции "Измененные шаблоны". Больше информации об изменении дизайна сайта на X-Cart - в <a href="https://devs.x-cart.com/en/design_changes/basic_guide_to_theme_creation.html">Базе знаний X-Cart</a>.' }] }

@@ -1,0 +1,5 @@
+Version 5.3.4.0
+
+Fixes
+2017-10-05 - [Bug] Updated the information on the availability of payment gateways for merchants in specific countries. #BUG-5373 (Maxim Kuznetsov) #Skrill #TwoCheckout #Qiwi #IdealPayments #Converge
+

@@ -1,0 +1,5 @@
+Version 5.3.3.3
+
+Fixes
+2017-08-08 - [Bug] The number of NFO orders was always shown as 0. #BUG-5247 (Eugene Dementjev) #CustomOrderStatuses
+

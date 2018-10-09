@@ -1,0 +1,7 @@
+Version 5.3.2.0
+
+Improvements
+2017-04-25 - [Change] Refactored the way js code is inserted into textareas: now the root administrator can use this feature at any time, whereas the rest of the store administrators must be given a special permission for Unfiltered HTML. #XCN-6227 (Eugene Dementjev) #Core #SimpleCMS #MultiVendor #News
+
+Fixes
+2017-03-06 - [Bug] In LayoutEditor, a block moved to the sidebar in the 2-column mode disappeared after switching to the 3-column mode. #BUG-4335 (Maxim Kuznetsov) #Core #ProductAdvisor #Sale #ThemeTweaker #ProductFilter #ProductComparison #MultiVendor #ProductTags #News

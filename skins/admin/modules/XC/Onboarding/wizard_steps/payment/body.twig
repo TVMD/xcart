@@ -1,0 +1,57 @@
+{##
+ # Payment step
+ #}
+
+<div class="onboarding-wizard-step step-{{ this.getStepIndex() }}"
+     v-show="isCurrentStep('{{ this.getStepIndex() }}')"
+     :transition="stepTransition">
+  <xlite-wizard-step-payment inline-template>
+    <div class="step-contents">
+      <h2 class="heading">{{ t("Manage your payment options") }}</h2>
+      <p class="text">{{ t("120+ supported payment gateways, such as PayPal, Authorize.net and etc.") }}</p>
+
+      <div class="methods">
+        {% if this.getMethod() %}
+          <div class="offline">
+            <div class="method-type">
+              {{ t('Offline method') }}
+            </div>
+
+            <div class="image">{{ svg('modules/XC/Onboarding/images/icon-phone-order.svg')|raw }}</div>
+
+            <div class="method-name">
+              {{ this.getOfflineMethodName() }}
+            </div>
+
+            <div class="note">
+              {{ t('Some people simply prefer to place their orders by phone — let them do that.') }}
+            </div>
+
+            <div class="switcher{% if this.isOfflineMethodEnabled() %} enabled{% endif %}">
+              <span class="inactive">{{ t('checkbox.onoff.off') }}</span>
+              <a href="#" @click.prevent="switchOfflineMethod({{ this.getOfflineMethodId() }}, $event)">
+                <div>
+                  <span class="fa fa-check"></span>
+                </div>
+              </a>
+              <span class="active">{{ t('checkbox.onoff.on') }}</span>
+            </div>
+          </div>
+        {% endif %}
+
+        {% for widgetClass in this.getOnlineWidgets() %}
+          {{ widget(widgetClass) }}
+        {% endfor %}
+      </div>
+
+      <div class="buttons">
+        <div class="more-button">
+          {{ widget('\\XLite\\View\\Button\\Link', label='Set up offline & online payments', location=this.getMoreSettingsLocation(), blank=1) }}
+        </div>
+        <div class="next-step">
+          {{ widget('\\XLite\\View\\Button\\Regular', label='Proceed to the next step', style='regular-main-button', attributes={'@click': 'goToNextStep'}, jsCode="null;") }}
+        </div>
+      </div>
+    </div>
+  </xlite-wizard-step-payment>
+</div>

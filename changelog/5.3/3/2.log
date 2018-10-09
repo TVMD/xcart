@@ -1,0 +1,23 @@
+Version 5.3.3.2
+
+Improvements
+2017-07-21 - [Change] Improved the UI for adding email addresses in the Store Setup -> Contact Information section. #BUG-5207 (Sergey Elmanov) #Core
+2017-07-20 - [Change] X-Sendfile can now be used to download heavy file attachments on servers that support this feature. #BUG-5181 (Eugene Dementjev) #Core #Egoods
+2017-07-06 - [Change] Added a page for checking the database for consistency. #XCN-6999 (Michael Lipinski) #Core
+
+Fixes
+2017-07-27 - [Bug] Upload of images to Amazon S3 was not working if the module Multivendor was installed. Fixed. #BUG-5242 (Eugene Dementjev) #Core
+2017-07-27 - [Bug] Incorrect behavior of the More menu item in Crisp White skin. Fixed. #BUG-5226 (Eugene Dementjev) #Core #CrispWhiteSkin
+2017-07-25 - [Bug] JS error during checkout with Simplify payment module enabled. Fixed. #BUG-5293 (Sergey Elmanov) #Core
+2017-07-25 - [Bug] JS error when creating a new product tab. Fixed. #BUG-5292 (Sergey Elmanov) #Core
+2017-07-21 - [Bug] Attribute values could not be edited if the number of values was larger than 15. Fixed. #BUG-5197 (Michael Lipinski) #Core
+2017-07-20 - [Bug] Shipping rates could not be assigned to specific zones. Fixed. #BUG-5230 (Michael Lipinski) #Core
+2017-07-19 - [Bug] When uploading an image from a URL with the option "Copy to filesystem" enabled, the image was not copied. Fixed. #BUG-5257 (Eugene Dementjev) #Core
+2017-07-19 - [Bug] New language labels could not be added on servers with PHP < 7.0. Fixed. #BUG-5248 (Eugene Dementjev) #Core #ThemeTweaker
+2017-07-14 - [Bug] In the Warehouse mode, vendors no longer have access to editing the staff note, custom note and add coupon fields. #BUG-5190 (Michael Lipinski) #Core #Coupons #GiftWrapping
+2017-07-14 - [Bug] Layout issues on the module page. #BUG-5166 (Sergey Elmanov) #Core
+2017-07-10 - [Bug] Google Search generated an error on the wrong link in the hreflang tag. #BUG-5154 (Sergey Elmanov) #Core
+2017-07-06 - [Bug] PayPal buttons display issues on the cart page in Crisp White. #BUG-5169 (Sergey Elmanov) #Core #CrispWhiteSkin
+2017-06-30 - [Bug] Removed editable attributes yes/no from the Specifications tab. #BUG-5158 (Eugene Dementjev) #Core
+2017-06-19 - [Bug] Installed addons are no longer displayed in More sales channels. #BUG-5086 (Maxim Kuznetsov) #Core
+

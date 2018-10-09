@@ -1,0 +1,10 @@
+Version 5.3.3.1
+
+Fixes
+2017-06-28 - [Bug] The setting "Wrap long category names" of the module Flyout Categories menu did not work in Crisp White Skin. #BUG-5153 (Sergey Elmanov) #CrispWhiteSkin
+2017-06-07 - [Bug] Layout issues at checkout related to displaying the add gift wrapping checkbox option. #BUG-4945 (Maxim Kuznetsov) #CrispWhiteSkin
+2017-06-05 - [Bug] Product filter disappeared on some mobile devices. #BUG-4948 (Maxim Kuznetsov) #CrispWhiteSkin
+2017-06-01 - [Bug] The invalid coupon error was not fully displayed in Crisp White. #BUG-4929 (Sergey Elmanov) #Coupons #CrispWhiteSkin
+2017-06-01 - [Bug] Layout issues related to the display of PIN codes in a customer invoice. #BUG-4915 (Sergey Elmanov) #CrispWhiteSkin
+2017-05-25 - [Bug] Changed the color of links in CrispWhite skin. #BUG-5009 (Maxim Kuznetsov) #CrispWhiteSkin
+

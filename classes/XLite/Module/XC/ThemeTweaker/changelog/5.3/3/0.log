@@ -1,0 +1,14 @@
+Version 5.3.3.0
+
+Improvements
+2017-04-26 - [Change] Webmaster mode refactoring: added a Webmaster panel to the Customer area which includes the following elements: Edited templates, Layout editor, Custom css, Labels editor. #XCN-7827 (Eugene Dementjev) #Core #ThemeTweaker #WebmasterKit
+2017-04-13 - [Change] Popups can now be edited in Webmaster mode. #XCN-7624 (Eugene Dementjev) #ThemeTweaker
+1970-01-01 - [Change] It is now possible to edit text labels in the Customer area right on the spot. #XCN-7278 (Eugene Dementjev) #Core #ThemeTweaker
+
+Fixes
+2017-05-26 - [Bug] The Look & Feel menu now contains a link to the "Edited templates" section; added a description to the "Layout" section. #BUG-4983 (Sergey Elmanov) #ThemeTweaker
+2017-05-26 - [Bug] Templates were not saved in Webmaster mode. #BUG-5032 (Eugene Dementjev) #ThemeTweaker
+2017-05-08 - [Bug] Checkout error vue.js?1493975604:1018 [Vue warn]: v-on:click="toggleItems" if logged in as admin. #BUG-4854 (Eugene Dementjev) #Core #ThemeTweaker #FastLaneCheckout
+2017-04-05 - [Bug] There were different tooltip.twig for the Admin and Customer areas. #BUG-4439 (Sergey Elmanov) #Core #ThemeTweaker #ProductReviews
+2017-03-24 - [Bug] Made the Textarea for Custom CSS/JS in the Admin area larger. #BUG-4689 (Sergey Elmanov) #ThemeTweaker
+2017-03-06 - [Bug] In LayoutEditor, a block moved to the sidebar in the 2-column mode disappeared after switching to the 3-column mode. #BUG-4335 (Maxim Kuznetsov) #Core #ProductAdvisor #Sale #ThemeTweaker #ProductFilter #ProductComparison #MultiVendor #ProductTags #News

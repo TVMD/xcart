@@ -1,0 +1,40 @@
+Version 5.3.4.6
+
+Improvements (2)
+2018-03-22 - [Change] Vendors can now use the setting "Calculate taxes for US in designated states only" in the Separate shops multivendor mode if the addons Avatax or TaxJar are active. #XCN-8758 (Sergey Elmanov) #Core #AvaTax #TaxJar
+2018-02-09 - [Change] Added a new setting to toggle the blur effect for images. #BUG-5919 https://bt.x-cart.com/view.php?id=48972 (Sergey Elmanov) #Core
+
+Fixes (32)
+2018-03-28 - [Bug] Fatal error during checkout if the setting "Ask anonymous users to create an account or sign in before checkout" was disabled. Fixed. #BUG-6204 (Sergey Elmanov) #Core
+2018-03-27 - [Bug] Fixed the rate calculation logics so that no duplicate requests to AvaTax API would be made. #BUG-6176 (Eugene Dementjev) #Core #AvaTax
+2018-03-26 - [Bug] Internal server error when re-calculating the order totals if a product from the order which used to be owned by one vendor was transferred to another vendor. Fixed. #BUG-6187 (Sergey Elmanov) #Core
+2018-03-26 - [Bug] In MultiVendor, when a new order was created, the vendor commission was calculated incorrectly. Fixed. #BUG-5964 (Sergey Elmanov) #Core #SalesTax #MultiVendor
+2018-03-23 - [Bug] A user could change their email address replacing it with the email address of an already existing user. Fixed. #BUG-6177 (Sergey Elmanov) #Core
+2018-03-23 - [Bug] The next/previous product links functioned incorrectly if the product page was accessed from a search results page. Fixed. #BUG-6113 (Shevelov Alexander) #Core #ProductFilter #NextPreviousProduct
+2018-03-23 - [Bug] Added some missing text labels and their translations. #BUG-6026 https://bt.x-cart.com/view.php?id=49100 (Shevelov Alexander) #Core #Coupons #SimpleCMS #VolumeDiscounts #ProductVariants #MultiVendor #VendorMessages
+2018-03-21 - [Bug] The Reset password link did not work correctly for vendors in the Customer area. Fixed. #BUG-6171 https://bt.x-cart.com/view.php?id=49262 (Sergey Elmanov) #Core #MultiVendor
+2018-03-20 - [Bug] The name Sales Tax was displayed incorrectly in the cart/during checkout if the addon MultiVendor was active and running in the Separate shops mode. Fixed. #BUG-6165 https://bt.x-cart.com/view.php?id=49251 (Shevelov Alexander) #Core #MultiVendor
+2018-03-20 - [Bug] Internal Server Error/Event Task Runner Error during product import when an image did not exist. Fixed. #BUG-6150 https://bt.x-cart.com/view.php?id=49227 (Sergey Elmanov) #Core
+2018-03-20 - [Bug] A custom state value was returned incorrectly during checkout. Fixed. #BUG-6124 (Shevelov Alexander) #Core
+2018-03-14 - [Bug] Bugs during checkout and when adding a product to the shopping cart if the addons ShopGate and VAT were enabled and then disabled again. Fixed. #BUG-6110 https://bt.x-cart.com/view.php?id=49269 (Sergey Elmanov) #Core #VAT #ShopGate
+2018-03-08 - [Bug] The setting  "Do not show customers’ contact information to vendors" was working incorrectly for the Separate shops mode. Fixed. #BUG-6098 https://bt.x-cart.com/view.php?id=49172 (Shevelov Alexander) #Core #MultiVendor
+2018-03-06 - [Bug] Added UTF-8 BOM support for import files. #BUG-6056 https://bt.x-cart.com/view.php?id=49149 (Shevelov Alexander) #Core
+2018-02-22 - [Bug] The user is logged out if they use an already used/invalid password reset key. #BUG-5657 https://bt.x-cart.com/view.php?id=48661 (Shevelov Alexander) #Core
+2018-02-21 - [Bug] Blur effect was present on already loaded images. Fixed. #BUG-5709 https://bt.x-cart.com/view.php?id=48705 (Sergey Elmanov) #Core
+2018-02-20 - [Bug] The quantity of purchased addons was calculated incorrectly. Fixed. #BUG-5609 (Shevelov Alexander) #Core
+2018-02-19 - [Bug] Removed the change link for shopping methods on OPC. #BUG-6031 https://bt.x-cart.com/view.php?id=49107 (Shevelov Alexander) #Core #CrispWhiteSkin
+2018-02-19 - [Bug] Problems when updating product images by import. Fixed. #BUG-6007 https://bt.x-cart.com/view.php?id=49077 (Sergey Elmanov) #Core
+2018-02-14 - [Bug] Labels editor did not work if clean URLs were enabled. Fixed. #BUG-6039 (Sergey Elmanov) #Core
+2018-02-14 - [Bug] Search was working incorrectly in the Customer area. Fixed. #BUG-5960 https://bt.x-cart.com/view.php?id=49039 (Sergey Elmanov) #Core
+2018-02-14 - [Bug] Fatal error if re-ordering with VAT configured. Fixed. #BUG-5926 https://bt.x-cart.com/view.php?id=48933 (Sergey Elmanov) #Core
+2018-02-14 - [Bug] A short buyer name was displayed incorrectly on the order page in the Admin area. Fixed. #BUG-5610 (Shevelov Alexander) #Core
+2018-02-12 - [Bug] Added a new setting for the selection of Next/Previous order sorting. #BUG-6016 https://bt.x-cart.com/view.php?id=49076 (Sergey Elmanov) #Core
+2018-02-09 - [Bug] Added a confirmation for when a customer account is converted to vendor. #BUG-5608 (Sergey Elmanov) #Core #MultiVendor
+2018-02-09 - [Bug] Addon links did not work correctly after the skin was changed. Fixed. #BUG-5605 (Shevelov Alexander) #Core
+2018-02-09 - [Bug] When the reviews tab was opened, the page was scrolled down to the page bottom. Fixed. #BUG-5584 https://bt.x-cart.com/view.php?id=48599 (Sergey Elmanov) #Core
+2018-02-08 - [Bug] Bulk category editing did not work if the addon Tags was disabled. Fixed. #BUG-6028 https://bt.x-cart.com/view.php?id=49102 (Shevelov Alexander) #Core
+2018-02-08 - [Bug] Minor style fixed for the Order Messages addon. #BUG-6027 (Sergey Elmanov) #Core #VendorMessages
+2018-02-02 - [Bug] Fatal error in the process of payment via Bitpay and returning to the store if the Bitpay module had been disabled by the store administrator before the payment was completed. Fixed. #BUG-5948 (Eugene Dementjev) #Core
+2018-02-02 - [Bug] Widget cache was working incorrectly when removing products via REST API. Fixed. #BUG-5917 https://bt.x-cart.com/view.php?id=48968 (Eugene Dementjev) #Core #RESTAPI
+2018-02-01 - [Bug] The advertisement block "Need a way to set wholesale prices?" could not be closed. Fixed. #BUG-5592 (Sergey Elmanov) #Core
+

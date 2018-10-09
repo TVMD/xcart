@@ -1,0 +1,4 @@
+Version 5.3.2.0
+
+Fixes
+2017-02-17 - [Bug] Update inventory improvement; it has become possible to enter values like "+5" or "-5". #BUG-4397 (Michael Lipinski) #Core #UpdateInventory

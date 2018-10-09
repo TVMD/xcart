@@ -1,0 +1,23 @@
+{##
+ # iframe
+ #
+ #
+ # @ListChild (list="checkout.review.selected", weight="20") 
+ # @ListChild (list="checkout_fastlane.sections.payment.left", weight="500") 
+ #}
+<script type="text/javascript">
+var xpcPaymentIds = [];
+{% if this.getXpcPaymentIds() %}
+{% for id in this.getXpcPaymentIds() %}xpcPaymentIds[{{ id }}] = '{{ id }}';{% endfor %}
+
+var xpcSavedCardPaymentId = '{{ this.getXpcSavedCardPaymentId() }}';
+var xpcBillingAddressId = '{{ this.getXpcBillingAddressId() }}'; 
+var xpcUseIframe = '{{ this.isUseIframe() }}';
+var currentPaymentId = {% if this.isCheckoutReady() %}'{{ this.getPaymentId() }}'{% else %}false{% endif %};
+{% else %}
+var xpcSavedCardPaymentId = '0';
+var xpcBillingAddressId = '0'; 
+var xpcUseIframe = '0';
+var currentPaymentId = false;
+{% endif %}
+</script>

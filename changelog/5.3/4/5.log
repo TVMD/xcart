@@ -1,0 +1,49 @@
+Version 5.3.4.5
+
+Improvements
+2017-12-19 - [Change] Added the controls to block and unblock all the files onto the E-goods tab of the order page in the Admin area. #BUG-5850 (Sergey Elmanov) #Core #Egoods
+2017-12-18 - [Change] W3C validator warning "Warning: The type attribute is unnecessary for JavaScript resources.". Fixed. #BUG-5859 (Eugene Dementjev) #Core #Paypal #ThemeTweaker #ProductFilter #Olark #Disqus #FastLaneCheckout #CrispWhiteSkin #MultiVendor #MultiCurrency #NextPreviousProduct #Buy Button #ShopperApproved
+2017-12-18 - [Change] Fixed some HTML code errors found by the W3C validator. #BUG-5858 (Sergey Elmanov) #Core
+2017-12-12 - [Change] Added the ability to specify a product's main category. #BUG-5571 (Michael Lipinski) #Core
+2017-12-05 - [Change] An order status can no longer be reset to Declined manually. #BUG-5776 (Michael Lipinski) #Core
+
+Fixes
+2018-01-25 - [Bug] The address book was working incorrectly with FLC. Fixed. #BUG-5946 (Sergey Elmanov) #Core #FastLaneCheckout
+2018-01-24 - [Bug] Server time zone was used for order statistics instead of the X-Cart store time zone. Fixed. #BUG-5938 (Sergey Elmanov) #Core
+2018-01-22 - [Bug] Updated the dompdf library to version 0.8.2 (fixed the PHP 7.0.27 incompatibility). #BUG-5954 (Sergey Elmanov) #Core
+2018-01-22 - [Bug] Product images import did not work properly when importing image duplicates. #BUG-5910 (Sergey Elmanov) #Core
+2018-01-19 - [Bug] Information on wholesale prices for memberships was not displayed on the product page. Fixed. #BUG-5933 (Sergey Elmanov) #Core #Wholesale
+2018-01-19 - [Bug] Category path/name are now checked for invalid and 4-byte UTF-8 characters which are not supported. #BUG-5928 (Sergey Elmanov) #Core
+2018-01-18 - [Bug] Yandex.Market feed was generated incorrectly on a large number of products. Fixed. #BUG-5930 (Sergey Elmanov) #Core #YandexMarket
+2018-01-18 - [Bug] Minimum PHP version increased. #BUG-5877 (Maxim Kuznetsov) #Core #BitPay
+2018-01-17 - [Bug] Various layout related bugs on the search page in the Standard skin. Fixed. #BUG-5916 (Sergey Elmanov) #Core
+2018-01-17 - [Bug] Error in logs "XLite [warning] Warning: get_class() expects parameter 1 to be object, string given in /var/run/classes/XLite/Core/Templating/Twig/Template.php on line 78". Fixed. #BUG-5912 (Sergey Elmanov) #Core
+2018-01-17 - [Bug] Error related to the sending of data in JS on the addresses page in the Customer area. Fixed. #BUG-5904 (Maxim Kuznetsov) #Core
+2018-01-17 - [Bug] "The same as shipping" option at checkout was not working correctly. Fixed. #BUG-5809 (Maxim Kuznetsov) #Core
+2018-01-12 - [Bug] Error when removing a related order in MultiVendor. Fixed. #BUG-5880 (Eugene Dementjev) #Core #MultiVendor
+2018-01-12 - [Bug] When updating the status of an order and adding a tracking number, the tracking number was not sent via email. Fixed. #BUG-5580 (Eugene Dementjev) #Core
+2018-01-04 - [Bug] PHP 7.2 support added. #BUG-5879 (Maxim Kuznetsov) #Core
+2017-12-27 - [Bug] In CrispWhite, product images were processed incorrectly with Cloud Zoom enabled. Fixed. #BUG-5888 (Maxim Kuznetsov) #Core #CrispWhiteSkin
+2017-12-22 - [Bug] Hyperlinks like http://*.x-cart.com were replaced with links like https://*.x-cart.com. #BUG-5891 (Eugene Dementjev) #Core #Egoods #FeaturedProducts #FileAttachments #Paypal #SalesTax #SimpleCMS #SocialLogin #VAT #VolumeDiscounts #Wholesale #ThemeTweaker #PINCodes #RelatedProducts #FreeShipping #BulkEditing #CustomProductTabs #UpdateInventory #Buy Button
+2017-12-18 - [Bug] Incorrect process of password recovery for customer when clean URLs were enabled. Fixed. #BUG-5864 (Maxim Kuznetsov) #Core
+2017-12-14 - [Bug] Error in logs "Error (code: 2): rmdir(var/datacache/HTML): Directory not empty in file". Fixed. #BUG-5847 (Maxim Kuznetsov) #Core
+2017-12-14 - [Bug] Made the file upload error message more informative. #BUG-5706 (Sergey Elmanov) #Core
+2017-12-13 - [Bug] Optimization for search engines. #BUG-5838 (Sergey Elmanov) #Core
+2017-12-13 - [Bug] The copy and paste function did not work correctly when editing the email address in the Contact information section in IE and Firefox. Fixed. #BUG-5520 (Eugene Dementjev) #Core #Onboarding
+2017-12-12 - [Bug] When an order was created containing products from different vendors, the order creation information got duplicated. Fixed. #BUG-5827 (Maxim Kuznetsov) #Core #MultiVendor
+2017-12-11 - [Bug] Google fonts used in some skins/themes (for example, Noblesse) were not working in IE11/EDGE. Fixed. #BUG-5782 (Michael Lipinski) #Core
+2017-12-07 - [Bug] Error "Error (code: 0): Call to a member function getNameForMessages() on null" in the Order messages module. Fixed. #BUG-5779 (Michael Lipinski) #Core #VendorMessages
+2017-12-07 - [Bug] When creating a plain field attribute for a product, the sorting of attribute values turned out wrong. #BUG-5688 (Sergey Elmanov) #Core
+2017-12-06 - [Bug] When editing an invoice with AOM, the selected attribute value was reset to the default attribute value. Fixed. #BUG-5780 (Maxim Kuznetsov) #Core
+2017-12-06 - [Bug] When removing all the orders, it was not possible to reset the "Next order #" counter. #BUG-5768 (Michael Lipinski) #Core
+2017-12-05 - [Bug] Error in logs "Warning: Illegal offset type in /Users/michaellipinski/development/xcart/src/classes/XLite/Model/Order.php on line 3286". Fixed. #BUG-5810 (Michael Lipinski) #Core
+2017-12-05 - [Bug] If using a product's widget cache with multiple categories, the product category was shown incorrectly. Fixed. #BUG-5770 (Michael Lipinski) #Core
+2017-11-23 - [Bug] The favicon was not displayed on certain pages in Edge/IE. Fixed. #BUG-5687 (Michael Lipinski) #Core #SimpleCMS
+2017-11-21 - [Bug] On image upload, the local image filepath was determined incorrectly. Fixed. #BUG-5655 (Sergey Elmanov) #Core
+2017-11-20 - [Bug] The shipping calculation formula was not updated before it was saved. Fixed. #BUG-5737 (Sergey Elmanov) #Core
+2017-11-20 - [Bug] A wrong page was displayed to a user attempting to access a page restricted by membership. Fixed. #BUG-5582 (Sergey Elmanov) #Core
+2017-11-09 - [Bug] Fatal error when creating/updating a product. Fixed. #BUG-5708 (Sergey Elmanov) #Core #GoSocial
+2017-11-09 - [Bug] The status of an order containing shippable products was automatically reset to Delivered after an egood file from that order had been downloaded. Fixed. #BUG-5692 (Sergey Elmanov) #Core #Egoods #FileAttachments
+2017-10-24 - [Bug] Added a new type of bell notifications in the Admin area: Pending memberships. #BUG-5518 (Michael Lipinski) #Core
+2017-09-18 - [Bug] Previous/Next order feature now works based on date & order number. #BUG-5433 (Michael Lipinski) #Core
+

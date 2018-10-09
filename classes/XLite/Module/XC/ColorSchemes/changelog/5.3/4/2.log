@@ -1,0 +1,6 @@
+Version 5.3.4.2
+
+Fixes (2)
+2018-06-28 - [Bug] Wrong styles were used for the View cart button in the Add to cart popup. Fixed. #BUG-6375 https://bt.x-cart.com/view.php?id=49493 (Sergey Elmanov) #ColorSchemes
+2018-06-06 - [Bug] Color scheme name is now added as a class to the tag body. #BUG-6112 https://bt.x-cart.com/view.php?id=49187 (Sergey Elmanov) #ColorSchemes
+

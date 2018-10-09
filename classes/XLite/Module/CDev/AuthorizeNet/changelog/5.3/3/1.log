@@ -1,0 +1,5 @@
+Version 5.3.3.1
+
+Fixes
+2017-08-21 - [Bug] Fix upgrade hook for version 5.3.3.0. #BUG-5396 (Eugene Dementjev) #AuthorizeNet
+

@@ -1,0 +1,13 @@
+{##
+ # Module author
+ #
+ # @ListChild (list="itemsList.module.manage.columns.module-main-section", weight="20")
+ # @ListChild (list="itemsList.module.install.columns.module-main-section", weight="20")
+ # @ListChild (list="itemsList.module.sales-channels.columns.module-main-section", weight="20")
+ # @ListChild (list="itemsList.module.purchased.columns.module-main-section", weight="20")
+ #}
+{% if this.getAuthorURL(this.module) %}
+  <div class="author"><a href="{{ this.getAuthorURL(this.module) }}">{{ this.module.getAuthorName() }}</a></div>
+{% else %}
+  <div class="author">{{ this.module.getAuthorName() }}</div>
+{% endif%}

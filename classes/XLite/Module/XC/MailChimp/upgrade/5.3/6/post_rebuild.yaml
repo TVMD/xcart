@@ -1,0 +1,20 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Upgrade data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: 'send_coupons'
+    category: XC\MailChimp
+    type: XLite\Module\XC\MailChimp\View\FormField\Select\SendCoupons
+    orderby: 700
+    value: 'all'
+    translations:
+      - code: en
+        option_name: 'Type of discount coupons that should be uploaded to MailChimp'
+        option_comment: 'The MailChimp promo rules are:<br> - Code<br> - Discount amount<br> - Active from<br> - Active till <br>Discount coupons configured using any rules outside this rule set will be treated as not matching the MailChimp rules.'
+      - code: ru
+        option_name: 'Тип купонов на скидку, который следует загружать в MailChimp'
+        option_comment: 'Промо-правила MailChimp: <br> - Код<br> - Сумма скидки<br> - Активен с<br> - Активен по <br>Купоны, настроенные с использованием каких-либо правил сверх этого набора, будут считаться не соответствующим промо-правилам MailChimp.'

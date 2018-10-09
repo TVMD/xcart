@@ -1,0 +1,430 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * ____file_title____
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/**
+ * Entries list styles
+ */
+
+table.entries-list {
+  border-collapse: collapse;
+  margin: 0px 0px 25px 0px;
+  width: 800px;
+}
+
+table.entries-list td,
+  table.entries-list th
+{
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+table.entries-list tr.header {
+  background: none #f3f3f3;
+  height: 35px;
+}
+
+table.entries-list tr.header .module-info-header {
+  text-align: left;
+  padding: 5px 5px 5px 15px;
+}
+
+table.entries-list tr.header .version-header {
+  text-align: center;
+}
+
+table.entries-list tr.header .size-header {
+  text-align: right;
+  padding-right: 15px;
+}
+
+table.entries-list tr.header th {
+  font-size: 16px;
+  font-weight: normal;
+  color: #53769d;
+}
+
+table.entries-list tr.separator,
+  table.entries-list tr.separator td
+{
+  height: 10px;
+}
+
+table.entries-list tr td {
+  color: #333333;
+}
+
+table.entries-list tr.core-entry {
+  background: none #eff8fe;
+  height: 45px;
+}
+
+table.entries-list tr.module-entry {
+  border-top: #e5e5e5 1px solid;
+  border-bottom: #e5e5e5 1px solid;
+}
+
+table.entries-list tr.module-entry td,
+  table.entries-list tr.core-entry td
+{
+  padding: 10px 15px;
+}
+
+.entries-list td.module-info span.name {
+  color: #333333;
+  font-size: 16px;
+}
+
+.entries-list td.module-info span.author {
+  color: #9e9e9e;
+  font-size: 12px;
+}
+
+.entries-list .status.disabled {
+  color: #8f8f8f;
+}
+
+.entries-list .status.not-installed {
+  color: #4a9821;
+}
+
+table.entries-list tr td.old-version {
+  color: #8f8f8f;
+  padding-right: 20px;
+  text-align: center;
+}
+
+table.entries-list tr td.version-separator {
+  width: 1px;
+  height: 14px;
+  padding: 10px;
+  background: transparent url(../images/icon_arrow_version.png) left 12px no-repeat;
+}
+
+table.entries-list tr.core-entry td.version-separator {
+  background-position: left 16px;
+}
+
+table.entries-list tr td.new-version {
+  color: #333333;
+  padding-left: 10px;
+}
+
+.entries-list .size {
+  color: #8f8f8f;
+  text-align: right;
+}
+
+.free-space-warning-section {
+  border: solid #f7f7f7 6px;
+  padding: 17px 10px 10px 85px;
+  width: 800px;
+  min-height: 80px;
+  position: relative;
+  background: transparent url(../images/warning_circle.png) 20px 15px no-repeat;
+}
+
+.free-space-warning-section h2 {
+  margin-top: 10px;
+}
+
+/**
+ * Incompatible entries list styles
+ */
+
+.incompatible-list .alert.agree {
+  padding: 0;
+  display: block;
+  width: 800px;
+}
+
+.incompatible-module-list-description {
+  color: #333333;
+  width: 800px;
+  padding: 0px 5px 25px 5px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+table.incompatible-modules-list {
+  border-collapse: collapse;
+  margin: 0px 0px 30px 0px;
+  width: 800px;
+}
+
+.incompatible-modules-list tr td {
+  padding: 9px 14px;
+  border-top: #e5e5e5 1px solid;
+  border-bottom: #e5e5e5 1px solid;
+}
+
+.incompatible-modules-list tr td,
+  .incompatible-modules-list tr td span
+{
+  font-size: 16px;
+  color: #333333;
+}
+
+
+.incompatible-modules-list td.module-status {
+  cursor: help;
+}
+
+.incompatible-modules-list td.module-info {
+  min-width: 500px;
+}
+
+.incompatible-modules-list td.module-info span.name {
+
+}
+
+.incompatible-modules-list td.module-info span.author {
+  color: #8f8f8f;
+}
+
+.incompatible-modules-list td span.extended-warranty {
+  color: #FF0000;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.incompatible-modules-list td .extended-warranty-container,
+.incompatible-modules-list td .incompatible-status-container {
+  display: inline-block;
+  float: left;
+}
+
+.incompatible-modules-list td .extended-warranty-container .tooltip.in,
+.incompatible-modules-list td .incompatible-status-container .tooltip.in {
+  opacity: 1;
+}
+
+.incompatible-modules-list td .extended-warranty-container .tooltip-inner,
+.incompatible-modules-list td .incompatible-status-container .tooltip-inner {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  background: #FFFFFF;
+  color: #333333;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.incompatible-modules-list td .extended-warranty-container .tooltip-arrow,
+.incompatible-modules-list td .incompatible-status-container .tooltip-arrow {
+  border-top-color: #FFFFFF;
+  bottom: -4px;
+  margin-left: -9px;
+  border-width: 9px 9px 0;
+}
+
+.incompatible-modules-list td span.extended-warranty svg {
+  padding-top: 9px;
+  width: 18px;
+  fill: #51b962;
+}
+
+.incompatible-modules-list td span.incompatible-status svg{
+  padding-top: 9px;
+  width: 20px;
+  fill: #FF0000;
+}
+
+.incompatible-modules-list td.module-info span.author-email {
+  display: block;
+  font-size: 14px;
+}
+
+.incompatible-modules-list td.disable {
+  font-size: 14px;
+  padding-top: 12px;
+}
+
+.incompatible-modules-list td.disable label {
+  padding: 0px 0px 0px 3px;
+}
+
+.incompatible-modules-list td.disable input
+{
+  vertical-align: bottom;
+  margin-bottom: 2px;
+}
+
+.incompatible-status-message
+{
+  display: none;
+}
+
+.incompatible-list-actions {
+  width: 800px;
+  margin-bottom: 60px;
+}
+
+.incompatible-list-actions button {
+  float: left;
+  padding: 0 25px;
+}
+
+.incompatible-list-actions div.update-trial-notice {
+  float: right;
+  margin: 10px;
+  font-size: 14px;
+  color: #982626;
+}
+
+.formError div.formErrorContent {
+  width: 300px;
+  line-height: 18px;
+}
+
+/* TODO: refactor with ready2install step!!  */
+.service-messages-section {
+  margin: 0px 0px 40px 0px;
+}
+
+.ready-to-install-service-message {
+  border: solid 1px #e9e9e9;
+  padding: 5px 5px 5px 5px;
+  background-color: #f7f7f7;
+  width: 788px;
+  margin: 0px 0px 20px 0px;
+}
+
+.ready-to-install-service-message .message-entry {
+  background-color: #ffffff;
+  padding: 15px 15px 15px 15px;
+  color: #d65335;
+  font-size: 16px;
+}
+
+/**
+ * Premium license modules section
+ */
+.premium-license-modules-section {
+  background: transparent url(../images/warning_circle.png) 0px 15px no-repeat;
+  margin-bottom: 40px;
+}
+
+.premium-license-modules-message {
+  font-size: 14px;
+  color: #333333;
+  padding: 20px 0px 30px 70px;
+  width: 800px;
+}
+
+.premium-license-modules-section .premium-license-modules-list {
+  width: 800px;
+}
+
+.alert {
+  padding: 20px;
+  color: #5d503b;
+}
+
+.alert hr {
+  border-top-color: #d8c8ad;
+  opacity: 0.39;
+}
+
+.alert.expired-keys div {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.alert.premium-license-modules-list .module-info a {
+  font-size: 16px;
+  color: #5d503b;
+}
+
+.alert.premium-license-modules-list .module-info .name {
+  font-weight: 600;
+}
+
+.alert.premium-license-modules-list .module-info .author {
+  color: #9b9b9b;
+}
+
+.alert.expired-keys table,
+.alert.premium-license-modules-list table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.alert.expired-keys table {
+  margin-top: 20px;
+}
+
+.alert.expired-keys table th,
+.alert.expired-keys table td {
+  line-height: 30px;
+}
+
+.alert.expired-keys .actions,
+.alert.premium-license-modules-list .actions {
+  min-height: 32px;
+  text-align: left;
+}
+
+.alert.expired-keys .actions button,
+.alert.premium-license-modules-list .actions button {
+  padding: 0 24px;
+}
+
+.alert.premium-license-modules-list .actions button {
+  min-height: 41px;
+}
+
+.alert.premium-license-modules-list .actions button + button {
+  margin-left: 5px;
+}
+
+.alert.premium-license-modules-list .actions .or-separator {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.alert.expired-keys .actions button.regular-main-button {
+  font-weight: 600;
+}
+
+.alert.expired-keys .actions > *,
+.alert.premium-license-modules-list .actions > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.alert.expired-keys .actions .revalidate-keys {
+  padding-left: 20px;
+}
+
+.alert.expired-keys .actions .revalidate-keys button {
+  padding: 0;
+  float: none;
+  min-height: initial;
+  border: none;
+  background: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.alert.expired-keys .actions .revalidate-keys button * {
+  font-size: 14px;
+}
+
+.alert.expired-keys .actions .revalidate-keys .progress-state .success,
+.alert.expired-keys .actions .revalidate-keys .progress-state .fail{
+  height: 14px;
+  bottom: 0;  
+  margin: auto;
+}
+
+.alert.expired-keys .actions .revalidate-keys .progress-state .success .fa,
+.alert.expired-keys .actions .revalidate-keys .progress-state .fail .fa{
+  font-size: 14px;
+}

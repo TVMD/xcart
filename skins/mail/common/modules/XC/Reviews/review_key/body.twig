@@ -1,0 +1,13 @@
+{##
+ # Email body
+ #}
+
+{{ t('Recently, you have made a purchase from our company:', {'company': this.companyName, 'orderNumber': this.orderNumber, 'orderDate': this.formatDate(this.orderDate)})|raw }}
+
+<ul>
+{% for p in this.products %}
+<li style="margin-left: 20px; line-height: 24px;"><a href="{{ p.url }}">{{ p.name }}</a></li>
+{% endfor %}
+</ul>
+
+{{ t('Please review purchased products')|raw }}

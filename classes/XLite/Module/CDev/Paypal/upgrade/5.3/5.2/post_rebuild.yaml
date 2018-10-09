@@ -1,0 +1,16 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: loginScopes
+    category: CDev\Paypal
+    type: XLite\Module\CDev\Paypal\View\FormField\Select\Scopes
+    value: 'a:6:{i:0;s:6:"openid";i:1;s:5:"email";i:2;s:7:"profile";i:3;s:7:"address";i:4;s:5:"phone";i:5;s:47:"https://uri.paypal.com/services/expresscheckout";}'
+    orderby: 700
+    translations:
+      - code: en
+        option_name: Login scopes

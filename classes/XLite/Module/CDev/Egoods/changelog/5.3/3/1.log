@@ -1,0 +1,10 @@
+Version 5.3.3.1
+
+Improvements
+2017-08-14 - [Change] Added some help tips on the Egoods module settings page. #BUG-5336 (Eugene Dementjev) #Egoods
+
+Fixes
+2017-09-04 - [Bug] Fixed PHP 5.4 compatibility errors/warnings. #BUG-5439 (Eugene Dementjev) #Core #AmazonS3Images #Egoods #Paypal #RESTAPI #PINCodes #PitneyBowes #CustomerAttachments #VendorMessages
+2017-08-17 - [Bug] The E-Goods module settings page now contains information on how to set up X-Sendfile. #BUG-5337 (Sergey Elmanov) #Egoods
+2017-08-09 - [Bug] In Egoods, after changing the status to "Delivered", the order was still treated as awaiting processing. #BUG-5322 (Sergey Elmanov) #Egoods
+

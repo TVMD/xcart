@@ -1,0 +1,8 @@
+{##
+ # Landing page header
+ #
+ # @ListChild (list="itemsList.module.install.footer", weight="10")
+ #}
+{% if this.isLandingPage() %}
+  <a href="{{ this.buildURL('addons_list_marketplace') }}">{{ t('View all addons') }}</a>
+{% endif %}

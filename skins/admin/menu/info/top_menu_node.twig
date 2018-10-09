@@ -1,0 +1,10 @@
+{##
+ # Info top menu node
+ #}
+<div class="info-menu menu notification">
+  <div class="icon">
+    {{ this.getSVGImage('images/bell.svg')|raw }}
+    <div class="unread-mark"></div>
+  </div>
+  <div class="box">{{ widget('XLite\\View\\Menu\\Admin\\Info\\LazyLoad') }}</div>
+</div>

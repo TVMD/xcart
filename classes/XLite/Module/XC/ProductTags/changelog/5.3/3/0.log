@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Fixes
+2017-05-11 - [Bug] When using Bulk edit, tags were added not to all of the selected products. #BUG-4883 (Eugene Dementjev) #ProductTags
+2017-03-06 - [Bug] In LayoutEditor, a block moved to the sidebar in the 2-column mode disappeared after switching to the 3-column mode. #BUG-4335 (Maxim Kuznetsov) #Core #ProductAdvisor #Sale #ThemeTweaker #ProductFilter #ProductComparison #MultiVendor #ProductTags #News

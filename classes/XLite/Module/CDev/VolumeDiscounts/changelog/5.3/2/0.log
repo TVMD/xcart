@@ -1,0 +1,5 @@
+Version 5.3.2.0
+
+Fixes
+2017-06-08 - [Bug] Page layout issues on the cart page. #BUG-5070 (Michael Lipinski) #Core #Paypal #VolumeDiscounts
+

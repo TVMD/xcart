@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Improvements
+2017-08-09 - [Change] Added manage news and manage banners permissions. #BUG-5215 (Eugene Dementjev) #Core #News
+

@@ -1,0 +1,22 @@
+Version 5.3.3.0
+
+Improvements
+2017-01-31 - [Change] UI improvement for displaying/adding a review on the product page. #XCN-7371 (Sergey Elmanov) #Core #ProductReviews #CrispWhiteSkin
+2017-01-10 - [Change] It is now possible to add multiple email addresses (and specify the main address) in the Contacts section. #XCN-7375 (Sergey Elmanov) #Core #ContactUs #PINCodes #ProductVariants #SagePay #ProductReviews #CrispWhiteSkin #MultiVendor #VendorMessages #NetbanxHostedPayment
+2016-12-15 - [Change] Cloud Zoom activation/deactivation feature added for the default skin and CrispWhite skin. Added the setting "Cloud Zoom: inside or outside" that can be used to control how Cloud Zoom is displayed. #XCN-7363 (Sergey Elmanov) #Core #ColorSchemes #CrispWhiteSkin
+
+Fixes
+2017-05-05 - [Bug] Changed the appearance of the My account menu in Crisp White. #BUG-4658 (Sergey Elmanov) #CrispWhiteSkin
+2017-05-04 - [Bug] Minor style change for the module MyWishlist in Crisp White. #BUG-4624 (Maxim Kuznetsov) #CrispWhiteSkin
+2017-05-03 - [Bug] Fixed banner position for the PayPal Credit banner in CrispWhite. #BUG-4730 (Eugene Dementjev) #CrispWhiteSkin
+2017-04-10 - [Bug] Contact Us page improvement. #BUG-4759 (Michael Lipinski) #ContactUs #CrispWhiteSkin
+2017-04-05 - [Bug] Changed the styles in the My Account section (in CrispWhite) on the "Address book" tab. #BUG-4487 (Michael Lipinski) #Core #CrispWhiteSkin
+2017-03-29 - [Bug] Layout problems in the header in Crisp White if the menu required two or more lines. #BUG-4684 (Maxim Kuznetsov) #Core #SimpleCMS #CrispWhiteSkin
+2017-03-14 - [Bug] My account section changes. #BUG-4341 (Maxim Kuznetsov) #Core #RuTranslation #CanadaPost #CrispWhiteSkin #FlyoutCategoriesMenu
+2017-03-03 - [Bug] Changed the design of the Credit card at checkout in CrispWhite. #BUG-4202 (Eugene Dementjev) #Core #FastLaneCheckout #CrispWhiteSkin
+2017-02-17 - [Bug] Added a section checkout logos picture to one page checkout. #BUG-4398 (Eugene Dementjev) #Core #FastLaneCheckout #CrispWhiteSkin
+2017-02-16 - [Bug] On the page of a coming soon product there is now a button for adding to the comparison list. #BUG-4143 (Maxim Kuznetsov) #Core #CrispWhiteSkin
+2017-01-18 - [Bug] Moved the Arrival date setting to the section Prices & Inventory, as well as added it to the Inventory tracking tab. Changed the color and position of the "Coming soon" label on the storefront. #BUG-3878 (Maxim Kuznetsov) #Core #ProductAdvisor #RuTranslation #CrispWhiteSkin
+2017-01-18 - [Bug] If sale price and market price features were used at the same time, the sale price label got misplaced. #BUG-4416 (Maxim Kuznetsov) #MarketPrice #ProductAdvisor #Sale #CrispWhiteSkin
+2016-12-06 - [Bug] Added a back to top button which appears in the Customer area on all the pages (except for checkout) if the user has scrolled down the page. #BUG-4107 (Michael Lipinski) #Core #CrispWhiteSkin
+2016-12-06 - [Bug] When adding products to the comparison list, a notification is now displayed. Changed the text. When adding a product to the comparison list in the mobile version, an indicator is now displayed on the icon in the menu. #BUG-4608 (Maxim Kuznetsov) #RuTranslation #ProductComparison #CrispWhiteSkin

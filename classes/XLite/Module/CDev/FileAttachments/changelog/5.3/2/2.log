@@ -1,0 +1,4 @@
+Version 5.3.2.2
+
+Fixes
+2017-09-11 - [Bug] RCE vulnerability: A vendor/admin with limited access permissions could upload a php script using the File attachments module. Fixed. #BUG-5461 (Eugene Dementjev) #Core #FileAttachments #CanadaPost

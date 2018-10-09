@@ -1,0 +1,6 @@
+Version 5.3.2.2
+
+Fixes
+2017-09-06 - [Bug] During checkout, the email specified in the user account was passed on to the payment system instead of the one entered during checkout. Fixed. #BUG-5459 (Michael Lipinski) #Stripe #YandexMoney
+2017-08-31 - [Bug] Refunds were not working with the latest API version. Fixed. #BUG-5328 (Eugene Dementjev) #Stripe
+

@@ -1,0 +1,5 @@
+Version 5.3.3.2
+
+Fixes
+2017-08-11 - [Bug] A post-upgrade hook for version 5.3.3 failed on a large number of products (~500k). Fixed. #BUG-5360 (Sergey Elmanov) #CustomProductTabs
+

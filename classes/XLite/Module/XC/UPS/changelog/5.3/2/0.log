@@ -1,0 +1,5 @@
+Version 5.3.2.0
+
+Fixes
+2017-08-23 - [Bug] Minor code refactoring for the UPS module. #BUG-5418 (Michael Lipinski) #UPS
+

@@ -1,0 +1,6 @@
+Version 5.3.6.4
+
+Fixes (2)
+2018-07-04 - [Bug] Order information is now sent to MailChimp in any case if a list is specified in the "Default list for Automation campaigns" setting. #BUG-6134 (Sergey Elmanov) #MailChimp
+2018-05-29 - [Bug] A correct product price is now sent to MailChimp if VAT is enabled and configured. #BUG-6386 (Eugene Dementjev) #MailChimp
+

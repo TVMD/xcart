@@ -1,0 +1,12 @@
+{##
+ # Quick menu top menu node
+ #}
+<div class="marketplace-menu menu notification">
+  <div class="icon">
+    <a href="{{ this.buildUrl('addons_list_marketplace', '', {landing: 1}) }}">
+      {{ this.getSVGImage('images/marketplace.svg')|raw }}
+      <div class="unread-mark"></div>
+    </a>
+  </div>
+  <div class="box">{{ widget('XLite\\View\\Menu\\Admin\\Marketplace\\LazyLoad') }}</div>
+</div>

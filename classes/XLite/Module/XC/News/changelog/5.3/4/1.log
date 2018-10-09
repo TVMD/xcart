@@ -1,0 +1,5 @@
+Version 5.3.4.1
+
+Fixes (1)
+2018-05-29 - [Bug] Wrong next/previous links for news messages. Fixed #BUG-6376 https://bt.x-cart.com/view.php?id=49489 (Ruslan Iskhakov) #News
+

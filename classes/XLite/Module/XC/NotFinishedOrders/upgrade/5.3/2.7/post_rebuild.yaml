@@ -1,0 +1,16 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Order\Status\Property:
+  - { paymentStatus: { code: A }, shippingStatus: { code: NF }, incStock: true}
+  - { paymentStatus: { code: PP }, shippingStatus: { code: NF }, incStock: true}
+  - { paymentStatus: { code: P }, shippingStatus: { code: NF }, incStock: true}
+  - { paymentStatus: { code: D }, shippingStatus: { code: NF }, incStock: true}
+  - { paymentStatus: { code: C }, shippingStatus: { code: NF }, incStock: true}
+  - { paymentStatus: { code: Q }, shippingStatus: { code: NF }, incStock: true}
+  - { paymentStatus: { code: R }, shippingStatus: { code: NF }, incStock: true}
+

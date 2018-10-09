@@ -1,0 +1,5 @@
+Version 5.3.3.1
+
+Fixes
+2017-09-04 - [Bug] In Bulk edit price and membership, it is now possible to assign tax classes. #BUG-5438 (Michael Lipinski) #BulkEditing
+

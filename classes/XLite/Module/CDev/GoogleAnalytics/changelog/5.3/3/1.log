@@ -1,0 +1,5 @@
+Version 5.3.3.1
+
+Fixes
+2017-07-24 - [Bug] Stripe popup was displayed when returning to editing the shipping data during Fast Lane Checkout. Fixed. #BUG-5280 (Michael Lipinski) #GoogleAnalytics #Stripe
+

@@ -1,0 +1,21 @@
+{##
+ # Create backup block
+ #}
+
+<div class="backup-focus-overlay"></div>
+
+<div class="create-backup-section">
+  <div class="create-backup-section-frame">
+
+    <div class="header">{{ t('Don’t forget to create a backup!') }}</div>
+
+    <div class="description">
+      {{ t('We are doing our best to make your upgrade process not only easy to do, but safe.') }}
+      <br>
+      {{ t('Use our new nifty module to automatically backup your store and be able to restore it if anything crops up.') }}
+    </div>
+
+    {{ widget('\XLite\\View\\Button\\Link', style='create-backup-button', location=this.getBackupModuleLink(), label=t('Backup your store with Backup Master'), blank=true) }}
+
+  </div>
+</div>

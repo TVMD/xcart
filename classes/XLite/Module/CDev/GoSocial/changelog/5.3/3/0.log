@@ -1,0 +1,4 @@
+Version 5.3.3.0
+
+Fixes
+2017-03-24 - [Bug] Added the meta tag og:image to the home page and the tags for twitter for categories and static pages. #BUG-4442 (Sergey Elmanov) #Core #GoSocial

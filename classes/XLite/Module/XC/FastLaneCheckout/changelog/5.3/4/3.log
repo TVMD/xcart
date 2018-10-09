@@ -1,0 +1,9 @@
+Version 5.3.4.3
+
+Improvements
+2017-12-18 - [Change] W3C validator warning "Warning: The type attribute is unnecessary for JavaScript resources.". Fixed. #BUG-5859 (Eugene Dementjev) #Core #Paypal #ThemeTweaker #ProductFilter #Olark #Disqus #FastLaneCheckout #CrispWhiteSkin #MultiVendor #MultiCurrency #NextPreviousProduct #Buy Button #ShopperApproved
+
+Fixes
+2018-01-25 - [Bug] The address book was working incorrectly with FLC. Fixed. #BUG-5946 (Sergey Elmanov) #Core #FastLaneCheckout
+2017-12-27 - [Bug] Changing the address at checkout with FLC enabled caused the form to freeze. Fixed. #BUG-5897 (Eugene Dementjev) #FastLaneCheckout
+

@@ -1,0 +1,84 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Date field styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.ui-datepicker {
+  z-index: 100 !important;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 3px 15px;
+
+  .ui-datepicker-header {
+    border: none;
+    background: transparent;
+    cursor: default;
+
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        top: 2px;
+      }
+    }
+
+    .ui-datepicker-prev {
+      span {
+        background-position: -97px -16px;
+      }
+
+      &:hover {
+        left: 2px;
+
+        span {
+          background-position: -80px -192px;
+        }
+      }
+    }
+
+    .ui-datepicker-next {
+      span {
+        background-position: -33px -16px;
+      }
+
+      &:hover {
+        right: 2px;
+
+        span {
+          background-position: -48px -192px;
+        }
+      }
+    }
+  }
+
+  .ui-datepicker-calendar {
+    td {
+      a.ui-state-default {
+        background: transparent;
+        text-align: center;
+        border: 1px solid transparent;
+        color: #444444;
+        border-radius: 3px;
+        line-height: 22px;
+        padding-right: 4px;
+        padding-top: 3px;
+
+        &.ui-state-hover:hover {
+          text-decoration: none;
+          border: 1px solid #d3d3d3;
+        }
+
+        &.ui-state-active {
+          background: #3465a3;
+          border: 1px solid transparent;
+           color: #ffffff;
+        }
+      }
+    }
+  }
+}

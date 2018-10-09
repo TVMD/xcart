@@ -1,0 +1,46 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Calculate sales styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.sales-box {
+  width: 902px;
+  min-width: 902px;
+  display: block;
+}
+
+.sales-box h3 {
+  color: #333;
+  font-size: 20px;
+  line-height: normal;
+  font-family: Arial;
+  margin-bottom: 4px;
+  font-weight: normal;
+}
+
+.sales-box .subcontent {
+  padding: 20px;
+}
+
+.sales-box .buttons {
+  text-align: center;
+  padding-top: 12px;
+}
+
+.sales-box .buttons .main-button {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.sales-progress .subcontent {
+  padding: 20px 0;
+  padding-bottom: 12px;
+}
+
+.sales-progress div.content {
+  width: 900px;
+}

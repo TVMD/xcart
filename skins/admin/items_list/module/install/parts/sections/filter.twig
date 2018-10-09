@@ -1,0 +1,32 @@
+{##
+ # ____file_title____
+ #
+ # @ListChild (list="marketplace.top-controls", weight="100")
+ #}
+{% if this.isVisibleAddonFilters() %}
+  <div class="addons-filters">
+  
+    <div class="addons-selectors">
+  
+      <form name="addons-filter" method="GET" action="{{ url() }}">
+        {{ widget('\\XLite\\View\\FormField\\Input\\FormId') }}
+        {% for name, value in this.getURLParams() %}
+          <input type="hidden" name="{{ name }}" value="{{ value }}" />
+        {% endfor %}
+
+        <div class="price-filter-box combine-selector">
+          {{ widget('XLite\\View\\ItemsList\\Module\\Filter\\Selector', name='price', items=this.getPriceOptionsForSelector(), caption=t('Free & paid')) }}
+        </div>
+
+        <div class="tag-filter-box combine-selector">
+          {{ widget('XLite\\View\\ItemsList\\Module\\Filter\\Selector', name='tags', items=this.getTagOptionsForSelector(), caption=t('All tags')) }}
+        </div>
+  
+      </form>
+  
+    </div>
+  
+    {{ widget_list('marketplace.addons-filters') }}
+
+  </div>
+{% endif %}

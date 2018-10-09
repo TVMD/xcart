@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Fixes
+2017-05-10 - [Bug] In the module Product Filter, it is now possible to control how selected parameters should be inserted into a URL: via hash parameters or via get parameters. #BUG-4765 (Sergey Elmanov) #ProductFilter
+2017-03-06 - [Bug] In LayoutEditor, a block moved to the sidebar in the 2-column mode disappeared after switching to the 3-column mode. #BUG-4335 (Maxim Kuznetsov) #Core #ProductAdvisor #Sale #ThemeTweaker #ProductFilter #ProductComparison #MultiVendor #ProductTags #News

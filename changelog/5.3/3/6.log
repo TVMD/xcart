@@ -1,0 +1,10 @@
+Version 5.3.3.6
+
+Improvements
+2017-11-17 - [Change] "pageId" parameter has been removed from categories canonical urls. #BUG-5760 (Eugene Dementjev) #Core
+
+Fixes
+2017-11-15 - [Bug] Under certain conditions (go to an online payment gateway -> return without payment -> choose a different payment method), a wrong payment method was shown on the invoice. #BUG-5745 (Sergey Elmanov) #Core
+2017-11-14 - [Bug] Image upload via url without copying to the server did not work. Fixed. #BUG-5749 (Sergey Elmanov) #Core
+2017-11-08 - [Bug] Removed Optimistick lock from the product stock update function. #BUG-5731 (Sergey Elmanov) #Core
+

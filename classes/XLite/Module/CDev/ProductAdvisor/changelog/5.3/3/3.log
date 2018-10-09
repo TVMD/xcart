@@ -1,0 +1,5 @@
+Version 5.3.3.3
+
+Fixes
+2017-10-13 - [Bug] Wrong products were shown in the New Arrivals block on category pages if caching was enabled. Fixed. #BUG-5587 (Michael Lipinski) #ProductAdvisor
+

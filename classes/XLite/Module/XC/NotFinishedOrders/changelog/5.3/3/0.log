@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Improvements (1)
+2018-05-30 - [Change] Added a new payment method: PayPal for Marketplaces. #XCN-8443 (Maxim Kuznetsov) #Core #Paypal #MultiVendor #NotFinishedOrders
+

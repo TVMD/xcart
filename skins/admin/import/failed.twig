@@ -1,0 +1,25 @@
+{##
+ # Import failed section
+ #}
+
+<div class="import-box import-failed">
+
+  <div class="header clearfix">
+    <h2><i class="icon-exclamation-sign"></i>  {{ this.getFailedHeader() }}</h2>
+  </div>
+
+  <div class="content">
+    {% if this.getLinesMessage() %}
+      <div class="subcontent clearfix">
+        <h4>{{ this.getLinesMessage() }}</h4>
+      </div>
+    {% endif %}
+    <div class="subcontent clearfix">
+      {{ widget_list('import.failed.content') }}
+    </div>
+    <div class="buttons">
+      {{ widget_list('import.failed.buttons') }}
+    </div>
+  </div>
+
+</div>

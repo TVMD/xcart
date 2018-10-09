@@ -1,0 +1,5 @@
+Version 5.3.3.5
+
+Fixes
+2017-11-09 - [Bug] Fatal error when creating/updating a product. Fixed. #BUG-5708 (Sergey Elmanov) #Core #GoSocial
+

@@ -1,0 +1,6 @@
+Version 5.3.7.1
+
+Fixes (2)
+2018-06-08 - [Bug] Improved the routine of sending the same messages to multiple addressees. #BUG-6438 (Eugene Dementjev) #Core #PINCodes #ProductVariants #ProductReviews #MultiVendor #TrustedVendors
+2018-05-02 - [Bug] Adding reviews from the same ip address is no longer blocked (used to be blocked for one hour) - because now only registered customers are allowed to leave reviews. #BUG-6049 https://bt.x-cart.com/view.php?id=49139 (Sergey Elmanov) #ProductReviews
+

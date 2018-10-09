@@ -1,0 +1,10 @@
+Version 5.3.4.0
+
+Improvements
+2017-09-07 - [Change] An email notification can now be sent to buyers asking them to leave feedback for the product they purchased. #BUG-4775 (Vladimir Semyonov) #ProductReviews
+
+Fixes
+2017-08-29 - [Bug] When submitting an invalid form, the form froze. #BUG-5288 (Sergey Elmanov) #Core #ProductReviews
+2017-08-09 - [Bug] New lines were missing in reviews. #BUG-5338 (Sergey Elmanov) #ProductReviews
+2017-08-09 - [Bug] Unclosed span tag. Fixed. #BUG-5201 (Eugene Dementjev) #Core #ProductReviews
+

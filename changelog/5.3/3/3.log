@@ -1,0 +1,6 @@
+Version 5.3.3.3
+
+Fixes
+2017-08-09 - [Bug] Cloud zoom was working incorrectly for the 2nd and further images. Fixed. #BUG-5355 (Sergey Elmanov) #Core
+2017-08-09 - [Bug] During checkout, when returning from PayPal, the selected country was reset to USA. Fixed. #BUG-5351 (Sergey Elmanov) #Core
+

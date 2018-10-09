@@ -1,0 +1,7 @@
+Version 5.3.3.3
+
+Fixes (3)
+2018-03-28 - [Bug] Fatal error on the PIN codes page in the Admin area after the removal of an order with a PIN code. Fixed. #BUG-5962 (Sergey Elmanov) #PINCodes
+2018-03-26 - [Bug] JS error if the list of pin codes being added by manual entry contains duplicates. Fixed. #BUG-6190 (Sergey Elmanov) #PINCodes
+2018-03-21 - [Bug] When a few items of a product with PIN codes and different attributes were purchased, only the PIN code for the last item was shown on the invoice. Fixed. #BUG-6161 https://bt.x-cart.com/view.php?id=49243 (Sergey Elmanov) #PINCodes
+

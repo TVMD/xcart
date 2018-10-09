@@ -1,0 +1,8 @@
+Version 5.3.3.2
+
+Improvements
+2017-10-02 - [Change] Added information about the exchange rate onto the order page in the Admin area if the order had been placed using a currency other than the store's primary one. #BUG-5369 (Michael Lipinski) #MultiCurrency
+
+Fixes
+2017-09-18 - [Bug] Updated the URL for Google Finance currency converter. #BUG-5499 (Maxim Kuznetsov) #MultiCurrency
+

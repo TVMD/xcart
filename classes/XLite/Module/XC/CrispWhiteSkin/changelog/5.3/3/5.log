@@ -1,0 +1,14 @@
+Version 5.3.3.5
+
+Fixes
+2017-10-20 - [Bug] Fix CloudZoom for Crisp White Skin. #BUG-5602 (Eugene Dementjev) #CrispWhiteSkin
+2017-10-12 - [Bug] PayPal login was working incorrectly when the addon Social Login was disabled. Fixed. #BUG-5583 (Eugene Dementjev) #Paypal #CrispWhiteSkin
+2017-10-12 - [Bug] Fixed a minor appearance issue for the credit card widget at checkout for BlueSnap. #BUG-5579 (Michael Lipinski) #CrispWhiteSkin #BlueSnap
+2017-10-09 - [Bug] Improved the way the subscription block is displayed in the Customer area. #BUG-5542 (Michael Lipinski) #CrispWhiteSkin #NewsletterSubscriptions
+2017-09-18 - [Bug] Layout issues on the category page in list mode on iPad in CrispWhite. #BUG-5455 (Maxim Kuznetsov) #CrispWhiteSkin
+2017-09-15 - [Bug] Overlapping text on the search page in mobile view. Fixed. #BUG-5489 (Michael Lipinski) #Core #CrispWhiteSkin
+2017-09-15 - [Bug] Images were not sharp enough in Google Chrome. #BUG-5397 (Michael Lipinski) #Core #CrispWhiteSkin
+2017-09-15 - [Bug] Fixed the appearance of the add to cart popup on iPad. #BUG-5279 (Maxim Kuznetsov) #CrispWhiteSkin
+2017-09-14 - [Bug] Layout issues in the Quick view popup on smaller screen resolutions in CrispWhite. #BUG-5483 (Michael Lipinski) #CrispWhiteSkin
+2017-09-13 - [Bug] Layout issues in the customer address form in IE11 in CrispWhite skin. #BUG-5405 (Michael Lipinski) #CrispWhiteSkin
+

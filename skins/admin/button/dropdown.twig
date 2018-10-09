@@ -1,0 +1,53 @@
+{##
+ # Dropdown button
+ #}
+<div class="btn-group btn-dropdown {{ this.getDropDirection() }}" role="group">
+
+  {% set showCaret = this.getShowCaret() %}
+  {% set useCaretButton = this.getUseCaretButton() %}
+
+  <button type="button"
+          {% if this.hasName() %} name="{{ this.getName() }}"{% endif %}
+          {% if this.hasValue() %} value="{{ this.getValue() }}"{% endif %}
+          class="{{ this.getClass() }}"
+          role="group"
+          {% if not useCaretButton %}
+    data-toggle="dropdown"
+    aria-haspopup="true"
+    aria-expanded="false"
+          {% endif %}
+          {% if this.getButtonTitle() %}
+            title="{{ this.getButtonTitle() }}"
+          {% endif %}>
+
+    {{ this.displayCommentedData(this.getCommentedData()) }}
+
+    {% set iconStyle = this.getParam('icon-style') %}
+    {% if iconStyle %}<span><i class="{{ iconStyle }}"></i></span>{% endif %}
+
+    {% set buttonLabel = t(this.getButtonLabel()) %}
+    {% if buttonLabel %}<span>{{ buttonLabel|raw }}</span>{% endif %}
+
+    {% if showCaret and not useCaretButton %}
+      <span class="caret"></span>
+    {% endif %}
+  </button>
+  {% if useCaretButton %}
+    <button
+            type="button"
+            class="btn btn-default dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+      <span class="caret"></span>
+    </button>
+  {% endif %}
+
+  {% if this.getAdditionalButtons() %}
+    <ul class="dropdown-menu" role="menu">
+      {% for button in this.getAdditionalButtons() %}
+        <li>{{ button.display()|raw }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>

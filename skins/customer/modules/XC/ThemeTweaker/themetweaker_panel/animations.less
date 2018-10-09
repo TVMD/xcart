@@ -1,0 +1,145 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * animations and transitions
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+// N.B. backwards compatibility for minor release and CrispWhite-base skins
+.define-color-reloading-highlight-if-not-defined() {@color-reloading-highlight: #ffa000}
+.define-color-reloading-highlight-if-not-defined();
+.define-color-reloading-base-if-not-defined() {@color-reloading-base: #676767};
+.define-color-reloading-base-if-not-defined();
+
+/* always present */
+.themetweaker-panel.expand-transition {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+/* .expand-enter defines the starting state for entering */
+/* .expand-leave defines the ending state for leaving */
+.themetweaker-panel.expand-enter,
+.themetweaker-panel.expand-leave {
+  height: 0 !important;
+  opacity: 0;
+}
+
+/*
+ * Reloading animation styles
+ */
+
+.themetweaker-panel-wrapper .reloading {
+  position: relative;
+}
+
+.themetweaker-panel-wrapper .reloading .reloading-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1003;
+  color: @color-reloading-base;
+  margin-top: 60px;
+}
+
+.themetweaker-panel-wrapper .reloading:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  display:block;
+  z-index: 1000;
+
+  background: fade(@body-bg, 90%);
+
+  -webkit-animation: tt-appear 0.3s ease-in-out;
+  animation: tt-appear 0.3s ease-in-out;
+}
+
+.themetweaker-panel-wrapper .reloading.reloading-animated:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  z-index: 1003;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.3) rotate(0deg);
+  transform: translate(-50%, -50%) scale(0.3) rotate(0deg);
+  opacity: 0.5;
+
+  -webkit-animation-name: tt-circles;
+  animation-name: tt-circles;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  border-color: @color-reloading-highlight transparent transparent;
+}
+
+@-webkit-keyframes tt-appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes tt-appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes tt-circles {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0.3) rotate(0deg);
+    transform: translate(-50%, -50%) scale(0.3) rotate(0deg);
+  }
+  12.5% {
+    -webkit-transform: translate(-50%, -50%) scale(0.3) rotate(180deg);
+    transform: translate(-50%, -50%) scale(0.3) rotate(180deg);
+  }
+  25%, 50% {
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1) rotate(720deg);
+    transform: translate(-50%, -50%) scale(1) rotate(720deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(0.3) rotate(1800deg);
+    transform: translate(-50%, -50%) scale(0.3) rotate(1800deg);
+    opacity: 0.5;
+  }
+}
+
+@keyframes tt-circles {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0.3) rotate(0deg);
+    transform: translate(-50%, -50%) scale(0.3) rotate(0deg);
+  }
+  12.5% {
+    -webkit-transform: translate(-50%, -50%) scale(0.3) rotate(180deg);
+    transform: translate(-50%, -50%) scale(0.3) rotate(180deg);
+  }
+  25%, 50% {
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1) rotate(720deg);
+    transform: translate(-50%, -50%) scale(1) rotate(720deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(0.3) rotate(1800deg);
+    transform: translate(-50%, -50%) scale(0.3) rotate(1800deg);
+    opacity: 0.5;
+  }
+}

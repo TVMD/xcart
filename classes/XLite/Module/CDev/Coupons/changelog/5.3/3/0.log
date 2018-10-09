@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Improvements
+2017-10-06 - [Change] Added coupons to the import/export of orders. #BUG-5384 (Sergey Elmanov) #Coupons #FreeShipping
+

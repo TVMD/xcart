@@ -1,0 +1,5 @@
+Version 5.3.4.1
+
+Fixes
+2017-10-13 - [Bug] Minor style fixes for the Order messages addon. #BUG-5595 (Michael Lipinski) #VendorMessages
+

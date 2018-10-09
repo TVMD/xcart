@@ -1,0 +1,9 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: "Skrill Quick Checkout description", translations: [{ code: en, label: '<strong>Skrill Quick Checkout</strong> enables you to take <strong>direct</strong> payments from credit cards, debit cards and over 80 other local payment options in nearly 200 countries. The highly competitive rates are published on the Skrill website <a href="https://signup.skrill.com/business/#/?lang=EN&rid=21477277">www.skrill.com</a>' }] }

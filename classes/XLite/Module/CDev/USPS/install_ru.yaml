@@ -1,0 +1,222 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: dataProvider
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Data provider
+  - name: pbEmailId
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: PitneyBowes merchant emailId
+  - name: pbShipperId
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: PitneyBowes merchant shipperId
+  - name: userid
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Идентификатор пользователя
+  - name: server_url
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Веб-адрес API сервера U.S.P.S.
+        option_comment: 'Введите веб-адрес, указанный в уведомлении от U.S.P.S. об успешной регистрации в U. S. Postal Service Web Tools Application Program Interfaces. Например: <ul><li>http://testing.shippingapis.com/ShippingAPITest.dll</li><li>http://production.shippingapis.com/ShippingAPI.dll</li></ul>'
+
+  - name: additionalSettingsSeparator
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Дополнительные настройки
+
+  - name: commonOptionsSeparator
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Общие настройки
+  - name: dimensions
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Размеры упаковки (в дюймах)
+  - name: girth
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Периметр (дюймы)
+        option_comment: Для больших размеров и непрямоугольного и неизменяемого контейнера.
+  - name: max_weight
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Максимальный вес упаковки
+  - name: currency_rate
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Коэффициент пересчета валюты
+        option_comment: Укажите ставку X, где 1 USD = X в валюте магазина.<br/>Стоимость доставки всегда определяется в американских доллрах. Если в магазине используется другая валюта, необходимо указать коэффициент пересчёта стоимости доставки, полученной от службы доставки, в валюту магазина. Если валюта совпадает, оставить коэффициент равным 1.
+
+  - name: domesticUSPSSeparator
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Локальный U.S.P.S.
+  - name: container
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Тара
+  - name: package_size
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Размеры упаковки (длина+обхват, в дюймах)
+  - name: first_class_mail_type
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Тип почтового отправления для сервиса First-Class
+  - name: machinable
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Машинная обработка
+  - name: use_rate_type
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Используемый тип цены (розничная, коммерческая и т.п.)
+  - name: pb_domestic_parcel_type
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Тип почтового отправления
+
+  - name: internationalUSPSSeparator
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Международная служба U.S.P.S.
+  - name: mail_type
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Тип почтового отправления
+  - name: container_intl
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Тара
+  - name: commercial
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Воспользоваться услугой Commercial Base
+  - name: gxg
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Служба доставки Global Express Guarantee (GXG)
+  - name: gxg_pobox
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Пункт назначения GXG - абонентский ящик
+  - name: gxg_gift
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: В посылке GXG есть подарок
+  - name: pb_international_parcel_type
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Тип почтового отправления
+
+  - name: cacheOnDeliverySeparator
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Оплата при получении
+  - name: use_cod_price
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Использовать фиксированную сумму наценки на доставку наложенным платежом
+        option_comment: Если вы планируете предоставлять покупателям возможность оплаты заказа при получении при доставке методами USPS, вы можете ускорить расчет стоимости доставки заказа, установив фиксированную наценку за использование данного метода оплаты. В случае, когда размер наценки не задан жестко на стороне магазина, расчет наценки будет осуществляться на стороне USPS, и для получения информации о размере наценки магазин должен будет отправить несколько запросов к USPS API (по одному для каждого типа сервисов USPS), что в общей сложности может занять до 20 сек. При использовании фиксированной наценки магазин будет делать всего один запрос к USPS API, на который ему потребуется менее одной секунды. Использование фиксированной наценки значительно ускоряет расчет стоимости доставки методами USPS и является рекомендуемой опцией.
+  - name: cod_price
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Fixed COD price
+        option_comment: 'Если вы выбрали использование фиксированной наценки на COD, укажите здесь ее значение. Это значение будет использовано для всех методов доставки USPS. Вы можете найти актуальное значение наценки за использование услуги Collect on delivery на этой странице: <a href="https://www.usps.com/business/add-extra-services.htm" target="_blank">https://www.usps.com/business/add-extra-services.htm</a>'
+
+  - name: additionalOptionsSeparator
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Дополнительные опции
+  - name: debug_enabled
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Записать всю коммуникацию магазина с сервером USPS
+  - name: pbSandbox
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Sandbox mode
+  - name: autoenable_new_methods
+    category: CDev\USPS
+    translations:
+      - code: ru
+        option_name: Добавлять новые методы USPS включенными
+
+XLite\Model\LanguageLabel:
+  - { name: '"Cash on delivery" status', translations: [{ code: ru, label: 'Состояние варианта оплаты "Наложенный платеж"' }] }
+  - { name: 'usps.CODStatusOptionComment', translations: [{ code: ru, label: 'Важно: Чтобы включить/отключить вариант оплаты "Наложенный платеж", необходимо включить/отключить способ оплаты "Наложеный платеж (U.S.P.S.)" на <a href="{{URL}}">странице Способов оплаты</a>.' }] }
+  - { name: 'Refresh list of available methods', translations: [{ code: ru, label: 'Обновить список доступных методов' }] }
+  - { name: 'Wrong container type selected: {{value}}. For large package size only the following types are allowed: RECTANGULAR, NONRECTANGULAR, VARIABLE', translations: [{ code: ru, label: 'Выбран неправильный тип контейнера: {{value}}. Для указанного размера LARGE допустимы следующие значения для типа контейнера: RECTANGULAR, NONRECTANGULAR, VARIABLE' }] }
+  - { name: '{{value}} is an invalid container type for a REGULAR package. Valid Container is: VARIABLE', translations: [{ code: ru, label: '{{value}} - неправильное значение для размера REGULAR. Допустимое значение: VARIABLE' }] }
+
+  - { name: 'USPS Shipments', translations: [{ code: ru, label: 'USPS Shipments' }] }
+  - { name: 'Tracking information was updated successfully', translations: [{ code: ru, label: 'Tracking information was updated successfully' }] }
+  - { name: 'Shipment has been voided successfully', translations: [{ code: ru, label: 'Shipment has been voided successfully' }] }
+  - { name: 'Shipment has been created successfully', translations: [{ code: ru, label: 'Shipment has been created successfully' }] }
+  - { name: 'Shipment Id', translations: [{ code: ru, label: 'Shipment Id' }] }
+  - { name: 'Tracking number', translations: [{ code: ru, label: 'Tracking number' }] }
+  - { name: 'Delivery cost', translations: [{ code: ru, label: 'Delivery cost' }] }
+  - { name: 'Shipping label', translations: [{ code: ru, label: 'Shipping label' }] }
+  - { name: 'Shipment options', translations: [{ code: ru, label: 'Shipment options' }] }
+  - { name: 'Method name', translations: [{ code: ru, label: 'Method name' }] }
+  - { name: 'Parcel type', translations: [{ code: ru, label: 'Parcel type' }] }
+  - { name: 'Parcel weight', translations: [{ code: ru, label: 'Parcel weight' }] }
+  - { name: 'Parcel dimensions', translations: [{ code: ru, label: 'Parcel dimensions' }] }
+  - { name: 'Irregular parcel girth', translations: [{ code: ru, label: 'Irregular parcel girth' }] }
+  - { name: 'Special services', translations: [{ code: ru, label: 'Special services' }] }
+  - { name: 'COD value', translations: [{ code: ru, label: 'COD value' }] }
+  - { name: 'Insurance value', translations: [{ code: ru, label: 'Insurance value' }] }
+  - { name: 'Label format', translations: [{ code: ru, label: 'Label format' }] }
+  - { name: 'Label size', translations: [{ code: ru, label: 'Label size' }] }
+  - { name: 'Hide total carrier charge', translations: [{ code: ru, label: 'Hide total carrier charge' }] }
+  - { name: 'Hide the carrier shipping charge on the label', translations: [{ code: ru, label: 'Hide the carrier shipping charge on the label' }] }
+  - { name: 'Non delivery option', translations: [{ code: ru, label: 'Non delivery option' }] }
+  - { name: 'Use this field for instructions in case the package is not delivered.', translations: [{ code: ru, label: 'Use this field for instructions in case the package is not delivered.' }] }
+  - { name: 'Print custom message 1', translations: [{ code: ru, label: 'Print custom message 1' }] }
+  - { name: 'This is a user specified message that gets printed on the face of the label. A string of up to 50 characters can be printed on the label.', translations: [{ code: ru, label: 'This is a user specified message that gets printed on the face of the label. A string of up to 50 characters can be printed on the label.' }] }
+  - { name: 'Print custom message 2', translations: [{ code: ru, label: 'Print custom message 2' }] }
+  - { name: 'This is a user specified message that gets printed on the bottom of the label. A string of up to 50 characters can be printed on the label.', translations: [{ code: ru, label: 'This is a user specified message that gets printed on the bottom of the label. A string of up to 50 characters can be printed on the label.' }] }
+  - { name: 'Shipping label sender signature', translations: [{ code: ru, label: 'Shipping label sender signature' }] }
+  - { name: 'Adds the sender’s signature and the date on CN22 and CP72 shipping labels. Enter the signature as a string. The Sender’s signature date is automatically populated.', translations: [{ code: ru, label: 'Adds the sender’s signature and the date on CN22 and CP72 shipping labels. Enter the signature as a string. The Sender’s signature date is automatically populated.' }] }
+  - { name: 'Create shipment', translations: [{ code: ru, label: 'Create shipment' }] }

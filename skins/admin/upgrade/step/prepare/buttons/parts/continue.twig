@@ -1,0 +1,13 @@
+{##
+ # The "Continue" button
+ #
+ # @ListChild (list="upgrade.step.prepare.buttons.sections", weight="200")
+ #}
+
+{% if this.isNextStepAvailable() %}
+  {% if this.isShowPharPopup() %}
+    {{ widget('\\XLite\\View\\Button\\Popup\\UpgradePhar', style='regular-main-button main-button', label=t('Continue')) }}
+  {% else %}
+    {{ widget('\\XLite\\View\\Button\\Submit', style='regular-main-button main-button', label=t('Continue')) }}
+  {% endif %}
+{% endif %}

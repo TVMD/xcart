@@ -1,0 +1,5 @@
+Version 5.3.4.2
+
+Fixes (1)
+2018-03-26 - [Bug] In MultiVendor, when a new order was created, the vendor commission was calculated incorrectly. Fixed. #BUG-5964 (Sergey Elmanov) #Core #SalesTax #MultiVendor
+

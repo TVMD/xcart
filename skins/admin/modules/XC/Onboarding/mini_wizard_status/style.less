@@ -1,0 +1,49 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Mini status widget
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.onboarding-wizard-mini-informer {
+  position: absolute;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #97c564;
+  color: white;
+  text-align: center;
+  right: 10px;
+  top: 25px;
+
+  .progress-circle {
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .progress-status, .progress-circle {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .progress-status {
+    text-align: left;
+    margin-right: 10px;
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .status-message {
+    display: block;
+    font-weight: 600;
+  }
+}

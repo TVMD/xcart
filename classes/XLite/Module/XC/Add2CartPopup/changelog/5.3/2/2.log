@@ -1,0 +1,5 @@
+Version 5.3.2.2
+
+Fixes
+2017-09-25 - [Bug] Under certain conditions, there were issues with displaying a product rating in the add to cart popup. Fixed. #BUG-5497 (Sergey Elmanov) #Add2CartPopup
+

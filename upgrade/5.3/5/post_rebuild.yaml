@@ -1,0 +1,59 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: mail_from_type
+    category: Email
+    type: XLite\View\FormField\Select\EmailFrom
+    orderby: 10500
+    value: contact
+    translations:
+      - code: en
+        option_name: 'Which email to use for the FROM field'
+      - code: ru
+        option_name: 'Адрес email для использования в поле FROM'
+  - name: mail_from_manual
+    category: Email
+    type: \XLite\View\FormField\Input\Text\EmailFromManual
+    orderby: 10600
+    value: ''
+    widgetParameters:
+      required: true
+  - name: use_smtp
+    category: Email
+    type: \XLite\View\FormField\Input\Checkbox\UseSmtp
+  - name: deliverability_check
+    category: Company
+    type: \XLite\View\FormField\DeliverabilityCheck
+    orderby: 49400
+  - name: orders_department
+    category: Company
+    translations:
+      - code: en
+        option_name: 'Sales department e-mails'
+        option_comment: 'The first email in this field (the one marked dark blue) will be used as the "Reply-To:" address for low limit warning messages.<br/><br/>All addresses in this field will be used as the "TO:" address for notifications about orders (creation of new orders, changes of order status, etc).'
+      - code: ru
+        option_name: 'E-mail отдела продаж'
+        option_comment: 'Первый адрес в данном поле (отмеченный темно-синим) будет использоваться в качестве обратного адреса для сообщений, предупреждающих об уменьшении количества товара на складе до минимального уровня.<br/><br/>Все адреса в данном поле будут использоваться как адреса получателя для уведомлений о заказах (создание новых заказов, изменения статуса заказа и т.д.)'
+  - name: site_administrator
+    category: Company
+    translations:
+      - code: en
+        option_name: 'Site administrator e-mails'
+        option_comment: 'The first email in this field (the one marked dark blue) will be used as the "Reply-To:" address for most notifications about user profiles.<br/><br/>All addresses in this field will be used as the "TO:" address for information on access to your store in safe mode (Hard and Soft reset links), notifications about failed administrator login attempts, low limit warnings, etc.'
+      - code: ru
+        option_name: 'E-mail администратора сайта'
+        option_comment: 'Первый адрес в данном поле (отмеченный темно-синим) будет использоваться в качестве обратного адреса для большинства оповещений, касающихся пользовательских профилей.<br/><br/>Все адреса в данном поле будут использоваться как адреса получателя для информации о возможности доступа к магазину в безопасном режиме (ссылки для Жесткого и Мягкого Сброса), уведомлений о неудачных попытках авторизации администратора, предупреждений об уменьшении количества товара на складе до минимального уровня и т.д.'
+  - name: users_department
+    category: Company
+    translations:
+      - code: en
+        option_name: 'Customer relations e-mails'
+        option_comment: 'The first email in this field (the one marked dark blue) will be used as the "Reply-To:" address for password reset messages.<br/><br/>All addresses in this field will be used as the "TO:" address for notifications about user profile related events (creation of a new user profile, deletion of a user profile, etc).'
+      - code: ru
+        option_name: 'E-mail клиентской службы'
+        option_comment: 'Первый адрес в данном поле (отмеченный темно-синим) будет использоваться в качестве обратного адреса для сообщений со ссылкой для сброса пароля.<br/><br/>Все адреса в данном поле будут использоваться как адреса получателя для уведомлений о событиях, касающихся пользовательских профилей (создание нового профиля, удаление профиля и т.д.).'

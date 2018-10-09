@@ -1,0 +1,5 @@
+Version 5.3.4.1
+
+Fixes
+2017-11-07 - [Bug] Wrong country selection when Geolocation & MultiCurrency modules were enabled. Fixed. #BUG-5711 (Sergey Elmanov) #CrispWhiteSkin #MultiCurrency
+

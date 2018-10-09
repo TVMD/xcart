@@ -1,0 +1,16 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Upgrade data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: domestic_all_services_type
+    category: CDev\USPS
+    type: XLite\Module\CDev\USPS\View\FormField\Select\AllServicesType
+    value: online
+    orderby: 370
+    translations:
+      - code: en
+        option_name: Request rates for

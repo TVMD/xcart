@@ -1,0 +1,5 @@
+Version 5.3.6.0
+
+Improvements
+2017-12-22 - [Change] Added promo rules & promo codes support in the module MailChimp. #XCN-8482 (Sergey Elmanov) #MailChimp
+

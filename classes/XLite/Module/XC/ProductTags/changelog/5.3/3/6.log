@@ -1,0 +1,5 @@
+Version 5.3.3.6
+
+Fixes (1)
+2018-06-20 - [Bug] Improved the tag list UI in the Customer area in the Standard skin. #BUG-6311 https://bt.x-cart.com/view.php?id=49413 (Eugene Dementjev) #ProductTags
+

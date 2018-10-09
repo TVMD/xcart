@@ -1,0 +1,40 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: enable_history
+    category: CDev\Egoods
+    type: XLite\View\FormField\Input\Checkbox\YesNo
+    orderby: 300
+    value: 0
+    translations:
+      - code: en
+        option_name: 'Keep a history of downloads'
+      - code: ru
+        option_name: 'Сохранять историю загрузок'
+  - name: esd_fullfilment
+    category: CDev\Egoods
+    type: XLite\View\FormField\Input\Checkbox\YesNo
+    orderby: 400
+    value: 0
+    translations:
+      - code: en
+        option_name: 'Show only ESD related fulfilment statuses'
+        option_comment: 'With this option enabled, only 3 statuses will be available: New, Delivered and Will Not Deliver. You can rename the statuses as you require using the "Custom Order Statuses" module'
+      - code: ru
+        option_name: 'Отображать только статусы для цифровой дистрибуции'
+        option_comment: 'При включении данной настройки будет доступны только 3 статуса доставки: Новый, Доставлен и Доставка отменена. Переименовать их можно при помощи модуля Custom Order Statuses'
+  - name: approve_before_download
+    category: CDev\Egoods
+    type: XLite\View\FormField\Input\Checkbox\YesNo
+    orderby: 500
+    value: 0
+    translations:
+      - code: en
+        option_name: 'Approve before providing access to download'
+      - code: ru
+        option_name: 'Одобрение перед предоставлением доступа на скачивание'

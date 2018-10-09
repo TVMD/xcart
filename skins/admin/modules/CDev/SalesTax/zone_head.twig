@@ -1,0 +1,19 @@
+{##
+ # Zone head 
+ #}
+
+{% set column = this.column %}
+
+<a href="{{ url(this.getTarget(), '', {'sortBy': column.sort, 'sortOrder': this.getSortDirectionNext(column)}) }}"
+    data-sort="{{ column.sort }}"
+    data-direction="{{ this.getSortOrder() }}"
+    class="{{ this.getSortLinkClass(column) }}">{{ t('Zone') }}</a>
+{% if this.isColumnSorted(column) %}
+  {% if 'desc' == this.getSortOrder() %}
+    <span class="dir desc-order">&uarr;</span>
+  {% endif %}
+  {% if 'asc' == this.getSortOrder() %}
+    <span class="dir asc-order">&darr;</span>
+  {% endif %}
+{% endif %}
+<a href="{{ url('zones') }}" target="_blank">{{ t('Manage zones') }}</a>

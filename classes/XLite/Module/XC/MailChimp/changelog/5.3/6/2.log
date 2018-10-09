@@ -1,0 +1,5 @@
+Version 5.3.6.2
+
+Improvements (1)
+2018-04-27 - [Change] The addons exercising GDPR related activities were marked as such; the list of such addons can now be viewed on a special page in the Admin area. #XCN-8792 (Sergey Elmanov) #GoogleAnalytics #Olark #AvaTax #Mandrill #MailChimp #Concierge #OneCIntegration #Zapier #ShopGate #TaxJar
+

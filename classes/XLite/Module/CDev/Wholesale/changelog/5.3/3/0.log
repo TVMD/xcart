@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Fixes
+2017-11-02 - [Bug] Updated SVG icons in the admin area. #BUG-5702 (Sergey Elmanov) #Core #Wholesale
+

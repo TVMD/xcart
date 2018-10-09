@@ -1,0 +1,41 @@
+{##
+ # ____file_title____
+ #
+ # @ListChild (list="modules-manage.top-controls", weight="100")
+ #}
+{% if not this.isRecentlyInstalledPage() %}
+
+<div class="installed-modules-header">
+
+  <div class="addons-filters">
+    <div class="addons-search-box">
+  
+      {% form '\\XLite\\View\\Form\\Module\\ManageSearch' with {formMethod: 'GET', className: 'search-form'} %}
+        <div class="state">
+          {{ widget('XLite\\View\\ItemsList\\Module\\Filter\\Selector', name='state', items=this.getStateOptionsForSelector(), caption=t('All addons')) }}
+        </div>
+        <div class="substring">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          {{ widget('\\XLite\\View\\FormField\\Input\\Text', fieldOnly='true', fieldName='substring', value=this.getSubstring(), placeholder=t('Search for modules')) }}
+        </div>
+      {% endform %}
+  
+    </div>
+  </div>
+
+  <div class="actions">
+    {{ widget('XLite\\View\\Button\\Addon\\ActivateLicenseKey') }}
+    {{ widget('XLite\\View\\Button\\Addon\\EnterLicenseKey') }}
+    {{ widget('XLite\\View\\Button\\Addon\\Upload') }}
+    <span class="separator-or">{{ t('or') }}</span>
+    <a href="{{ url('addons_list_marketplace') }}">{{ t('View more addons in Marketplace') }}</a>
+  </div>
+
+</div>
+{% else %}
+  <div class="installed-modules-header">
+    <div class="actions">
+      {{ widget('XLite\\View\\Button\\Addon\\ActivateLicenseKey') }}
+    </div>
+  </div>
+{% endif %}

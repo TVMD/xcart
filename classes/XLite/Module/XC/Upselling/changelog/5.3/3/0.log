@@ -1,0 +1,4 @@
+Version 5.3.3.0
+
+Fixes
+2017-05-29 - [Bug] The sort order chosen for related products in the Admin area was not applied in the Customer area. #BUG-5049 (Michael Lipinski) #RelatedProducts

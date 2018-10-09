@@ -1,0 +1,6 @@
+Version 5.3.4.2
+
+Fixes (2)
+2018-03-16 - [Bug] Fatal error on the Product tabs page in the vendor area. Fixed. #BUG-6099 https://bt.x-cart.com/view.php?id=49175 (Sergey Elmanov) #MultiVendor #CustomProductTabs
+2018-03-16 - [Bug] Fixed a few minor issues related to the removal and re-installation of the addon Custom Product Tabs. #BUG-6060 (Shevelov Alexander) #CustomProductTabs
+

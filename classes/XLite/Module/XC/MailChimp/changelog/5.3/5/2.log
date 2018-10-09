@@ -1,0 +1,5 @@
+Version 5.3.5.2
+
+Fixes
+2017-11-30 - [Bug] Fixed "Fatal error: Call to a member function getId() on null". #BUG-5793 (Sergey Elmanov) #MailChimp
+

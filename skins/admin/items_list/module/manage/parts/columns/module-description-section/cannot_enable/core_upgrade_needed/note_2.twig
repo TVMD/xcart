@@ -1,0 +1,13 @@
+{##
+ # Recomendation to upgrade kernel
+ #
+ # @ListChild (list="itemsList.module.manage.columns.module-description-section.messages.cannot_enable.core_upgrade_needed", weight="200")
+ # @ListChild (list="itemsList.module.install.columns.module-description-section.cannot_enable.core_upgrade_needed", weight="200")
+ # @ListChild (list="itemsList.module.sales-channels.columns.module-description-section.cannot_enable.core_upgrade_needed", weight="200")
+ # @ListChild (list="itemsList.module.purchased.columns.module-description-section.cannot_enable.core_upgrade_needed", weight="200")
+ #}
+{% if this.isCoreUpgradeAvailable(this.module.getMajorVersion()) %}
+  <div>
+    {{ t('Please') }} <a href="{{ url('upgrade', '', {'version': this.module.getMajorVersion()}) }}">{{ t('upgrade core') }}</a>
+  </div>
+{% endif %}

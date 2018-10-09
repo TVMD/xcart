@@ -1,0 +1,11 @@
+Version 5.3.5.0
+
+Improvements (4)
+2018-03-23 - [Change] Localization of the links to kb.x-cart.com #BUG-6182 (Eugene Dementjev) #Core #Coupons #Egoods #Paypal #SocialLogin #UpdateInventory #Buy Button #Onboarding
+2018-03-19 - [Change] Now it is possible to customize the vendor registration form by adding custom fields and instructions. #XCN-8304 (Sergey Elmanov) #Core #MultiVendor
+2018-03-19 - [Change] UI improvement for the setup of email addresses from which email notifications will be sent. This change is aimed to support the universal use of DKIM and SPF. #XCN-8471 https://bt.x-cart.com/view.php?id=49091 (Sergey Elmanov) #Core
+2018-01-10 - [Change] Unicode is now supported by Clean URLs #BUG-5895 (Maxim Kuznetsov) #Core
+
+Fixes (1)
+2018-02-27 - [Bug] Errors during checkout if payment via Amazon was used. Fixed. #BUG-5956 https://bt.x-cart.com/view.php?id=49086 (Shevelov Alexander) #Core
+

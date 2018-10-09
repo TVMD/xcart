@@ -1,0 +1,5 @@
+Version 5.3.3.2
+
+Fixes
+2017-10-26 - [Bug] W3C validation error "Element li not allowed as child of element div in this context.". Fixed. #BUG-5677 (Michael Lipinski) #News
+

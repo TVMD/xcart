@@ -1,0 +1,5 @@
+Version 5.3.3.2
+
+Improvements
+2017-09-11 - [Change] Updated the URL for Authorize.Net registration. #BUG-5476 (Michael Lipinski) #AuthorizeNet
+

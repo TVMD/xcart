@@ -1,0 +1,8 @@
+Version 5.3.3.0
+
+Improvements
+2017-04-25 - [Change] Refactored the way js code is inserted into textareas: now the root administrator can use this feature at any time, whereas the rest of the store administrators must be given a special permission for Unfiltered HTML. #XCN-6227 (Eugene Dementjev) #Core #SimpleCMS #MultiVendor #News
+2017-02-16 - [Change] Static pages can now be sorted. The sorting is then used on the Sitemap page. #XCN-7623 (Sergey Elmanov) #SimpleCMS #Sitemap
+
+Fixes
+2017-03-29 - [Bug] Layout problems in the header in Crisp White if the menu required two or more lines. #BUG-4684 (Maxim Kuznetsov) #Core #SimpleCMS #CrispWhiteSkin

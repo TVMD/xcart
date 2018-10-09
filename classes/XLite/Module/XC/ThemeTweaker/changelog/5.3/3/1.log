@@ -1,0 +1,15 @@
+Version 5.3.3.1
+
+Improvements
+2017-06-30 - [Change] Added a promo block about Google Tag Manager on the Custom JS page. #BUG-5135 (Maxim Kuznetsov) #ThemeTweaker #GoogleTagManager
+2017-06-20 - [Change] Changed how saving is done in themetweaker. #BUG-5046 (Eugene Dementjev) #ThemeTweaker
+2017-05-24 - [Change] The Custom css field in the Admin area can now be expanded by the administrator in any direction. #BUG-4982 (Sergey Elmanov) #ThemeTweaker
+
+Fixes
+2017-06-28 - [Bug] Hidden blocks were showed when layout editor mode was disabled. Fixed. #BUG-5145 (Sergey Elmanov) #ThemeTweaker
+2017-06-21 - [Bug] UI improvements for Webmaster mode. #BUG-5014 (Eugene Dementjev) #Core #ThemeTweaker
+2017-06-19 - [Bug] Decreased the font size on the template editor tab in webmaster panel. #BUG-5033 (Eugene Dementjev) #ThemeTweaker
+2017-05-30 - [Bug] In Froala on product preview input fields in the menu were not fully displayed. #BUG-4895 (Maxim Kuznetsov) #ThemeTweaker
+2017-05-30 - [Bug] Removed certain functions in the Froala menu on product preview. #BUG-4894 (Sergey Elmanov) #ThemeTweaker #Froala
+2017-05-22 - [Bug] Added a warning to be displayed in the Admin area when switching to a different skin if custom templates for the current skin are present. #BUG-4752 (Sergey Elmanov) #ThemeTweaker
+

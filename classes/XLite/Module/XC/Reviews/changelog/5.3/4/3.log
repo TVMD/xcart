@@ -1,0 +1,5 @@
+Version 5.3.4.3
+
+Fixes
+2017-09-14 - [Bug] Code refactoring: replaced \XLite::ADMIN_SELF with \XLite::getAdminScript(). #BUG-5487 (Michael Lipinski) #Core #ProductReviews #MultiVendor
+

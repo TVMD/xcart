@@ -1,0 +1,19 @@
+{##
+ # Modules main section list
+ #
+ # @ListChild (list="itemsList.module.install.columns.module-main-section", weight="100")
+ # @ListChild (list="itemsList.module.sales-channels.columns.module-main-section", weight="100")
+ # @ListChild (list="itemsList.module.purchased.columns.module-main-section", weight="100")
+ #}
+{% if this.isInstalled(this.module) %}
+  {% if this.isEnabled(this.module) %}
+    <div class="installed">{{ t('Installed') }}</div>
+  {% else %}
+    <div class="installed-disabled">{{ t('Disabled') }}</div>
+  {% endif %}
+{% endif %}
+{% if this.isInstalled(this.module) %}
+  <div class="view-module-in-list">
+    <a href="{{ this.getModulePageURL(this.module) }}">{{ t('View in my addons') }}</a>
+  </div>
+{% endif %}

@@ -1,0 +1,84 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Version page styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.version-message {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.installation-message {
+  margin-bottom: 20px;
+}
+
+.version-message,
+.license-message,
+.installation-message {
+  padding-left: 5px;
+}
+
+.private-modules,
+.public-modules {
+  margin: 20px 0;
+}
+
+.private-modules .header,
+.public-modules .header {
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.private-modules th,
+.public-modules th {
+  font-weight: normal;
+  text-align: left;
+  cursor: pointer;
+  line-height: 20px;
+  padding: 0 20px 0 5px;
+  background: #eeeeee;
+}
+
+.private-modules th:last-of-type,
+.public-modules th:last-of-type {
+  padding-right: 5px;
+}
+
+.private-modules th.sorttable_sorted,
+.public-modules th.sorttable_sorted {
+  padding-right: 2px;
+}
+
+.private-modules td,
+.public-modules td {
+  padding: 0 20px 0 5px;
+}
+
+.private-modules .dataTables_filter.dataTables_filter,
+.public-modules .dataTables_filter.dataTables_filter {
+  width: 100%;
+  text-align: left;
+}
+
+.private-modules .dataTables_filter.dataTables_filter label,
+.public-modules .dataTables_filter.dataTables_filter label {
+  text-indent: -100%;
+  overflow: hidden;
+  display: inline-block;
+  width: 30%;
+  margin: 5px;
+  padding-right: 10px;
+}
+
+.private-modules .dataTables_filter.dataTables_filter input,
+.public-modules .dataTables_filter.dataTables_filter input {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-left: 0;
+  font-size: inherit;
+}

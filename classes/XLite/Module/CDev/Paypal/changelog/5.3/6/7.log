@@ -1,0 +1,7 @@
+Version 5.3.6.7
+
+Fixes (3)
+2018-03-28 - [Bug] IPN callback locks did not work if the callback was setting the order into the Declined state. Fixed. #BUG-6147 https://bt.x-cart.com/view.php?id=48785 (Maxim Kuznetsov) #Paypal
+2018-03-06 - [Bug] Added a warning to the settings page of PayPal Standard that PDT callbacks are not supported. #BUG-5631 (Sergey Elmanov) #Paypal
+2018-02-14 - [Bug] Fixed the distance between the Add to Cart button and the PayPal button in the mobile version of the Crisp White skin. #BUG-5676 https://bt.x-cart.com/view.php?id=48674 (Shevelov Alexander) #Paypal
+

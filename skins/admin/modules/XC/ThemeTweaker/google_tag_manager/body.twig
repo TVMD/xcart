@@ -1,0 +1,22 @@
+{##
+ # Google tag manager promo
+ #}
+
+<div class="google-tag-manager-alert alert module-banner">
+  <p>
+    {{ t('Use the Google Tag Manager addon for more flexibility when adding JS code to your web pages.') }}
+    <a href="https://support.google.com/tagmanager/answer/6102821?hl=en" target="_blank" class="external">{{ t('Learn more about Google Tag Manager') }}</a>
+  </p>
+  <br/>
+  <p>
+    {% if this.isModuleConfigured() %}
+      {{ widget('XLite\\View\\Button\\Link', location='https://www.google.com/analytics/tag-manager/', label=t('Tag Manager Dashboard'), style='action', blank=true) }}
+    {% elseif this.isModuleEnabled() %}
+      {{ widget('XLite\\View\\Button\\Link', location=this.getModuleConfigURL(), label=t('Configure Tag Manager'), style='action') }}
+    {% elseif this.isModuleInstalled() %}
+      {{ widget('XLite\\View\\Button\\Link', location=this.getModuleEnableURL(), label=t('Install Google Tag Manager'), style='action') }}
+    {% else %}
+      {{ widget('XLite\\View\\Button\\Link', location=this.getModuleInstallURL(), label=t('Install Google Tag Manager'), style='action') }}
+    {% endif %}
+  </p>
+</div>

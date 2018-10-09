@@ -1,0 +1,35 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Banner CSS styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.top-controls.banner {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  max-width: 1400px;
+}
+
+.top-controls.banner .carousel-indicators {
+  bottom: -20px;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.top-controls.banner .carousel-indicators li {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  height: 2px;
+  width: 20px;
+  background-color: #708692;
+  margin: 0;
+}
+
+.top-controls.banner .carousel-indicators li.active {
+  background-color: #ccd0d2;
+}

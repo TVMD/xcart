@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Fixes
+2017-06-22 - [Bug] Deleting a currency in the module MultiCurrency resulted in a fatal error. Fixed. #BUG-5130 (Sergey Elmanov) #Core #MultiCurrency
+

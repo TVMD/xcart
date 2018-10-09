@@ -1,0 +1,13 @@
+{##
+ # Modules list
+ #
+ # @ListChild (list="itemsList.module.manage.columns", weight="30")
+ # @ListChild (list="itemsList.module.install.columns", weight="30")
+ # @ListChild (list="itemsList.module.sales-channels.columns", weight="30")
+ # @ListChild (list="itemsList.module.purchased.columns", weight="30")
+ #}
+<td class="icon">
+  <div class="icon-container">
+    {{ widget_list('icon', type='nested', module=this.module) }}
+ </div>
+</td>

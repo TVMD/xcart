@@ -1,0 +1,6 @@
+Version 5.3.3.4
+
+Fixes
+2017-11-02 - [Bug] Add to cart button was displayed on the comparison table page for coming soon products. Fixed. #BUG-5598 (Sergey Elmanov) #ProductAdvisor #ProductComparison #CrispWhiteSkin
+2017-10-27 - [Bug] Wrong sorting direction was used when sorting by date on the Coming soon page. Fixed. #BUG-5559 (Michael Lipinski) #ProductAdvisor
+

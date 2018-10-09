@@ -1,0 +1,9 @@
+{##
+ # Datepicker template
+ #}
+
+<span class="input-field-wrapper {{ this.getWrapperClass() }}">
+  {{ this.displayCommentedData(this.getCommentedData()) }}
+  <input{{ this.getAttributesCode()|raw }} />
+  <input type="hidden" name="{{ this.getName() }}" value="{{ this.getValueAsString() }}" class="datepicker-value-input" />
+</span>

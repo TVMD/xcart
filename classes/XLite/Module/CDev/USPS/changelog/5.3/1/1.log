@@ -1,0 +1,4 @@
+Version 5.3.1.1
+
+Fixes
+2017-06-23 - [Bug] USPS and DHL did not return rates if product weight was less than 0.003 lbs. Fixed #BUG-4949 (Michael Lipinski) #USPS #DHL

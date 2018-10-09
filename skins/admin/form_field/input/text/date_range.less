@@ -1,0 +1,119 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Date range field styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+input.date-range,
+div.table-value input[type="text"].date-range {
+  background-image: url(../../../images/icon_calendar.png);
+  background-repeat: no-repeat;
+  background-position: right 6px top 5px !important;
+  padding-right: 33px;
+  font-size: 15px;
+}
+
+div.date-picker-wrapper {
+  background: #ffffff;
+
+  .top-bar {
+    input[type=button].apply-btn {
+      background: #3465a3;
+      color: #ffffff;
+      border: none;
+    }
+
+    .selected-days {
+      font-style: normal;
+    }
+  }
+
+  .month-wrapper {
+    height: 233px;
+    border: none;
+
+    .gap {
+      display: none !important;
+    }
+
+    .month1,
+    .month2 {
+      border-spacing: 0;
+
+      thead {
+        .caption {
+          .month-name {
+            text-transform: lowercase;
+            color: #444444;
+
+            &:first-letter {
+              text-transform: uppercase;
+            }
+          }
+
+          .prev,
+          .next {
+            color: #444444;
+
+            &:hover {
+              color: #ffffff;
+              background: #444444;
+            }
+          }
+        }
+
+        .week-name {
+          th {
+            text-transform: lowercase;
+            color: #444444;
+
+            &:first-letter {
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+
+      tbody {
+        td {
+          width: 26px;
+
+          div.day {
+            height: 27px;
+            width: 27px;
+            line-height: 26px;
+
+            &.toMonth {
+              transition: box-shadow 0.1s ease-in-out;
+              border-radius: 4px;
+
+              &:hover {
+                transition: box-shadow 0.1s ease-in-out;
+                box-shadow: 0 0 3px rgba(0,0,0,0.3);
+              }
+            }
+
+            &.checked {
+              background-color: #3465a3;
+              color: #ffffff;
+              border-radius: 0;
+
+              &:hover {
+                box-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer {
+      .custom-shortcut {
+        margin-right: 5px;
+      }
+    }
+  }
+}

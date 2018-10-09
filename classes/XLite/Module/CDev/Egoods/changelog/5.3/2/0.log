@@ -1,0 +1,8 @@
+Version 5.3.2.0
+
+Improvements
+2017-02-13 - [Change] Vendors can choose files from the server when uploading Egoods files. #XCN-7488 (Michael Lipinski) #Egoods #MultiVendor
+2017-01-23 - [Change] Multiple improvements for the modules E-Goods and PIN codes: added a new status for orders containing such products and awaiting approval; added a mode for showing only ESD shipping statuses; added a tab History of downloads to track the download of files. #XCN-7419 (Sergey Elmanov) #Egoods #PINCodes
+
+Fixes
+2017-03-24 - [Bug] Added some icons and a history of unavailable files to the "Files" tab in My Account. #BUG-4479 (Sergey Elmanov) #Core #Egoods #FileAttachments #MultiVendor

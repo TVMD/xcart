@@ -1,0 +1,4 @@
+Version 5.3.3.2
+
+Fixes
+2017-07-12 - [Bug] Fatal error "Class 'XLite\Module\XC\MailChimp\Model\Request' not found" has been fixed. #BUG-5214 (Maxim Kuznetsov) #MailChimp

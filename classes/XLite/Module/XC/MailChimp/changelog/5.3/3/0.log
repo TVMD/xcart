@@ -1,0 +1,7 @@
+Version 5.3.3.0
+
+Improvements
+2017-05-03 - [Change] Small improvements for the module MailChimp. Added oauth authentication. Added Order notifications. #XCN-7858 (Michael Lipinski) #MailChimp
+
+Fixes
+2017-04-24 - [Bug] Refactoring of the class AGenerator and its successors. #BUG-4805 (Sergey Elmanov) #Core #PitneyBowes #MailChimp

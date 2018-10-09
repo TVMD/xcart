@@ -1,0 +1,125 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Slidebar styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+#layout-editor-panel {
+	width: 100%;
+	background: #fff;
+	z-index: 99999;
+	min-height: 62px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 10px 10px 0 10px;
+    color: #333;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.layout-editor--initial > * {
+	display: none;
+}
+
+.layout-editor-help-message {
+	width: 100%;
+	padding: 10px 0;
+	margin-left: 35px;
+	color: #777;
+}
+
+.layout-editor-help-message .fa {
+	position: absolute;
+	margin-left: -24px;
+	margin-top: 3px;
+}
+
+.layout-editor-toggle {
+	margin-right: 20px;
+}
+
+.layout-editor-toggle .table-label label {
+	font-size: 16px;
+}
+
+.layout-editor-toggle .table-value {
+    height: 20px;
+}
+
+.layout-editor-toggle.layout-editor--disabled {
+	margin-right: auto;
+}
+
+.layout-editor-hidden-blocks {
+	margin-right: 20px;
+	margin-left: 35px;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
+	vertical-align: middle;
+	line-height: 34px;
+}
+
+.layout-editor-hidden-blocks_icon, .layout-editor-hidden-blocks_label, .layout-editor-hidden-blocks-counter {
+	color: #777;
+	font-size: 15px;
+}
+
+.layout-editor-hidden-blocks_label {
+}
+
+.layout-editor-hidden-blocks_icon {
+	margin-left: -25px;
+	position: absolute;
+}
+
+.layout-editor-hidden-blocks_icon, .layout-editor-hidden-blocks_label  {
+	margin-right: 5px;
+}
+
+.layout-editor-hidden-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.layout-editor-hidden-block {
+	margin: 2px;
+	text-decoration: none;
+	width: 130px;
+	min-height: 30px;
+	border-radius: 4px;
+	background-color: #eeefef;
+	padding: 0 5px;
+	cursor: pointer;
+	color: #4a4a4a;
+	font-size: 12px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.layout-editor-hidden-block:hover,
+.layout-editor-hidden-block:focus {
+	background: #0ba2e8;
+	color: #fff;
+}
+
+.layout-editor-hidden-block span {
+	word-break: break-all;
+}

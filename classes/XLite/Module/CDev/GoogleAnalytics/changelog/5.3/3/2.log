@@ -1,0 +1,5 @@
+Version 5.3.3.2
+
+Fixes (1)
+2018-02-12 - [Bug] Fixed the log notice "Notice: Undefined offset: 3 in classes/XLite/Module/CDev/GoogleAnalytics/Controller/Customer/ACustomer.php on line 46". #BUG-5712 (Sergey Elmanov) #GoogleAnalytics
+

@@ -1,0 +1,4 @@
+Version 5.3.2.0
+
+Improvements
+2017-03-17 - [Change] Wholesale prices can now be set as a percentage of the product's base price. #XCN-7421 (Sergey Elmanov) #Core #Wholesale

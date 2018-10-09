@@ -1,0 +1,247 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Attributes
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+div.variants .items-list-table table.list td.main {
+  min-width: 0;
+}
+
+div.variants .items-list-table table.list div.table-value span.input {
+  width: 100%;
+}
+
+div.variants .items-list-table table.list .inline-field input,
+div.variants .items-list-table table.list .inline-field select
+{
+  font-size: 14px;
+  text-align: left;
+  height: auto;
+  line-height: 22px;
+  padding-top: 7px;
+  padding-bottom: 4px;
+}
+
+div.variants .items-list-table table.list .inline-field input::-webkit-input-placeholder,
+div.variants .items-list-table table.list .inline-field input:-ms-input-placeholder,
+div.variants .items-list-table table.list .inline-field input::placeholder {
+  color: #C7C7CD;
+}
+
+div.variants .items-list-table table.list tbody.create tr.line td,
+div.variants .items-list-table table.list .inline-field select
+{
+  width: 180px;
+}
+
+div.variants .items-list-table table.list .inline-field select
+{
+  height: 34px;
+}
+
+div.variants .items-list-table table.list tbody.create tr.line td,
+  div.variants .items-list-table table.list tbody.lines tr.line td
+{
+  padding-left: 8px;
+  padding: 13px 3px 10px 17px;
+  background: #fff;
+}
+
+div.variants .items-list-table table.list tbody.create .inline-field,
+div.variants .items-list-table table.list tbody.lines .inline-field {
+  width: 100%;
+}
+
+
+div.variants .items-list-table table.list tbody.create tr.line td.actions.left,
+div.variants .items-list-table table.list tbody.lines tr.line td.actions.left {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+div.variants .items-list-table table.list tbody.create td.actions.right,
+  div.variants .items-list-table table.list tbody.lines td.actions.right
+{
+  padding-right: 10px;
+}
+
+div.variants .items-list-table table.list tbody.lines .plain-value {
+  width: 180px;
+}
+
+div.variants .items-list-table table.list tbody.lines .plain-value span {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+div.variants .items-list-table table.list .table-value {
+  padding: 0;
+}
+
+div.variants .items-list-table table.list thead th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 17px;
+  font-size: 14px;
+  color: #4f6f96;
+}
+
+div.variants .items-list-table table.list thead th .subheader {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+div.variants .items-list-table table.list thead th.attributeValue .subheader {
+  max-width: 190px;
+  overflow: hidden;
+  position: relative;
+}
+
+div.variants .items-list-table table.list thead th.attributeValue .subheader:after {
+  content: '';
+  background: linear-gradient(to right, rgba(248, 248, 248,0) 0%,rgba(248, 248, 248,1) 100%);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+}
+
+div.variants .items-list-table table.list thead {
+}
+
+div.variants .items-list-table table.list {
+}
+
+div.variants .items-list-table table.list .cell.amount.attention input{
+  background: #FFF5F5;
+  color: #d91a1a;
+}
+
+div.variants .items-list-table table.list .cell.amount input:target{
+  border-color: #DCA3A3;
+}
+
+div.variants .items-list-table table.list .create .cell.image {
+  padding-left: 0;
+}
+
+div.variants .items-list-table table.list .create .cell.image .attribute-name {
+  display: block;
+  line-height: 34px;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+div.variants .items-list-table table.list .create .cell.image .attribute-name + .attribute-name {
+  margin-top: 5px;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue {
+  max-width: 200px;
+  position: relative;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .variant-attribute-values {
+  width: 190px;
+  max-width: 190px;
+  position: relative;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .variant-attribute-value + .variant-attribute-value:before {
+  content: '•';
+  color: #9b9b9b;
+  margin: 0 2px;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .variant-id {
+  display: block;
+  font-size: 12px;
+  color: #9b9b9b;
+  overflow: hidden;
+  max-width: 190px;
+  position: relative;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .attribute-value-tooltip {
+  overflow: hidden;
+  max-width: 190px;
+  display: inline-block;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .popover  {
+  min-width: 100px;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .popover-content {
+  padding: 15px;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .variant-attribute-help-line {
+  display: block;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .variant-attribute-help-line .variant-attribute-name {
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .variant-attribute-help-line .variant-attribute-value {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 600;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .subfield .table-value {
+  display: block;
+}
+
+div.variants .items-list-table table.list .cell.attributeValue .subfield .table-value + .table-value {
+  margin-top: 5px;
+}
+
+div.variants .items-list-table table.list .cell.price input,
+div.variants .items-list-table table.list .cell.amount input,
+div.variants .items-list-table table.list .cell.weight input {
+  min-width: 73px;
+  width: 73px;
+}
+
+div.variants .items-list-table table.list .create .cell {
+  vertical-align: top;
+}
+
+div.variants .items-list-table table.list .cell input::placeholder {
+  font-style: normal;
+}
+
+.sticky-additional a.submit-form {
+  text-decoration: underline;
+  color: #154e9c;
+  font-size: 16px;
+}
+
+.sticky-additional {
+  padding: 5px;
+  display: inline;
+}
+
+.sticky-additional .or {
+  margin: 5px;
+  font-size: 16px;
+}
+
+div.variants .create-variants-block {
+  float: right;
+  margin-top: 20px;
+  margin-right: 22px;
+}
+
+div.variants .create-variants span {
+  font-size: 14px;
+}

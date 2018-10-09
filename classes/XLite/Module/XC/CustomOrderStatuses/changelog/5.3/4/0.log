@@ -1,0 +1,5 @@
+Version 5.3.4.0
+
+Improvements (1)
+2018-05-04 - [Change] Added a few order status change notifications that were missing. #BUG-6328 (Shevelov Alexander) #Core #NotFinishedOrders #CustomOrderStatuses
+

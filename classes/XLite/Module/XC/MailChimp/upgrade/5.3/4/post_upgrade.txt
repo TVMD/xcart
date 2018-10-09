@@ -1,0 +1,1 @@
+For the correct operation of the Abandoned Carts feature, you need to select a mail list that should be used for this feature on the settings page for the MailChimp Integration addon.

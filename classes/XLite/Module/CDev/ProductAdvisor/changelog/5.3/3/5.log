@@ -1,0 +1,6 @@
+Version 5.3.3.5
+
+Fixes (2)
+2018-07-02 - [Bug] Added the sort widget for the pages Sale, Bestsellers, New Arrivals, Comming Soon. #BUG-6490 https://bt.x-cart.com/view.php?id=49603 (Sergey Elmanov) #Bestsellers #ProductAdvisor #Sale
+2018-04-18 - [Bug] Placeholders like {contact us} in the menu now substitute clean urls for parameter based urls. #BUG-5996 https://bt.x-cart.com/view.php?id=49078 (Sergey Elmanov) #Bestsellers #ContactUs #ProductAdvisor #Sale #SimpleCMS
+

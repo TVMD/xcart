@@ -1,0 +1,5 @@
+Version 5.3.3.3
+
+Fixes
+2017-08-18 - [Bug] In the GoSocial module, removed the default value from the setting "Account name of the user to attribute the Tweet to (optional)". Fixed. #BUG-5391 (Michael Lipinski) #GoSocial
+

@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Fixes
+2017-05-22 - [Bug] With a large number of products, the quick data recalculation could not be completed properly (memory limit exceeded). Fixed. #BUG-4996 (Sergey Elmanov) #Core #XMLSitemap #BulkEditing
+2017-03-13 - [Bug] Restored the Delete option in the sticky panel, the products list and the bulk edit all button and added On/Off buttons for sale. #BUG-4388 (Sergey Elmanov) #Core #RuTranslation #Sale #BulkEditing

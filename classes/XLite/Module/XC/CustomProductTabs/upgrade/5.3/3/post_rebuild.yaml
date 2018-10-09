@@ -1,0 +1,49 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: 'Product tabs', translations: [{ code: en, label: 'Product tabs' }, {code: ru, label: 'Вкладки страницы товара' }] }
+
+XLite\Module\XC\CustomProductTabs\Model\Product\CustomGlobalTab:
+  - global_tab:
+        enabled: false
+        position: 60
+    translations:
+      - code: en
+        name: "Shipping info"
+        content: "To replace this text with your store's actual shipping info, go to \"Catalog -> Product tabs\" and edit the Shipping info page."
+        brief_info: "We deliver worldwide"
+      - code: ru
+        name: "Доставка"
+        content: "Для замены данного текста на настоящий текст информации о доставке товаров из вашего магазина, перейдите в секцию \"Каталог -> Вкладки страницы товара\" и редактируйте страницу \"Доставка\"."
+        brief_info: "Мы доставляем по всему миру"
+
+  - global_tab:
+        enabled: false
+        position: 70
+    translations:
+      - code: en
+        name: "Payment methods"
+        content: "<p>We accept the following payment methods:</p><p><img class=\"fr-draggable fr-dii\" src=\"skins/customer/images/demo/tabs/logos-payments-tab.png\" style=\"width:400px;\" /></p><p>To replace this text with your store's actual info on payment methods, go to \"Catalog -&gt; Product tabs\" and edit the Payment methods page.</p>"
+        brief_info: '<p><img class="fr-draggable fr-dii fr-fil" src="skins/customer/images/demo/tabs/logos-payments-tab.png" alt="Accepted payment methods" style="width:300px;" /></p>'
+      - code: ru
+        name: "Способы оплаты"
+        content: "<p>Мы принимаем следующие способы оплаты:</p><p><img class=\"fr-draggable fr-dii\" src=\"skins/customer/images/demo/tabs/logos-payments-tab.png\" style=\"width:400px;\" /></p><p>Для замены данного текста на настоящий текст информации о способах оплаты для вашего магазина, перейдите в секцию \"Каталог -> Вкладки страницы товара\" и редактируйте страницу \"Способы оплаты\".</p>"
+        brief_info: '<p><img class="fr-draggable fr-dii fr-fil" src="skins/customer/images/demo/tabs/logos-payments-tab.png" alt="Методы оплаты" style="width:300px;" /></p>'
+
+  - global_tab:
+        enabled: false
+        position: 80
+    translations:
+      - code: en
+        name: "Return Policy"
+        content: "This page is intended for your policy regarding returns and refunds.<br/><br/> Here you can provide information as to what products can be returned, how many days your customers have to return their purchase, whether they will receive a refund in the original form of payment, a replacement or a store credit, who pays for the shipping of the previously purchased products to the store, and so on.<br/><br/> To replace this text with your store's actual return policy, go to \"Catalog -> Product tabs\" and edit the Return Policy page."
+        brief_info: "We accept returns"
+      - code: ru
+        name: "Правила обмена и возврата"
+        content: "Данная страница предназначена для размещения информации о правилах обмена и возврата товаров.<br/><br/> Здесь вы можете указать, возврат каких товаров может быть осуществлен, в пределах какого срока ваши покупатели могут вернуть приобретенный товар, будет ли осуществлен возврат средств на исходный метод оплаты, либо же будет осуществлена замена товара или возврат средств в форме товарного кредита, кто оплачивает доставку ранее купленного товара обратно в магазин, и так далее.<br/><br/> Для замены данного текста на настоящий текст правил обмена и возврата товаров для вашего магазина, перейдите в секцию \"Каталог -> Вкладки страницы товара\" и редактируйте страницу \"Правила обмена и возврата\"."
+        brief_info: "Мы принимаем возвраты"

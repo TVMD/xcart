@@ -1,0 +1,93 @@
+{##
+ # Version page
+ #}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ this.getStyleFileUrl() }}">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jqc-1.12.3/dt-1.10.16/datatables.min.css"/>
+
+  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jqc-1.12.3/dt-1.10.16/datatables.min.js"></script>
+  <script src="{{ this.getControllerFileUrl() }}"></script>
+</head>
+<body>
+
+<div id="version_page">
+
+  <div class="version-message">
+    {{ this.getVersionMessage() }}
+  </div>
+
+  <div class="license-message">
+    {{ this.getLicenseMessage() }}
+  </div>
+
+  <div class="installation-message">
+    {{ this.getInstallationMessage() }}
+  </div>
+
+  <div class="private-modules">
+    <div class="header">
+      {{ t('Private and custom modules:') }}
+    </div>
+
+    {% if this.getPrivateModules() %}
+      <table id="private-modules">
+        <thead>
+        <tr>
+          <th>{{ t('Developer') }}</th>
+          <th>{{ t('Module name') }}</th>
+          <th>{{ t('Version') }}</th>
+          <th>{{ t('Installation date') }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for module in this.getPrivateModules() %}
+          <tr>
+            <td>{{ module.getAuthorName() }}</td>
+            <td>{{ module.getModuleName() }}</td>
+            <td>{{ module.getMajorVersion() }}.{{ module.getFullMinorVersion() }}</td>
+            <td>{{ this.formatDate(module.getDate()) }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      {{ 'None' }}
+    {% endif %}
+  </div>
+  <div class="public-modules">
+    <div class="header">
+      {{ t('Public installed modules:') }}
+    </div>
+
+    {% if this.getPublicModules() %}
+      <table id="public-modules">
+        <thead>
+        <tr>
+          <th>{{ t('Developer') }}</th>
+          <th>{{ t('Module name') }}</th>
+          <th>{{ t('Version') }}</th>
+          <th>{{ t('Installation date') }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for module in this.getPublicModules() %}
+          <tr>
+            <td>{{ module.getAuthorName() }}</td>
+            <td>{{ module.getModuleName() }}</td>
+            <td>{{ module.getMajorVersion() }}.{{ module.getFullMinorVersion() }}</td>
+            <td>{{ this.formatTime(module.getDate()) }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      {{ 'None' }}
+    {% endif %}
+  </div>
+
+</div>
+</body>
+</html>

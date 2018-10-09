@@ -1,0 +1,5 @@
+Version 5.3.3.1
+
+Improvements
+2017-10-25 - [Change] Added additional info on the Geolocation module setup. #BUG-5667 (Sergey Elmanov) #Geolocation
+

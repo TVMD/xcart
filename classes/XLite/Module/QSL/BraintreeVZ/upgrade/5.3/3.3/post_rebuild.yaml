@@ -1,0 +1,15 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Payment\Method:
+  - service_name: PayPal powered by Braintree
+    class: Module\QSL\BraintreeVZ\Model\Payment\Processor\BraintreeVZ
+    countries: [US, UK, FR, IT, ES]
+    translations:
+      - code: en
+        name: PayPal powered by Braintree
+        adminDescription: "Supported countries: US, UK, France, Italy & Spain."

@@ -1,0 +1,6 @@
+Version 5.3.4.1
+
+Fixes
+2017-06-21 - [Bug] CURLOPT_SSLVERSION has been updated because of PayPal requires TSL 1.2 #BUG-3985 (Sergey Elmanov) #Paypal
+2017-06-08 - [Bug] Page layout issues on the cart page. #BUG-5070 (Michael Lipinski) #Core #Paypal #VolumeDiscounts
+

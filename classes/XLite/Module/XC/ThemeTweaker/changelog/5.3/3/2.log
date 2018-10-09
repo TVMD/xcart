@@ -1,0 +1,5 @@
+Version 5.3.3.2
+
+Fixes
+2017-07-19 - [Bug] New language labels could not be added on servers with PHP < 7.0. Fixed. #BUG-5248 (Eugene Dementjev) #Core #ThemeTweaker
+

@@ -1,0 +1,9 @@
+Version 5.3.4.6
+
+Fixes (5)
+2018-06-19 - [Bug] Variant removal UX updated. #BUG-6482 https://bt.x-cart.com/view.php?id=49599 (Shevelov Alexander) #ProductVariants
+2018-06-19 - [Bug] Fixed the PHP 5.4 warning "Warning: array_filter() expects at most 2 parameters, 3 given in classes/XLite/Module/XC/ProductVariants/Model/Product.php on line 123". #BUG-6465 (Eugene Dementjev) #ProductVariants
+2018-06-14 - [Bug] A wrong variant image was displayed if the option "Force customer to choose product options before adding a product to cart = on product page" was enabled and there were options on which no variants were based. Fixed. #BUG-6466 https://bt.x-cart.com/view.php?id=49613 (Shevelov Alexander) #ProductVariants
+2018-06-08 - [Bug] Improved the routine of sending the same messages to multiple addressees. #BUG-6438 (Eugene Dementjev) #Core #PINCodes #ProductVariants #ProductReviews #MultiVendor #TrustedVendors
+2018-04-17 - [Bug] Improved the appearance of the Variants page in the Admin area. #BUG-5937 https://bt.x-cart.com/view.php?id=49002 (Sergey Elmanov) #ProductVariants
+

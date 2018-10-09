@@ -1,0 +1,5 @@
+Version 5.3.4.0
+
+Fixes
+2017-08-24 - [Bug] Tab name is now used for anchor name generation instead of ID. #BUG-5357 (Sergey Elmanov) #Core #CrispWhiteSkin #CustomProductTabs
+

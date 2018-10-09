@@ -1,0 +1,4 @@
+Version 5.3.3.4
+
+Fixes
+2017-08-07 - [Bug] Fix missed notifications (new review/new message) in the admin notifications menu. #BUG-5323 (Eugene Dementjev) #ProductReviews #VendorMessages #TrustedVendors

@@ -1,0 +1,6 @@
+Version 5.3.4.0
+
+Fixes
+2017-10-17 - [Bug] Added a setting to select the subscription list that should be used for abandoned carts. #BUG-5573 (Michael Lipinski) #MailChimp
+2017-10-13 - [Bug] Minor refactoring of the addon MailChimp. #BUG-5593 (Michael Lipinski) #MailChimp
+

@@ -1,0 +1,5 @@
+Version 5.3.5.0
+
+Fixes
+2017-06-30 - [Bug] Fixed some layout issues and option descriptions for MailChimp. #BUG-5143 (Sergey Elmanov) #MailChimp
+

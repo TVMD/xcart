@@ -1,0 +1,8 @@
+Version 5.3.5.4
+
+Improvements (1)
+2018-05-30 - [Change] Added a new payment method: PayPal for Marketplaces. #XCN-8443 (Maxim Kuznetsov) #Core #Paypal #MultiVendor #NotFinishedOrders
+
+Fixes (1)
+2018-05-24 - [Bug] Category custom meta description was not imported/exported. Fixed. #BUG-6312 (Shevelov Alexander) #Core
+

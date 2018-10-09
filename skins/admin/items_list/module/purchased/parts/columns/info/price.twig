@@ -1,0 +1,14 @@
+{##
+ # Module price
+ #
+ # @ListChild (list="itemsList.module.purchased.columns.icon", weight="210")
+ #}
+{% if this.showPrice(this.module) %}
+  <div class="price">
+    {% if not this.isFree(this.module) %}
+      <div class="paid">
+        <span class="currency">{{ this.formatPrice(this.module.getPrice(), this.module.getCurrency()) }}</span>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

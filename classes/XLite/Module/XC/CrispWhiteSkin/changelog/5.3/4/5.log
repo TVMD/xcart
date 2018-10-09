@@ -1,0 +1,15 @@
+Version 5.3.4.5
+
+Fixes (11)
+2018-03-26 - [Bug] The product image was overlapping with the labels New / Coming Soon on a product page if CloudZoom was used in the Inside mode and the skin CrispWhite was enabled. Fixed. #BUG-6192 https://bt.x-cart.com/view.php?id=49280 (Sergey Elmanov) #CrispWhiteSkin
+2018-03-21 - [Bug] Fixed minor layout issues related to the display of the product list in the Customer area in Crisp White. #BUG-5679 https://bt.x-cart.com/view.php?id=48777 (Eugene Dementjev) #CrispWhiteSkin
+2018-02-28 - [Bug] Changed the way product files are displayed. #BUG-5596 (Eugene Dementjev) #Egoods #FileAttachments #CrispWhiteSkin
+2018-02-21 - [Bug] No margin to the right of the button "Add to compare" on the product details page. Fixed. #BUG-5781 (Shevelov Alexander) #CrispWhiteSkin
+2018-02-19 - [Bug] Removed the change link for shopping methods on OPC. #BUG-6031 https://bt.x-cart.com/view.php?id=49107 (Shevelov Alexander) #Core #CrispWhiteSkin
+2018-02-19 - [Bug] The buttons View cart and Checkout were missing from the minicart if the store site was being accessed from a mobile device. Fixed. #BUG-5710 https://bt.x-cart.com/view.php?id=48702 (Eugene Dementjev) #CrispWhiteSkin
+2018-02-13 - [Bug] On opening Quick view in the Related products section on a product details page, the product image slider stopped working. Fixed. #BUG-5718 https://bt.x-cart.com/view.php?id=48716 (Shevelov Alexander) #CrispWhiteSkin
+2018-02-09 - [Bug] In CrispWhite, the menu was displayed incorrectly with scrolling. Fixed. #BUG-6014 https://bt.x-cart.com/view.php?id=49093 (Sergey Elmanov) #CrispWhiteSkin
+2018-02-09 - [Bug] When switching the selected product variant on the product page, a long name of a textarea attribute could be dislayed in a wrong way if the product had more than one attribute. Fixed. #BUG-5656 https://bt.x-cart.com/view.php?id=48660 (Shevelov Alexander) #CrispWhiteSkin
+2018-02-05 - [Bug] The hamburger menu icon was misplaced in Crisp White if viewed on a mobile device. Fixed. #BUG-5971 https://bt.x-cart.com/view.php?id=49054 (Sergey Elmanov) #CrispWhiteSkin
+2018-01-26 - [Bug] Fixed some layout issues for the Add to cart popup in Crisp White skin for the case when less than 3 related products are shown in the popup. #BUG-5604 (Sergey Elmanov) #CrispWhiteSkin
+

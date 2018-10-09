@@ -1,0 +1,9 @@
+Version 5.3.3.7
+
+Improvements (1)
+2018-05-24 - [Change] Product filter now supports multicurrency for the filter by price. #BUG-6217 https://bt.x-cart.com/view.php?id=49415 (Shevelov Alexander) #ProductFilter #MultiCurrency
+
+Fixes (2)
+2018-06-19 - [Bug] In the Customer area, in categories that do not contain any products, a message is now displayed saying that no products have been added to this category yet. #BUG-6120 (Eugene Dementjev) #Core #ProductFilter #CrispWhiteSkin
+2018-05-07 - [Bug] Fixed a typo in the Product Filters module. #BUG-5802 (Shevelov Alexander) #ProductFilter
+

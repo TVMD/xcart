@@ -1,0 +1,5 @@
+Version 5.3.3.4
+
+Fixes
+2018-01-25 - [Bug] When importing products, the Tags field was processed incorrectly; the current product tags were cleared, and new ones were not created. Fixed. #BUG-5970 (Sergey Elmanov) #ProductTags
+

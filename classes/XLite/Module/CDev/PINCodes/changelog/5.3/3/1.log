@@ -1,0 +1,5 @@
+Version 5.3.3.1
+
+Fixes
+2018-01-10 - [Bug] Setting "Approve before providing access" did not work. Fixed. #BUG-5924 (Maxim Kuznetsov) #PINCodes
+

@@ -1,0 +1,5 @@
+Version 5.3.3.1
+
+Fixes
+2017-08-14 - [Bug] When selecting Store Setup -> Taxes from the menu, the tab Tax Classes was opened. Now Sales Tax or VAT or Canadian Taxes gets opened (depending on what is installed). #BUG-5371 (Sergey Elmanov) #SalesTax #VAT #CanadianTaxes
+

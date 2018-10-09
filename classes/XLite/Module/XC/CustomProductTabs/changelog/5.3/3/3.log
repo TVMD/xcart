@@ -1,0 +1,6 @@
+Version 5.3.3.3
+
+Fixes
+2017-08-21 - [Bug] Description tab wasn't shown on product details page if Custom Product Tabs was enabled. Fixed. #BUG-5409 (Sergey Elmanov) #CustomProductTabs
+2017-08-21 - [Bug] A post-upgrade hook for version 5.3.3 failed on a large number of products (~500k). Fixed. #BUG-5411 (Sergey Elmanov) #CustomProductTabs
+

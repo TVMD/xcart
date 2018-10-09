@@ -1,0 +1,6 @@
+Version 5.3.2.0
+
+Fixes
+2017-10-24 - [Bug] Fix video uploading to a server in the Froala WYSIWYG. #BUG-5663 (Michael Lipinski) #Core #Froala
+2017-09-22 - [Bug] Updated Froala Editor to version 2.3.5 and introduced the htmlRemoveTags configuration. #BUG-4463 (Eugene Dementjev) #Froala
+

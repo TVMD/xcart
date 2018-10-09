@@ -1,0 +1,4 @@
+Version 5.3.4.1
+
+Fixes
+2017-09-21 - [Bug] Button "Add review" on product page was not displayed after an anonymous customer had been login. Fixed. #BUG-5517 (Sergey Elmanov) #ProductReviews

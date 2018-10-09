@@ -1,0 +1,5 @@
+Version 5.3.3.2
+
+Fixes
+2017-07-26 - [Bug] In Sales tax and Canadian taxes, the default value of the setting Taxable base was changed to Discounted Subtotal + Shipping cost. #BUG-5205 (Michael Lipinski) #SalesTax #CanadianTaxes
+

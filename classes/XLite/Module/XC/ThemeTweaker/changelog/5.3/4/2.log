@@ -1,0 +1,9 @@
+Version 5.3.4.2
+
+Improvements
+2017-12-18 - [Change] W3C validator warning "Warning: The type attribute is unnecessary for JavaScript resources.". Fixed. #BUG-5859 (Eugene Dementjev) #Core #Paypal #ThemeTweaker #ProductFilter #Olark #Disqus #FastLaneCheckout #CrispWhiteSkin #MultiVendor #MultiCurrency #NextPreviousProduct #Buy Button #ShopperApproved
+
+Fixes
+2017-12-22 - [Bug] Hyperlinks like http://*.x-cart.com were replaced with links like https://*.x-cart.com. #BUG-5891 (Eugene Dementjev) #Core #Egoods #FeaturedProducts #FileAttachments #Paypal #SalesTax #SimpleCMS #SocialLogin #VAT #VolumeDiscounts #Wholesale #ThemeTweaker #PINCodes #RelatedProducts #FreeShipping #BulkEditing #CustomProductTabs #UpdateInventory #Buy Button
+1970-01-01 - [Bug] After saving a label after editing, it was not possible to edit it again without a page refresh or a toggle of the Highlight labels option. Fixed. #BUG-5547 (Sergey Elmanov) #ThemeTweaker
+

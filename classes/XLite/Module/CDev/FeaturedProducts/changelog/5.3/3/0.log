@@ -1,0 +1,4 @@
+Version 5.3.3.0
+
+Fixes
+2017-03-30 - [Bug] ItemsList improvement: added the ability to send default widget parameters as search parameters. #BUG-4586 (Michael Lipinski) #Core #FeaturedProducts

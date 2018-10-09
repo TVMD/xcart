@@ -1,0 +1,7 @@
+Version 5.3.3.1
+
+Fixes
+2017-06-29 - [Bug] Fixed small bug with using Stripe within Fast Lane Checkout. #BUG-5155 (Sergey Elmanov) #FastLaneCheckout
+2017-06-06 - [Bug] If using FLC and NFO, at checkout, when the user was redirected to the payment page, the state was reset to the default one. #BUG-5061 (Michael Lipinski) #Core #FastLaneCheckout
+2017-06-01 - [Bug] The truck icon in FLC was misplaced in the standard skin. Fixed. #BUG-5059 (Maxim Kuznetsov) #FastLaneCheckout
+

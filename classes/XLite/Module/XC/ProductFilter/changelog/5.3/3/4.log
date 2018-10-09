@@ -1,0 +1,5 @@
+Version 5.3.3.4
+
+Fixes
+2017-11-14 - [Bug] The Classes field value for Product filter was not saved when choosing certain classes. #BUG-5748 (Sergey Elmanov) #ProductFilter
+

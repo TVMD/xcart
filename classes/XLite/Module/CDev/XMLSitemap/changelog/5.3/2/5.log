@@ -1,0 +1,7 @@
+Version 5.3.2.5
+
+Fixes
+2017-03-23 - [Bug] Brought the checkup of file availability at a URL to a unified form. #BUG-4151 (Eugene Dementjev) #Core #XMLSitemap
+
+Fixes
+2017-05-22 - [Bug] With a large number of products, the quick data recalculation could not be completed properly (memory limit exceeded). Fixed. #BUG-4996 (Sergey Elmanov) #Core #XMLSitemap #BulkEditing

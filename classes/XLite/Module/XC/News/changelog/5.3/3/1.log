@@ -1,0 +1,5 @@
+Version 5.3.3.1
+
+Improvements
+1970-01-01 - [Change] When generating XML Sitemap by cron, http was used for the URL at all times. Fixed. #BUG-5538 (Michael Lipinski) #Core #XMLSitemap #News
+

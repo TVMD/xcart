@@ -1,0 +1,8 @@
+Version 5.3.4.1
+
+Improvements
+2017-12-18 - [Change] W3C validator warning "Warning: The type attribute is unnecessary for JavaScript resources.". Fixed. #BUG-5859 (Eugene Dementjev) #Core #Paypal #ThemeTweaker #ProductFilter #Olark #Disqus #FastLaneCheckout #CrispWhiteSkin #MultiVendor #MultiCurrency #NextPreviousProduct #Buy Button #ShopperApproved
+
+Fixes
+2017-11-01 - [Bug] Warning in logs "XLite [warning] Warning: array_values() expects parameter 1 to be array, null given in classes/XLite/Module/XC/NextPreviousProduct/View/Product/Details/Customer/NextPreviousProduct.php on line 445". Fixed. #BUG-5585 (Sergey Elmanov) #NextPreviousProduct
+

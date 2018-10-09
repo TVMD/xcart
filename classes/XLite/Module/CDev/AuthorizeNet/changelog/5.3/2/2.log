@@ -1,0 +1,4 @@
+Version 5.3.2.2
+
+Fixes
+2017-03-22 - [Bug] Updated information on the availability of payment systems for different countries. #BUG-4314 (Maxim Kuznetsov) #AuthorizeNet #Skrill #TwoCheckout #YandexMoney #IdealPayments #SofortBanking #NetbanxHostedPayment

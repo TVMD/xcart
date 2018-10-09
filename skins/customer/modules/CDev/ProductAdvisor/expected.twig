@@ -1,0 +1,10 @@
+{##
+ # Product low stock label
+ #
+ # @ListChild (list="itemsList.product.grid.customer.info", weight="32")
+ # @ListChild (list="itemsList.product.list.customer.info", weight="2001")
+ #}
+
+{% if this.product.isUpcomingProduct() and this.config.CDev.ProductAdvisor.cs_display_date %}
+  <span class="coming-soon-note">{{ t('Expected on') }} <span class="coming-soon-date">{{ this.formatDate(this.product.getArrivalDate()) }}</span></span>
+{% endif %}

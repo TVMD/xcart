@@ -1,0 +1,5 @@
+Version 5.3.3.1
+
+Fixes
+2017-08-29 - [Bug] The next/previous product links of a product were always displaying the links of the product that was opened first. #BUG-5324 (Michael Lipinski) #NextPreviousProduct
+

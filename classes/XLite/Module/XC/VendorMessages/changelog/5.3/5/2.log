@@ -1,0 +1,6 @@
+Version 5.3.5.2
+
+Fixes (2)
+2018-03-23 - [Bug] Added some missing text labels and their translations. #BUG-6026 https://bt.x-cart.com/view.php?id=49100 (Shevelov Alexander) #Core #Coupons #SimpleCMS #VolumeDiscounts #ProductVariants #MultiVendor #VendorMessages
+2018-02-08 - [Bug] Minor style fixed for the Order Messages addon. #BUG-6027 (Sergey Elmanov) #Core #VendorMessages
+

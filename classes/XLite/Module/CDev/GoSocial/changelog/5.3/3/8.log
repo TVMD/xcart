@@ -1,0 +1,5 @@
+Version 5.3.3.8
+
+Improvements (1)
+2018-06-11 - [Change] The Open Graph tags field is now the same for all the entities for which it is used. #BUG-5947 https://bt.x-cart.com/view.php?id=49018 (Eugene Dementjev) #GoSocial
+

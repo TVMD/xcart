@@ -1,0 +1,16 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Currency:
+  - { currency_id: 643, symbol: ₽, suffix: ₽ }
+
+XLite\Model\LanguageLabel:
+  - { name: "Do not show at startup anymore", translations: [{ code: en, label: "Do not show at startup anymore" }] }
+  - { name: 'Transactions details', translations: [{ code: en, label: 'Transaction details' }]}
+
+XLite\Model\Notification:
+  - { templatesDirectory: order_created, translations: [{ code: en, description: "This notification is sent to both the administrator and customer when a new order is created." }]}

@@ -1,0 +1,16 @@
+Version 5.3.5.6
+
+Fixes (12)
+2018-06-21 - [Bug] Product image was displayed incorrectly in Crisp White + IE 11. Fixed. #BUG-5892 https://bt.x-cart.com/view.php?id=48907 (Shevelov Alexander) #CrispWhiteSkin
+2018-06-19 - [Bug] Improvements for the display of errors on the Sign Up popup. #BUG-6477 (Eugene Dementjev) #Core #CrispWhiteSkin
+2018-06-19 - [Bug] In the Customer area, in categories that do not contain any products, a message is now displayed saying that no products have been added to this category yet. #BUG-6120 (Eugene Dementjev) #Core #ProductFilter #CrispWhiteSkin
+2018-06-04 - [Bug] Fixed a subscription form display issue in Crisp White skin for the screen width of 768px. #BUG-5959 https://bt.x-cart.com/view.php?id=49035 (Eugene Dementjev) #CrispWhiteSkin
+2018-06-04 - [Bug] Flyout categories menu was displayed incorrectly with long category names. Fixed. #BUG-5840 https://bt.x-cart.com/view.php?id=48814 (Eugene Dementjev) #CrispWhiteSkin #FlyoutCategoriesMenu
+2018-06-01 - [Bug] The pager widget was misplaced on the category page in the Customer area in Standard skin. Fixed. #BUG-6417 https://bt.x-cart.com/view.php?id=49559 (Sergey Elmanov) #Core #CrispWhiteSkin
+2018-06-01 - [Bug] The free shipping label for a product was displayed incorrectly. Fixed. #BUG-5603 (Maxim Kuznetsov) #Core #CrispWhiteSkin
+2018-05-30 - [Bug] The Change password form in the Customer area is now displayed in a popup. #BUG-6414 https://bt.x-cart.com/view.php?id=49427 (Sergey Elmanov) #Core #CrispWhiteSkin
+2018-05-29 - [Bug] In Crisp White, the text label "email" was displayed incorrectly for the Russian language. #BUG-5951 https://bt.x-cart.com/view.php?id=49029 (Sergey Elmanov) #CrispWhiteSkin
+2018-05-07 - [Bug] Added a link to the comparison list to the top message displayed after adding a product to a comparison. #BUG-6043 https://bt.x-cart.com/view.php?id=49125 (Sergey Elmanov) #ProductComparison #CrispWhiteSkin
+2018-05-07 - [Bug] When creating an <ul> list in Froala, there was no margin-bottom. Fixed. #BUG-5795 https://bt.x-cart.com/view.php?id=48802 (Sergey Elmanov) #SimpleCMS #CrispWhiteSkin
+2018-03-30 - [Bug] The checkbox in the MailChimp list subscription setup popup was displayed incorrectly. Fixed. #BUG-6221 (Shevelov Alexander) #CrispWhiteSkin
+

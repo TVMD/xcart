@@ -1,0 +1,8 @@
+{##
+ # Landing page header
+ #
+ # @ListChild (list="marketplace.top-controls", weight="400")
+ #}
+{% if this.isLandingPage() %}
+  <h2>{{ t('Hot addons') }}</h2>
+{% endif %}

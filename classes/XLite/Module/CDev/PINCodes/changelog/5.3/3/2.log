@@ -1,0 +1,6 @@
+Version 5.3.3.2
+
+Fixes
+2018-01-25 - [Bug] Fatal error on the PIN codes page in the Admin area after the removal of an order with a PIN code. Fixed. #BUG-5962 (Sergey Elmanov) #PINCodes
+2017-12-22 - [Bug] Hyperlinks like http://*.x-cart.com were replaced with links like https://*.x-cart.com. #BUG-5891 (Eugene Dementjev) #Core #Egoods #FeaturedProducts #FileAttachments #Paypal #SalesTax #SimpleCMS #SocialLogin #VAT #VolumeDiscounts #Wholesale #ThemeTweaker #PINCodes #RelatedProducts #FreeShipping #BulkEditing #CustomProductTabs #UpdateInventory #Buy Button
+

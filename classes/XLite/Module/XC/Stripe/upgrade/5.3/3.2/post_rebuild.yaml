@@ -1,0 +1,9 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: 'Copy Webhook URL and go to Account settings', translations: [{ code: 'en', label: 'Copy "Webhook URL" and go to <a href="https://dashboard.stripe.com/account/webhooks" target="_blank">Account settings</a>' }, { code: 'ru', label: 'Скопируйте "Webhook URL" и перейдите в <a href="https://dashboard.stripe.com/account/webhooks" target="_blank">Account settings</a>' }] }

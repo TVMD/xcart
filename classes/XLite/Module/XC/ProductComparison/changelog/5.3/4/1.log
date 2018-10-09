@@ -1,0 +1,5 @@
+Version 5.3.4.1
+
+Fixes
+2017-11-02 - [Bug] Add to cart button was displayed on the comparison table page for coming soon products. Fixed. #BUG-5598 (Sergey Elmanov) #ProductAdvisor #ProductComparison #CrispWhiteSkin
+

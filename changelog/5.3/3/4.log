@@ -1,0 +1,57 @@
+Version 5.3.3.4
+
+Improvements
+2017-09-07 - [Change] Added the fields for the sorting of attributes and their values to the import/export product attribute values file. #BUG-5170 (Michael Lipinski) #Core
+2017-09-05 - [Change] Minor logging improvement: action and target are now added to the URI in the log file for POST requests. #BUG-5445 (Michael Lipinski) #Core
+2017-08-23 - [Change] UI improvement for the calendar widget in the Admin area. #BUG-5204 (Sergey Elmanov) #Core
+2017-08-09 - [Change] Added manage news and manage banners permissions. #BUG-5215 (Eugene Dementjev) #Core #News
+2017-08-02 - [Change] Added checks for the presence of orders without a shipping/payment status to Consistency Check. #BUG-5240 (Eugene Dementjev) #Core
+2017-08-02 - [Change] Added a check for the table attribute_value_select with a specified attribute_option_id which are not present in the database to Consistency Check. #BUG-5209 (Eugene Dementjev) #Core
+2017-08-01 - [Change] Added a new check to Consistency check to find out whether the database contains orders without an associated profile (profile_id == NULL). #BUG-5208 (Eugene Dementjev) #Core
+1970-01-01 - [Change] Added a console utility command.php to replace the obsolete next-sdk. #XCN-8068 (Michael Lipinski) #Core
+
+Fixes
+2017-09-15 - [Bug] Local images were not getting imported for variants. Fixed. #BUG-5495 (Maxim Kuznetsov) #Core #AmazonS3Images #ProductVariants
+2017-09-15 - [Bug] Wrong information about a previously failed payment was added to the email invoice sent to the customer. #BUG-5488 (Michael Lipinski) #Core
+2017-09-11 - [Bug] In the Sales channels popup, link tags were not working. #BUG-5478 (Michael Lipinski) #Core
+2017-09-11 - [Bug] RCE vulnerability: A vendor/admin with limited access permissions could upload a php script using the File attachments module. Fixed. #BUG-5461 (Eugene Dementjev) #Core #FileAttachments #CanadaPost
+2017-09-08 - [Bug] In the shopping cart, Aberdeen was always shown as state for estimated shipping if UK was selected as country. Fixed. #BUG-5468 (Michael Lipinski) #Core
+2017-09-07 - [Bug] Duplicate entries in order history regarding sent messages. Fixed. #BUG-5460 (Eugene Dementjev) #Core
+2017-09-06 - [Bug] Temporary files were not removed when using ImageMagick to crop images. Fixed. #BUG-5457 (Michael Lipinski) #Core
+2017-09-06 - [Bug] A wrong minimum memory_limit was shown in the installer in the insufficient memory_limit message. Fixed. #BUG-5452 (Michael Lipinski) #Core
+2017-09-05 - [Bug] The fields in Store setup -> Contact Information -> Contacts can no longer be saved as blank. #BUG-5453 (Eugene Dementjev) #Core
+2017-09-05 - [Bug] In the quick view popup, variant images could not be switched. Fixed. #BUG-5365 (Sergey Elmanov) #Core #ProductVariants
+2017-09-04 - [Bug] Fixed PHP 5.4 compatibility errors/warnings. #BUG-5439 (Eugene Dementjev) #Core #AmazonS3Images #Egoods #Paypal #RESTAPI #PINCodes #PitneyBowes #CustomerAttachments #VendorMessages
+2017-09-01 - [Bug] Cart items were entered into order history even after the respective payment transaction had failed. Fixed. #BUG-5446 (Michael Lipinski) #Core
+2017-08-30 - [Bug] Error "String data, right truncated: 1406 Data too long for column 'metaTags' at row 1" when saving a long value in the metaKeywords field of a product. Fixed. #BUG-5281 (Eugene Dementjev) #Core
+2017-08-29 - [Bug] When submitting an invalid form, the form froze. #BUG-5288 (Sergey Elmanov) #Core #ProductReviews
+2017-08-29 - [Bug] Added the address type "not selected" for the default customer address field. #BUG-5200 (Eugene Dementjev) #Core
+2017-08-28 - [Bug] Fixed field validation for the Store Setup -> Contact information page. #BUG-5428 (Eugene Dementjev) #Core
+2017-08-28 - [Bug] The link leading to the module settings page was cut short after the admin logged in, which resulted in going to the list of installed modules. #BUG-5318 (Michael Lipinski) #Core
+2017-08-24 - [Bug] Fixed some layout issues related to the credit card info entry widget for the module BlueSnap. #BUG-5424 (Eugene Dementjev) #Core #CrispWhiteSkin #BlueSnap
+2017-08-24 - [Bug] Incorrect language name was used for Malaysia; changed to Malay. #BUG-5422 (Michael Lipinski) #Core
+2017-08-24 - [Bug] The names of USPS shipping methods on the packing slip were printed incorrectly. Fixed. #BUG-5340 (Michael Lipinski) #Core
+2017-08-24 - [Bug] A wrong flag image was used for Cambodia. Fixed. #BUG-5299 (Michael Lipinski) #Core
+2017-08-23 - [Bug] Minor refactoring of styles. #BUG-5290 (Eugene Dementjev) #Core #ThemeTweaker #FastLaneCheckout #CrispWhiteSkin
+2017-08-22 - [Bug] Fixed some layout issues related to the credit card info entry widget on browser window widths of less than 1200px. #BUG-5408 (Michael Lipinski) #Core
+2017-08-22 - [Bug] Fixed a typo in the file classes/XLite/View/FormField/Textarea/Simple.php. #BUG-5222 (Sergey Elmanov) #Core
+2017-08-21 - [Bug] PDF attachments got attached to emails twice. Fixed. #BUG-5401 (Michael Lipinski) #Core
+2017-08-21 - [Bug] Fixed some layout issues related to the widget for credit card info entry in the IE and Firefox browsers. #BUG-5398 (Michael Lipinski) #Core #CrispWhiteSkin
+2017-08-21 - [Bug] Real-time shipping cost calculation was performed when adding a product to cart. Now it only takes place when the cart/checkout page is accessed. #BUG-5390 (Michael Lipinski) #Core
+2017-08-18 - [Bug] Page load time improvement for the Environment and Marketplace pages in the Admin area. #BUG-5380 (Michael Lipinski) #Core
+2017-08-14 - [Bug] The minicart subtotal was not recalculated on the cart page. Fixed. #BUG-5307 (Sergey Elmanov) #Core
+2017-08-11 - [Bug] On mobile devices, the phrase "Have a discount coupon" was displayed over the footer. Fixed. #BUG-5272 (Sergey Elmanov) #Core #CrispWhiteSkin
+2017-08-11 - [Bug] Too much space before the title on the product attributes page. #BUG-5178 (Sergey Elmanov) #Core
+2017-08-09 - [Bug] Payment method descriptions were displayed incorrectly. #BUG-5331 (Eugene Dementjev) #Core
+2017-08-09 - [Bug] Made the Fax field in the Company info blank. #BUG-5326 (Eugene Dementjev) #Core
+2017-08-09 - [Bug] Unclosed span tag. Fixed. #BUG-5201 (Eugene Dementjev) #Core #ProductReviews
+2017-08-07 - [Bug] Removed the update button below the module name on the Installed Addons page. #BUG-5302 (Eugene Dementjev) #Core
+2017-08-07 - [Bug] After the first login to the Admin area, the menu was positioned incorrectly. #BUG-5261 (Sergey Elmanov) #Core
+2017-08-02 - [Bug] Add2cart popup should be displayed only when a product has been added to the cart successfully. #BUG-5223 (Sergey Elmanov) #Core #Add2CartPopup
+2017-08-01 - [Bug] Execute cached trait was not working correctly sometimes. Fixed. #BUG-5186 (Sergey Elmanov) #Core
+2017-08-01 - [Bug] Checkout could not be completed with addresses entered in a certain way. #BUG-5159 (Eugene Dementjev) #Core #FastLaneCheckout
+2017-07-31 - [Bug] Race condition on the updating of product quantity on order placement. Fixed. #BUG-5316 (Sergey Elmanov) #Core
+2017-07-26 - [Bug] Fatal error when using restoredb in a multi-vendor store. #BUG-5266 (Michael Lipinski) #Core
+2017-07-26 - [Bug] Customer ip is now saved in the order history. #BUG-5256 (Sergey Elmanov) #Core
+2017-07-20 - [Bug] Fixed the recalculation of taxes when editing an order in AOM. #BUG-5213 (Michael Lipinski) #Core #CanadianTaxes
+

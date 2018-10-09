@@ -1,0 +1,167 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Slidebar styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.webmaster-mode-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+}
+
+.webmaster-mode-code {
+    width: 60%;
+}
+
+.webmaster-mode-tree {
+    width: 40%;
+    overflow: auto;
+}
+
+[data-editor-tree] {
+    background-color: #f6f6f6;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    overflow: auto;
+}
+
+[data-editor-tree].not-processed {
+    display: none !important;
+}
+
+.jstree-container-ul > .jstree-last {
+    padding-bottom: 20px;
+}
+
+[data-editor-code] {
+
+}
+
+[data-editor-wrapper] {
+    height: 100%;
+}
+
+.xlite-template-code {
+    height: 100%;
+}
+
+.xlite-template-code.reloading:before {
+    z-index: 900;
+}
+
+.xlite-template-code.reloading-animated:after {
+    z-index: 902;
+}
+
+.xlite-template-code .table-value {
+    float: none;
+}
+
+.xlite-template-code .codemirror {
+    border: none;
+    resize: none;
+}
+
+.xlite-template-code .table-value > .CodeMirror {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    border: none;
+    border-left: 1px solid #ccc;
+    border-radius: 0;
+
+    font-size: 12px;
+    line-height: 1.42em;
+}
+
+.themetweaker-popup-node > .jstree-anchor:after {
+    content: "\f247";
+    background: none;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    margin-left: 10px;
+    color: darkorange;
+}
+
+.themetweaker-popup-node > .jstree-anchor {
+    background: rgba(255, 140, 0, 0.15);
+    border-radius: 2px;
+    box-shadow: inset 0 0 1px #ccc;
+}
+
+.themeTweaker_tree.jstree-default .jstree-anchor {
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+}
+
+.themeTweaker_tree.jstree-default .jstree-icon.jstree-themeicon {
+    background: none;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    color: #4f5b6a;
+}
+
+.themeTweaker_tree.jstree-default .jstree-open>.jstree-ocl {
+    background-position: -132px -6px;
+}
+
+.themeTweaker_tree.jstree-default .jstree-closed>.jstree-ocl {
+    background-position: -100px -6px;
+}
+
+.themeTweaker_tree.jstree-default .jstree-node {
+    min-height: 20px;
+    line-height: 20px;
+}
+
+.themeTweaker_tree.jstree-default .jstree-icon:empty {
+    height: 20px;
+    line-height: 20px;
+}
+
+.themeTweaker_tree.jstree-default .jstree-disabled>.jstree-icon {
+    opacity: 1;
+    filter: none;
+    -webkit-filter: none;
+}
+
+.themeTweaker_tree.jstree-default .jstree-open>a>.jstree-icon.jstree-themeicon {
+    padding-left: 3px;
+}
+
+.themeTweaker_tree.jstree-default .jstree-icon.jstree-themeicon:after {
+    content: '\f07b';
+}
+
+.themeTweaker_tree.jstree-default .jstree-open>a>.jstree-icon.jstree-themeicon:after {
+    content: '\f07c';
+}
+
+.themeTweaker_tree.jstree-default .jstree-disabled>.jstree-icon.jstree-themeicon:after {
+    content: '\f114';
+}
+
+.themeTweaker_tree.jstree-default .jstree-open>a.jstree-disabled>.jstree-icon.jstree-themeicon:after {
+    content: '\f115';
+}

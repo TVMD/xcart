@@ -1,0 +1,5 @@
+Version 5.3.2.2
+
+Fixes (1)
+2018-06-04 - [Bug] Flyout categories menu was displayed incorrectly with long category names. Fixed. #BUG-5840 https://bt.x-cart.com/view.php?id=48814 (Eugene Dementjev) #CrispWhiteSkin #FlyoutCategoriesMenu
+

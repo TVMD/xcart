@@ -1,0 +1,10 @@
+Version 5.3.4.1
+
+Improvements
+2017-12-19 - [Change] Added the controls to block and unblock all the files onto the E-goods tab of the order page in the Admin area. #BUG-5850 (Sergey Elmanov) #Core #Egoods
+
+Fixes
+2018-01-19 - [Bug] Fatal error when attempting to clone a product with file attachments while the module MultiVendor is active. Fixed. #BUG-5941 (Sergey Elmanov) #Egoods #MultiVendor
+2017-12-22 - [Bug] Hyperlinks like http://*.x-cart.com were replaced with links like https://*.x-cart.com. #BUG-5891 (Eugene Dementjev) #Core #Egoods #FeaturedProducts #FileAttachments #Paypal #SalesTax #SimpleCMS #SocialLogin #VAT #VolumeDiscounts #Wholesale #ThemeTweaker #PINCodes #RelatedProducts #FreeShipping #BulkEditing #CustomProductTabs #UpdateInventory #Buy Button
+2017-11-09 - [Bug] The status of an order containing shippable products was automatically reset to Delivered after an egood file from that order had been downloaded. Fixed. #BUG-5692 (Sergey Elmanov) #Core #Egoods #FileAttachments
+

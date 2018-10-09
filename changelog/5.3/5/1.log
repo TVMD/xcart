@@ -1,0 +1,13 @@
+Version 5.3.5.1
+
+Improvements (1)
+2018-04-13 - [Change] Cookies are now placed with the secure parameter if HTTPS is enabled. The setting "Redirect customers to https" has been removed; now the customer is always redirected from HTTP to HTTPS if HTTPS is enabled. #BUG-5639 https://bt.x-cart.com/view.php?id=48639 (Sergey Elmanov) #Core
+
+Fixes (6)
+2018-04-16 - [Bug] Blocked PIN codes were able for sale. Fixed. #BUG-5961 (Sergey Elmanov) #Core
+2018-04-16 - [Bug] A custom state value was returned incorrectly during checkout. Fixed. #BUG-6124 (Shevelov Alexander) #Core
+2018-04-13 - [Bug] When the status of an order was updated to Paid via the order page, the sales value for the products in the order was not increased. Fixed. #BUG-6284 (Shevelov Alexander) #Core
+2018-04-13 - [Bug] Minor improvements for the minicart in the Crisp White skin. #BUG-6247 (Eugene Dementjev) #Core #CrispWhiteSkin
+2018-04-12 - [Bug] EXIF data of images is now used For image resizing (only the orientation). #BUG-5966 https://bt.x-cart.com/view.php?id=49043 (Sergey Elmanov) #Core
+2018-04-09 - [Bug] The Calendar widget on the coupon creation page now has a translation into all the languages. #BUG-6268 (Shevelov Alexander) #Core #Coupons
+

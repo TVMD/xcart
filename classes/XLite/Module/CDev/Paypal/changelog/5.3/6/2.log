@@ -1,0 +1,5 @@
+Version 5.3.6.2
+
+Fixes
+2017-11-15 - [Bug] Added delayed rendering for PayPal Express Checkout buttons. #BUG-5744 (Sergey Elmanov) #Paypal
+

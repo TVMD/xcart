@@ -1,0 +1,10 @@
+Version 5.3.4.0
+
+Improvements
+2017-10-27 - [Change] 'Description editor' in customer area works now for categories and static pages. #BUG-5664 (Eugene Dementjev) #Core #SimpleCMS #ThemeTweaker #CrispWhiteSkin
+2017-07-28 - [Change] Implemented a nice image loading effect for the CrispWhite skin. #XCN-7368 (Sergey Elmanov) #CrispWhiteSkin
+
+Fixes
+2017-10-05 - [Bug] Fixed some CSS styles so they would pass w3c validation. #BUG-3825 (Michael Lipinski) #Core #SimpleCMS #ThemeTweaker #ProductComparison #ColorSchemes #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #NextPreviousProduct #Geolocation
+2017-08-24 - [Bug] Tab name is now used for anchor name generation instead of ID. #BUG-5357 (Sergey Elmanov) #Core #CrispWhiteSkin #CustomProductTabs
+

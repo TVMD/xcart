@@ -1,0 +1,10 @@
+{##
+ # Modules list
+ #
+ # @ListChild (list="sales-channels.top-controls", weight="400")
+ #}
+{% form '\\XLite\\View\\Form\\Module\\Install' %}
+  <div class="marketplace-wrapper{% if this.isLandingPage() %} marketplace-landing{% endif %}">
+    {% include this.getBody() %}
+  </div>
+{% endform %}

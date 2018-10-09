@@ -1,0 +1,8 @@
+Version 5.3.3.0
+
+Fixes
+2017-05-25 - [Bug] Fatal error if a vendor uses the bulk edit all feature. #BUG-5013 (Sergey Elmanov) #Core #Sale
+2017-04-20 - [Bug] Removed the unused <li> tag on the product page. #BUG-4523 (Maxim Kuznetsov) #Sale
+2017-03-13 - [Bug] Restored the Delete option in the sticky panel, the products list and the bulk edit all button and added On/Off buttons for sale. #BUG-4388 (Sergey Elmanov) #Core #RuTranslation #Sale #BulkEditing
+2017-03-06 - [Bug] In LayoutEditor, a block moved to the sidebar in the 2-column mode disappeared after switching to the 3-column mode. #BUG-4335 (Maxim Kuznetsov) #Core #ProductAdvisor #Sale #ThemeTweaker #ProductFilter #ProductComparison #MultiVendor #ProductTags #News
+2017-01-18 - [Bug] If sale price and market price features were used at the same time, the sale price label got misplaced. #BUG-4416 (Maxim Kuznetsov) #MarketPrice #ProductAdvisor #Sale #CrispWhiteSkin

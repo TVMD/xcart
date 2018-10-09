@@ -1,0 +1,18 @@
+{##
+ # Tags
+ #
+ # @ListChild (list="itemsList.module.install.columns.module-description-section", weight="40")
+ # @ListChild (list="itemsList.module.sales-channels.columns.module-description-section", weight="40")
+ # @ListChild (list="itemsList.module.purchased.columns.module-description-section", weight="40")
+ #}
+{% if this.module.getTags() %}
+  <div class="module-tags">
+    <ul class="module-tags-list">
+      {% for value in this.module.getTags() %}
+        <li>
+          <a href="{{ this.getTagURL(value) }}">{{ this.getTagName(value) }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

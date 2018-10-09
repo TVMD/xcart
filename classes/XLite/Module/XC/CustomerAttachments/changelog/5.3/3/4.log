@@ -1,0 +1,5 @@
+Version 5.3.3.4
+
+Fixes (1)
+2018-04-23 - [Bug] Vendors and non-root administrators could not download from an order files attached by a customer. Fixed. #BUG-6258 (Sergey Elmanov) #CustomerAttachments
+

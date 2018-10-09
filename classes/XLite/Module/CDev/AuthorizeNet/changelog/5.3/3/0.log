@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Improvements
+2017-06-27 - [Change] Added the sha512 method for hash calculation. #BUG-5085 (Sergey Elmanov) #AuthorizeNet
+

@@ -1,0 +1,6 @@
+Version 5.3.3.0
+
+Fixes
+2017-03-06 - [Bug] In LayoutEditor, a block moved to the sidebar in the 2-column mode disappeared after switching to the 3-column mode. #BUG-4335 (Maxim Kuznetsov) #Core #ProductAdvisor #Sale #ThemeTweaker #ProductFilter #ProductComparison #MultiVendor #ProductTags #News
+2017-01-18 - [Bug] Moved the Arrival date setting to the section Prices & Inventory, as well as added it to the Inventory tracking tab. Changed the color and position of the "Coming soon" label on the storefront. #BUG-3878 (Maxim Kuznetsov) #Core #ProductAdvisor #RuTranslation #CrispWhiteSkin
+2017-01-18 - [Bug] If sale price and market price features were used at the same time, the sale price label got misplaced. #BUG-4416 (Maxim Kuznetsov) #MarketPrice #ProductAdvisor #Sale #CrispWhiteSkin

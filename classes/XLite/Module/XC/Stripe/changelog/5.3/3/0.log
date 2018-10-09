@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Improvements
+2017-12-19 - [Change] Added OAuth for Stripe payment method. #BUG-5843 (Eugene Dementjev) #Stripe
+

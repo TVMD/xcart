@@ -1,0 +1,5 @@
+Version 5.3.2.3
+
+Fixes
+2017-08-10 - [Bug] Fatal error when updating a product if the product had wholesale prices, and the administrator had a non-default membership. Fixed. #BUG-5344 (Michael Lipinski) #Wholesale
+

@@ -1,0 +1,5 @@
+Version 5.3.4.5
+
+Fixes (1)
+2018-06-05 - [Bug] Fixed a few bugs in the Fast Lane Checkout. #BUG-5902 (Eugene Dementjev) #FastLaneCheckout
+

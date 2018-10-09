@@ -1,0 +1,7 @@
+Version 5.3.4.3
+
+Fixes (3)
+2018-06-21 - [Bug] When removing the Custom Product Tabs module, the uninstall hook caused a fatal error. Fixed. #BUG-6409 https://bt.x-cart.com/view.php?id=49540 (Shevelov Alexander) #CustomProductTabs
+2018-06-11 - [Bug] Fixed a few minor issues related to the import/export of Custom product tabs. #BUG-5899 https://bt.x-cart.com/view.php?id=48929 (Maxim Kuznetsov) #CustomProductTabs
+2018-06-06 - [Bug] Excluded the product tabs visited by a user on a product page from the browser history. #BUG-6399 https://bt.x-cart.com/view.php?id=49515 (Sergey Elmanov) #Core #CustomProductTabs #ShopperApproved
+

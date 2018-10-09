@@ -1,0 +1,14 @@
+{##
+ # Modules main section list
+ #
+ # @ListChild (list="itemsList.module.manage.columns.module-main-section", weight="30")
+ #}
+{% set list = this.getNestedViewList('actions', {'module': this.module, 'canEnable': this.canEnable(this.module, 1), 'canDisable': this.canDisable(this.module, 1)}) %}
+
+{% if list is not empty %}
+  <ul class="actions">
+    {% for i, action in list %}
+      <li class="{{ action.getName() }}">{{ action.display() }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}

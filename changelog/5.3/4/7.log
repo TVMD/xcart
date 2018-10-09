@@ -1,0 +1,5 @@
+Version 5.3.4.7
+
+Fixes (1)
+2018-04-16 - [Bug] A custom state value was returned incorrectly during checkout. Fixed. #BUG-6124 (Shevelov Alexander) #Core
+

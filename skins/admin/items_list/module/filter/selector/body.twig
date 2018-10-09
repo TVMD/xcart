@@ -1,0 +1,28 @@
+{##
+ # Modules list
+ #}
+<div class="{{ this.getStyle() }}">
+  <div class="title">
+    {{ this.getCaption() }}
+    <i class="fa fa-angle-right"></i>
+  </div>
+  <div class="selector-items box">
+    {% if this.getItems() %}
+      <ul class="menu">
+        {% for item in this.getItems() %}
+          <li class="{{ this.getItemStyle(item) }}">
+            <div class="line">
+              {% if this.isItemSelected(item) %}
+                <span class="link"><span>{{ this.getItemLabel(item) }}</span></span>
+              {% else %}
+              <a href="{{ this.getItemURL(item) }}" class="link" title="{{ this.getItemLabel(item) }}">
+                <span>{{ this.getItemLabel(item) }}</span>
+              </a>
+              {% endif %}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</div>

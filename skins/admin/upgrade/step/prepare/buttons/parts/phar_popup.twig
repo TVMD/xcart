@@ -1,0 +1,19 @@
+{##
+ # Phar popup
+ #}
+
+<div class="upgrade-phar-notice-popup">
+  <p class="title">
+    {{ t('Attention!') }}
+  </p>
+
+  <p class="warning">
+    {{ t('Upgrade phar warning')|raw }}
+  </p>
+
+  <p class="hosting-providers">
+    {{ t('Also, you can review X-Cart recommended hosting providers')|raw }}
+  </p>
+
+  {{ widget('\\XLite\\View\\Button\\Regular', style='ok-button', label=t('Ok, Got it'), jsCode='popup.close();') }}
+</div>

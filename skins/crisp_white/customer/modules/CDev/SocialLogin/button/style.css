@@ -1,0 +1,100 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Social Login widget styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+/* COMMON */
+ul.social-login li.social-net-element {
+  display: inline-block;
+}
+
+/* ICON */
+
+.social-net-icon .provider-name {
+  display: none;
+}
+
+ul.social-login{
+  display: block;
+}
+
+ul.social-login li.social-net-element.social-net-icon {
+  margin-left: 0;
+  height: auto;
+  line-height: 1;
+}
+
+ul.social-login li.social-net-element.social-net-icon:not(:last-of-type) {
+  margin-right: 5px;
+}
+
+.social-net-icon {
+  text-align: center;
+  margin: 0;
+}
+
+.social-net-icon .fa {
+  font-size: 16px;
+  color: #fff;
+  padding: 3px 2px 1px 2px;
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.social-net-icon .fa.fa-facebook {
+  background-color: #385aa1;
+}
+
+.social-net-icon .fa.fa-google-plus {
+  background-color: #db4437;
+}
+
+/* BUTTON */
+ul.social-login li.social-net-button {
+  background: none;
+  padding: 0;
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+.social-net-button .provider-name {
+  position: relative;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.social-net-button a {
+  text-decoration: none;
+  display: block;
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 1px solid;
+  padding: 18px 0 19px 0;
+  text-align: center;
+}
+
+.social-net-button .fa {
+  font-size: 24px;
+  line-height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-net-button.social-net-Facebook a {
+  border-color: #3a5898;
+  color: #3a5898;
+}
+
+.social-net-button.social-net-Google a {
+  border-color: #4084f3;
+  color: #4084f3;
+}

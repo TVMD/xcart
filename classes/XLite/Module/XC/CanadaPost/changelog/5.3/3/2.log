@@ -1,0 +1,5 @@
+Version 5.3.3.2
+
+Fixes (1)
+2018-06-26 - [Bug] Detailed information about parcels was not displayed on the Shipments page of orders for which Canada Post was selected as a shipping method. Fixed. #BUG-6489 (Eugene Dementjev) #CanadaPost
+

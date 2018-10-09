@@ -1,0 +1,9 @@
+{##
+ # Link to the module
+ #
+ # @ListChild (list="itemsList.module.manage.columns.module-description-section.messages.cannot_enable.dependencies.details", weight="100")
+ # @ListChild (list="itemsList.module.install.columns.module-description-section.cannot_enable.dependencies.details", weight="100")
+ # @ListChild (list="itemsList.module.sales-channels.columns.module-description-section.cannot_enable.dependencies.details", weight="100")
+ # @ListChild (list="itemsList.module.purchased.columns.module-description-section.cannot_enable.dependencies.details", weight="100")
+ #}
+<a{% if this.getDependencyHRef(this.depend) %} href="{{ this.getDependencyHRef(this.depend) }}"{% endif %}>{{ this.depend.getModuleName() }} ({{ t('by') }} {{ this.depend.getAuthorName() }})</a>

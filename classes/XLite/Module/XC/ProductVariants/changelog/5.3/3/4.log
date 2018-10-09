@@ -1,0 +1,5 @@
+Version 5.3.3.4
+
+Fixes
+2017-10-16 - [Bug] Import of variant images was working incorrectly. Fixed. #BUG-5553 (Michael Lipinski) #ProductVariants
+

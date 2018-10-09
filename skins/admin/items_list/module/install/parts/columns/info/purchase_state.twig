@@ -1,0 +1,17 @@
+{##
+ # Marketplace banner
+ #
+ # @ListChild (list="itemsList.module.install.columns.module-description-section", weight="400")
+ # @ListChild (list="itemsList.module.purchased.columns.module-description-section", weight="400")
+ #}
+{% if this.isRecentlyPurchased() and this.isPurchaseComplete() %}
+    <div class="note alert alert-success">
+      {{ t('Your payment has been processed; now the addon can be installed.') }}
+    </div>
+{% endif %}
+
+{% if this.isPurchaseInProgress(this.module) %}
+<div class="note alert alert-warning">
+  {{ t('Your payment is being processed. The addon license key will be sent to your email address as soon as the processing has been completed. You will be able to use this key to install the addon at any time.') }}
+</div>
+{% endif %}

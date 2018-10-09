@@ -1,0 +1,4 @@
+Version 5.3.3.0
+
+Improvements
+2016-12-15 - [Change] Cloud Zoom activation/deactivation feature added for the default skin and CrispWhite skin. Added the setting "Cloud Zoom: inside or outside" that can be used to control how Cloud Zoom is displayed. #XCN-7363 (Sergey Elmanov) #Core #ColorSchemes #CrispWhiteSkin

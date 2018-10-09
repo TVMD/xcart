@@ -1,0 +1,4 @@
+Version 5.3.2.0
+
+Improvements
+2017-01-23 - [Change] In the core, added a way for real-time shipping methods to show actual information about the delivery time estimate returned by the shipping service. Implemented for FedEx. #XCN-7453 (Sergey Elmanov) #Core #FedEx

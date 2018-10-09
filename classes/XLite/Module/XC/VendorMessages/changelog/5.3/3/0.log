@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Improvements
+2017-03-23 - [Change] With the module Order messages, customer can now communicate with a vendor even if they haven't yet bought anything from that vendor. #XCN-7570 (Sergey Elmanov) #MultiVendor #VendorMessages
+2017-01-10 - [Change] It is now possible to add multiple email addresses (and specify the main address) in the Contacts section. #XCN-7375 (Sergey Elmanov) #Core #ContactUs #PINCodes #ProductVariants #SagePay #ProductReviews #CrispWhiteSkin #MultiVendor #VendorMessages #NetbanxHostedPayment

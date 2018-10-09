@@ -1,0 +1,5 @@
+Version 5.3.6.0
+
+Improvements
+2017-09-27 - [Change] PayPal Express Checkout adapted for the new PayPal API version. #XCN-8014 (Sergey Elmanov) #Paypal
+

@@ -1,0 +1,5 @@
+Version 5.3.3.6
+
+Fixes
+2017-11-10 - [Bug] When Fast Lane Checkout was used, the shipping methods did not get loaded sometimes. #BUG-5740 (Eugene Dementjev) #FastLaneCheckout
+

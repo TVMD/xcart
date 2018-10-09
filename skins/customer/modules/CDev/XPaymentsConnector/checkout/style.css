@@ -1,0 +1,134 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * CSS classes
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.xpc-box {
+  margin-top: 10px;
+  position: relative;
+}
+
+div#xpc {
+  height: 0px;
+}
+
+.checkout_fastlane_payment_methods div#xpc {
+  max-width: 400px;
+}
+
+iframe.xpc_iframe {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+}
+
+div.save-card-box {
+  text-align: center;
+  display: none;
+  margin-bottom: 20px;
+}
+
+div.save-card-box div.block-wait {
+  margin-left: -13px;
+  margin-right: -13px;
+}
+
+div.save-card-box label {
+  font-size: 14px;
+  color: #333;
+}
+
+div.saved-cards-box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 13px;
+}
+
+li.saved-cards-hidden,
+input.saved-cards-hidden {
+  display: none;
+}
+
+ul.saved-cards li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+ul.saved-cards li label {
+  cursor: pointer;
+  width: auto;
+}
+
+ul.saved-cards li label input {
+  vertical-align: top;
+  margin-top: 13px;
+}
+
+ul.saved-cards div.card-icon {
+  display: inline-block;
+  height: 40px;
+  width: 90px;
+  overflow: hidden;
+  margin-left: -15px;
+}
+
+ul.saved-cards div.card-info {
+  display: inline-block;
+}
+
+ul.saved-cards div.card-container {
+  display: inline-block;
+  width: 100%;
+}
+
+ul.saved-cards span.number {
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #4a4a4a;
+  display: block;
+}
+
+ul.saved-cards span.expire {
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 0px;
+  margin-top: -6px;
+  color: #808080;
+  display: inline-block;
+  white-space: normal;
+  float: right;
+}
+
+ul.saved-cards div.item-container {
+  display: inline-block;
+}
+
+ul.saved-cards div.address-warning-icon {
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 12px;
+  margin-right: 15px;
+  color: #4a4a4a;
+  float: right;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+a.saved-card-address {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+.webui-popover {
+  z-index: 1999 !important;
+}
+
+p.switch-cards-link {
+  margin-left: 35px;
+}

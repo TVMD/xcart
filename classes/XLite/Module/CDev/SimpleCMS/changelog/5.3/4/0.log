@@ -1,0 +1,8 @@
+Version 5.3.4.0
+
+Improvements
+2017-10-27 - [Change] 'Description editor' in customer area works now for categories and static pages. #BUG-5664 (Eugene Dementjev) #Core #SimpleCMS #ThemeTweaker #CrispWhiteSkin
+
+Fixes
+2017-10-05 - [Bug] Fixed some CSS styles so they would pass w3c validation. #BUG-3825 (Michael Lipinski) #Core #SimpleCMS #ThemeTweaker #ProductComparison #ColorSchemes #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #NextPreviousProduct #Geolocation
+

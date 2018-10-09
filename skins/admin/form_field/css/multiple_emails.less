@@ -1,0 +1,80 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Select2 multiple emails widget style
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.multiple-emails-container {
+  display: inline-block;
+  border: 1px solid #c3c3c3;
+  border-radius: 3px;
+  background-color: #fff;
+  min-width: 250px;
+  max-width: 400px;
+  min-height: 34px;
+  padding: 3px 0 0 3px;
+  cursor: text;
+
+  &.invalid {
+    border-color: #a94442;
+  }
+
+  .option {
+    position: relative;
+    background-color: #6cb5d7;
+    height: 25px;
+    display: inline-block;
+    padding: 2px 20px 2px 4px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    border-radius: 3px;
+    cursor: move;
+
+    transition: background-color 1000ms linear;
+
+    .option-text {
+      color: white;
+      font-size: 12px;
+    }
+
+    .option-remove {
+      position: absolute;
+      cursor: pointer;
+      right: 5px;
+      top: 2px;
+      color: white;
+
+      span {
+        display: block;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        font-size: 18px;
+      }
+
+      &:hover {
+        color: #19259C;
+      }
+    }
+
+    &:first-of-type {
+      background-color: #2d799c;
+      transition: background-color 1000ms linear;
+    }
+
+    &.ui-sortable-placeholder {
+      height: 25px;
+      vertical-align: bottom;
+    }
+  }
+
+  & > [contenteditable=true] {
+    height: 25px;
+    display: inline-block;
+    margin: 0 3px 3px 0;
+    padding: 2px;
+    font-size: 12px;
+  }
+}

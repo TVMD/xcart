@@ -1,0 +1,12 @@
+Version 5.3.5.2
+
+Improvements (2)
+2018-04-24 - [Change] Added the Reply-To field with the customer's address to admin notifiications about orders/contact us messages. #XCN-8839 (Sergey Elmanov) #Core #ContactUs #PINCodes #ProductReviews #WebmasterKit #MultiVendor
+2018-04-23 - [Change] Redirect to a language URL was getting cached by the browser; as a result switching the languages in the sequence "en -> any other lang -> en" did not work. Fixed. #BUG-6307 (Sergey Elmanov) #Core
+
+Fixes (4)
+2018-04-24 - [Bug] During import, variantSKU uniqueness was not checked for. Fixed. #BUG-6316 https://bt.x-cart.com/view.php?id=49412 (Sergey Elmanov) #Core #ProductVariants #MultiVendor
+2018-04-23 - [Bug] Fatal error when uploading images via the Admin area if using PHP 5.x. Fixed. #BUG-6308 (Sergey Elmanov) #Core
+2018-04-23 - [Bug] Fatal error on a customer profile in the Admin area if using PHP 5.4. Fixed. #BUG-6309 (Eugene Dementjev) #Core
+2018-04-20 - [Bug] The ASC/DESC sorting on an items list for the field selected by default on page load did not work. Fixed. #BUG-6261 https://bt.x-cart.com/view.php?id=49352 (Eugene Dementjev) #Core
+

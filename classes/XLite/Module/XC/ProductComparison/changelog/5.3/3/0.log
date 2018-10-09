@@ -1,0 +1,6 @@
+Version 5.3.3.0
+
+Fixes
+2017-03-24 - [Bug] Changed some text and color on the product details page when adding a product to a comparison in Crisp White. #BUG-4491 (Sergey Elmanov) #Core #ProductComparison
+2017-03-06 - [Bug] In LayoutEditor, a block moved to the sidebar in the 2-column mode disappeared after switching to the 3-column mode. #BUG-4335 (Maxim Kuznetsov) #Core #ProductAdvisor #Sale #ThemeTweaker #ProductFilter #ProductComparison #MultiVendor #ProductTags #News
+2016-12-06 - [Bug] When adding products to the comparison list, a notification is now displayed. Changed the text. When adding a product to the comparison list in the mobile version, an indicator is now displayed on the icon in the menu. #BUG-4608 (Maxim Kuznetsov) #RuTranslation #ProductComparison #CrispWhiteSkin

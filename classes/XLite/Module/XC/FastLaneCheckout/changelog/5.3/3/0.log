@@ -1,0 +1,9 @@
+Version 5.3.3.0
+
+Improvements
+2017-04-20 - [Change] If the country UK is selected, the State field becomes an input box with autocomplete (can be enabled by a setting in etc/config.php) #XCN-7854 (Sergey Elmanov) #Core #FastLaneCheckout
+
+Fixes
+2017-05-08 - [Bug] Checkout error vue.js?1493975604:1018 [Vue warn]: v-on:click="toggleItems" if logged in as admin. #BUG-4854 (Eugene Dementjev) #Core #ThemeTweaker #FastLaneCheckout
+2017-03-03 - [Bug] Changed the design of the Credit card at checkout in CrispWhite. #BUG-4202 (Eugene Dementjev) #Core #FastLaneCheckout #CrispWhiteSkin
+2017-02-17 - [Bug] Added a section checkout logos picture to one page checkout. #BUG-4398 (Eugene Dementjev) #Core #FastLaneCheckout #CrispWhiteSkin

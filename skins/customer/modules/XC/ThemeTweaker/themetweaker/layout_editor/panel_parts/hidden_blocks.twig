@@ -1,0 +1,11 @@
+{##
+ # Layout editor show hidden blocks button
+ #
+ # @ListChild (list="layout_editor", weight="20")
+ #}
+
+<div class='layout-editor-hidden-list'>
+	<a class='layout-editor-hidden-block' v-for="item in hiddenBlocks" @click="showBlock(item)">
+		<span class="name" v-text="getBlockName(item)"></span>
+	</a>
+</div>

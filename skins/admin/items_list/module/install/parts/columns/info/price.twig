@@ -1,0 +1,18 @@
+{##
+ # Module price
+ #
+ # @ListChild (list="itemsList.module.install.columns.icon", weight="210")
+ # @ListChild (list="itemsList.module.sales-channels.columns.icon", weight="210")
+ #}
+{% if this.showPrice(this.module) %}
+  <div class="price">
+    {% if not this.isFree(this.module) %}
+      <div class="paid">
+        <span class="currency">{{ this.formatPrice(this.module.getPrice(), this.module.getCurrency()) }}</span>
+        {% if this.isPurchased(this.module) %}
+          <span class="purchased">({{ t('Purchased') }})</span>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

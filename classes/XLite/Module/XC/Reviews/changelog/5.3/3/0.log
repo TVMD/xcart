@@ -1,0 +1,12 @@
+Version 5.3.3.0
+
+Improvements
+2017-03-02 - [Change] Admin/vendor can now reply to customer reviews. #XCN-7622 (Sergey Elmanov) #Core #ProductReviews #MultiVendor
+2017-02-22 - [Change] Customers can now leave feedback for vendors: feedback can be left after the product has been delivered (order status Delivered) and  may include three parts (Item as Described / Communication / Shipping Speed). #XCN-7571 (Eugene Dementjev) #ProductReviews #MultiVendor
+2017-01-31 - [Change] UI improvement for displaying/adding a review on the product page. #XCN-7371 (Sergey Elmanov) #Core #ProductReviews #CrispWhiteSkin
+2017-01-10 - [Change] It is now possible to add multiple email addresses (and specify the main address) in the Contacts section. #XCN-7375 (Sergey Elmanov) #Core #ContactUs #PINCodes #ProductVariants #SagePay #ProductReviews #CrispWhiteSkin #MultiVendor #VendorMessages #NetbanxHostedPayment
+
+Fixes
+2017-05-05 - [Bug] Fatal error on the product page with a review without a profile. #BUG-4844 (Eugene Dementjev) #ProductReviews
+2017-04-05 - [Bug] There were different tooltip.twig for the Admin and Customer areas. #BUG-4439 (Sergey Elmanov) #Core #ThemeTweaker #ProductReviews
+2017-03-24 - [Bug] When a customer edits their product review, the store administrator now gets a bell notification. #BUG-4493 (Sergey Elmanov) #ProductReviews

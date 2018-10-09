@@ -1,0 +1,12 @@
+{##
+ # Calculate sales progress section
+ #}
+<div class="sales-box sales-progress">
+  <div class="content">
+    {% form 'XLite\\View\\Form\\SalesCalculation' with {formAction: 'salesCancel'} %}
+    <div class="subcontent">
+      {{ widget('XLite\\View\\EventTaskProgress', event=this.getEventName(), message=this.getProgressMessage() ) }}
+    </div>
+    {% endform %}
+  </div>
+</div>

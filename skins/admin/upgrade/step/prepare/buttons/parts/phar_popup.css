@@ -1,0 +1,34 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Upgrade phar notice popup
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.upgrade-phar-notice-popup {
+  text-align: center;
+  max-width: 600px;
+  padding-bottom: 20px;
+}
+
+.upgrade-phar-notice-popup .title {
+  font-size: 28px;
+}
+
+.upgrade-phar-notice-popup .warning,
+.upgrade-phar-notice-popup .hosting-providers {
+  font-size: 16px;
+}
+
+.upgrade-phar-notice-popup .ok-button {
+  font-size: 16px;
+  padding: 0 40px;
+}
+
+.upgrade-phar-notice-popup .ok-button,
+.upgrade-phar-notice-popup .warning,
+.upgrade-phar-notice-popup .hosting-providers {
+  margin-top: 20px;
+}

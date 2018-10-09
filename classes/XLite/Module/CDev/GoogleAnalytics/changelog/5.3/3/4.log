@@ -1,0 +1,5 @@
+Version 5.3.3.4
+
+Fixes (1)
+2018-07-03 - [Bug] An event purchase was not sent in GA when the order status was switched from Authorized to Paid. Fixed. #BUG-6508 https://bt.x-cart.com/view.php?id=49570 (Sergey Elmanov) #GoogleAnalytics
+

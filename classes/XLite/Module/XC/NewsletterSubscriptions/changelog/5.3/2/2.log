@@ -1,0 +1,5 @@
+Version 5.3.2.2
+
+Fixes
+2017-08-14 - [Bug] Fatal error if an attempt is made to subscribe to the store news by an anonymous customer if both the modules Newsletter subscriptions and MailChimp are installed. #BUG-5366 (Michael Lipinski) #NewsletterSubscriptions
+

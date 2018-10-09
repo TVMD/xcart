@@ -1,0 +1,31 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - { name: requires_shipping_default, category: General, value: 1 }
+
+XLite\Model\Notification:
+  - { templatesDirectory: failed_admin_login, position: 100 }
+  - { templatesDirectory: failed_transaction, position: 200 }
+  - { templatesDirectory: low_limit_warning, position: 300 }
+  - { templatesDirectory: order_advanced_changed, position: 1300 }
+  - { templatesDirectory: order_changed, position: 1400 }
+  - { templatesDirectory: order_canceled, position: 1500 }
+  - { templatesDirectory: order_created, position: 1600 }
+  - { templatesDirectory: order_failed, position: 1700 }
+  - { templatesDirectory: order_processed, position: 1800 }
+  - { templatesDirectory: order_shipped, position: 1900 }
+  - { templatesDirectory: order_tracking_information, position: 2000 }
+  - { templatesDirectory: order_waiting_for_approve, position: 2100 }
+  - { templatesDirectory: profile_created, position: 2200 }
+  - { templatesDirectory: profile_deleted, position: 2300 }
+  - { templatesDirectory: profile_modified, position: 2400 }
+  - { templatesDirectory: recover_password_request, position: 2500 }
+  - { templatesDirectory: register_anonymous, position: 2600 }
+
+XLite\Model\LanguageLabel:
+  - { name: 'Minimum value is X', translations: [{ code: en, label: 'Minimum value is {{value}}' }]}

@@ -1,0 +1,8 @@
+Version 5.3.3.2
+
+Improvements (1)
+2018-07-06 - [Change] Updated the MaxMind Geoip2 Country database for the Geolocation module. #BUG-6533 (Sergey Elmanov) #Geolocation
+
+Fixes (1)
+2018-06-08 - [Bug] The "Select one" text label displayed in the country/state select boxes could not be translated into other languages. Fixed. #BUG-6201 https://bt.x-cart.com/view.php?id=49286 (Eugene Dementjev) #Core #Geolocation
+

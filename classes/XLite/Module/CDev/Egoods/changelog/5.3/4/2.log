@@ -1,0 +1,5 @@
+Version 5.3.4.2
+
+Fixes (1)
+2018-02-28 - [Bug] Changed the way product files are displayed. #BUG-5596 (Eugene Dementjev) #Egoods #FileAttachments #CrispWhiteSkin
+

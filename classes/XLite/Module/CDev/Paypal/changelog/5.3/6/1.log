@@ -1,0 +1,5 @@
+Version 5.3.6.1
+
+Fixes
+2017-11-06 - [Bug] Fixed various issues for PayPal Express Checkout. #BUG-5714 (Sergey Elmanov) #Core #Paypal
+

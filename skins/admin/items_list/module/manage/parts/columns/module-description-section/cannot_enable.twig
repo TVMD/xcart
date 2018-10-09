@@ -1,0 +1,13 @@
+{##
+ # Modules main section list
+ #
+ # @ListChild (list="itemsList.module.manage.columns.module-description-section.messages", weight="30")
+ # @ListChild (list="itemsList.module.install.columns.module-description-section", weight="400")
+ # @ListChild (list="itemsList.module.sales-channels.columns.module-description-section", weight="400")
+ # @ListChild (list="itemsList.module.purchased.columns.module-description-section", weight="400")
+ #}
+{% if this.hasErrors(this.module) %}
+  <div>
+    {{ widget_list('cannot_enable', type='nested', module=this.module) }}
+  </div>
+{% endif %}

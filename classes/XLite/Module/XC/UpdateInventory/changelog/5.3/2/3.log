@@ -1,0 +1,5 @@
+Version 5.3.2.3
+
+Fixes (1)
+2018-06-04 - [Bug] Quick data recalculation was launched for a category if Update inventory via a csv file was used. Fixed. #BUG-5975 (Eugene Dementjev) #UpdateInventory
+

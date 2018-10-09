@@ -1,0 +1,11 @@
+{##
+ # Contact us email body (to admin)
+ #}
+<p>
+  <b>{{ t('Name') }}:</b> {{ this.contact.getName() }}<br />
+  <b>{{ t('E-mail') }}:</b> <a href="mailto:{{ this.data.email }}">{{ this.contact.getEmail() }}</a><br />
+  <b>{{ t('Subject') }}:</b> {{ this.contact.getSubject() }}<br />
+</p>
+<p>
+  {{ this.contact.getMessage()|nl2br }}
+</p>

@@ -1,0 +1,17 @@
+{##
+ # Import progress section
+ #}
+
+<div class="import-box import-progress">
+
+  {{ widget('XLite\\View\\Import\\Titles') }}
+
+  <div class="content">
+    {% form 'XLite\\View\\Form\\Import' with {formAction: 'cancel'} %}
+      <div class="subcontent clearfix">
+        {{ widget('XLite\\View\\EventTaskProgress', event=this.getEventName(), message=this.getProgressMessage() ) }}
+      </div>
+    {% endform %}
+  </div>
+
+</div>

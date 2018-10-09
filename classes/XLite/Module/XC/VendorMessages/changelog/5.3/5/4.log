@@ -1,0 +1,7 @@
+Version 5.3.5.4
+
+Fixes (3)
+2018-06-07 - [Bug] Renamed the module Order messages to Messages. #BUG-6302 (Sergey Elmanov) #VendorMessages
+2018-05-31 - [Bug] Fixed the warning "Warning (deprecated): call_user_func_array() expects parameter 1 to be a valid callback, non-static method                    XLite\Core\Mailer::sendMessageNotifications() should not be called statically in classes/XLite/Core/Job/SendMail.php on line 40". #BUG-6437 https://bt.x-cart.com/view.php?id=49578 (Maxim Kuznetsov) #VendorMessages
+2018-04-18 - [Bug] (VendorMessages) In the Admin area the number of messages was displayed incorrectly when using search. #BUG-6152 (Sergey Elmanov) #VendorMessages
+

@@ -1,0 +1,95 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\LanguageLabel:
+  - { name: 'Use custom css', translations: [{ code: ru, label: 'Использовать свой CSS' }] }
+  - { name: 'Use custom js', translations: [{ code: ru, label: 'Использовать свой JavaScript' }] }
+  - { name: 'The database stores different version of the custom changes.', translations: [{ code: ru, label: 'В базе данных хранится другая версия пользовательского кода.' }] }
+  - { name: 'Review it.', translations: [{ code: ru, label: 'Просмотреть её.' }] }
+  - { name: 'Restore this version', translations: [{ code: ru, label: 'Восстановить эту версию' }] }
+  - { name: 'Your custom file is successfully saved', translations: [{ code: ru, label: 'Файл успешно сохранен' }] }
+  - { name: 'Theme tweaker', translations: [{ code: ru, label: 'Theme tweaker' }] }
+  - { name: 'Pick template from page element', translations: [{ code: ru, label: 'Выбор шаблона на основе элемента страницы' }] }
+  - { name: 'Edited templates', translations: [{ code: ru, label: 'Измененные шаблоны' }] }
+  - { name: 'Webmaster mode', translations: [{ code: ru, label: 'Режим веб-мастера' }] }
+  - { name: 'Template', translations: [{ code: ru, label: 'Шаблон' }] }
+  - { name: 'Back to templates list', translations: [{ code: ru, label: 'Вернуться к списку шаблонов' }] }
+  - { name: 'Webmaster Mode allows you to change the storefront design in click-and-edit mode', translations: [{ code: ru, label: 'Режим веб-мастера позволяет редактировать внешний вид сайта по месту.<br /><br />Если после внесения изменений витрина выглядит неправильно, попробуйте откатить изменения в секции "Измененные шаблоны". Больше информации об изменении дизайна сайта на X-Cart - в <a href="https://devs.x-cart.com/en/design_changes/basic_guide_to_theme_creation.html">Базе знаний X-Cart</a>.' }] }
+  - { name: 'Webmaster mode is enabled', translations: [{ code: ru, label: 'Режим веб-мастера включен' }] }
+  - { name: 'Webmaster mode is disabled', translations: [{ code: ru, label: 'Режим веб-мастера отключен' }] }
+  - { name: 'The template has been updated', translations: [{ code: ru, label: 'Шаблон обновлён' }] }
+  - { name: 'The template has been added', translations: [{ code: ru, label: 'Шаблон добавлен' }] }
+  - { name: 'webmasterMode.Enabled', translations: [{ code: ru, label: 'Вкл' }] }
+  - { name: 'webmasterMode.Disabled', translations: [{ code: ru, label: 'Выкл' }] }
+  - { name: 'New images', translations: [{ code: ru, label: 'Новые картинки' }] }
+  - { name: 'You are now in layout editing mode', translations: [{ code: ru, label: 'Здесь можно <b>перетаскивать блоки</b>, меняя их порядок.' }] }
+  - { name: 'You are now in preview mode', translations: [{ code: ru, label: 'Режим предпросмотра товара. Здесь можно <b>редактировать описание</b> товара.' }] }
+  - { name: 'Exit product preview', translations: [{ code: ru, label: 'Вернуться' }] }
+  - { name: 'You have unsaved changes. Are you really sure to exit the preview?', translations: [{ code: ru, label: 'У вас есть несохраненные изменения. Вы точно хотите выйти из режима предпросмотра?' }] }
+  - { name: 'Inline editor is unavailable due to TinyMCE', translations: [{ code: ru, label: '<i class="fa fa-exclamation-triangle inline-editor-message_icon"></i>Здесь можно <b>редактировать описание</b> товара. Изменения могут быть <span style="font-weight: bold; color: orange;">несовместимы</span> с редактором TinyMCE.' }] }
+  - { name: 'Changes may be incompatible with TinyMCE. Are you sure to proceed?', translations: [{ code: ru, label: 'Изменения могут быть несовместимы с редактором TinyMCE. Вы точно хотите их сохранить?' }] }
+  - { name: 'Layout editor', translations: [{ code: ru, label: 'Режим разметки' }] }
+  - { name: 'Template editor', translations: [{ code: ru, label: 'Редактор шаблонов' }] }
+  - { name: 'Labels editor', translations: [{ code: ru, label: 'Редактор меток' }] }
+  - { name: 'Discard changes', translations: [{ code: ru, label: 'Отказаться' }] }
+  - { name: 'Layout editor is', translations: [{ code: ru, label: 'Режим разметки' }] }
+  - { name: 'disabled blocks', translations: [{ code: ru, label: 'блоков отключено' }] }
+  - { name: 'Some', translations: [{ code: ru, label: 'Несколько' }] }
+  - { name: 'Block is enabled', translations: [{ code: ru, label: 'Блок включен' }] }
+  - { name: 'Block is disabled', translations: [{ code: ru, label: 'Блок отключен' }] }
+  - { name: 'Exit editor', translations: [{ code: ru, label: 'Выйти' }] }
+  - { name: 'Layout editor is enabled', translations: [{ code: ru, label: 'Режим разметки включен' }] }
+  - { name: 'Layout editor is disabled', translations: [{ code: ru, label: 'Режим разметки отключен' }] }
+  - { name: 'Layout editor allows you to change the position of the blocks in drag-n-drop fashion', translations: [{ code: ru, label: 'Режим редактирования разметки позволяет менять положение и порядок блоков путем перетаскивания' }] }
+  - { name: 'There are some custom CSS styles in your store. These styles may affect the look of the installed template. Review the custom styles and disable them if necessary.', translations: [{ code: ru, label: 'Для сайта заданы пользовательские CSS стили. Эти стили могут оказывать влияние на внешний вид интерфейса покупателя. <a href="{{url}}">Просмотрите пользовательские стили</a> и выключите их в случае необходимости.' }] }
+  - { name: 'There are some custom templates in your store that may contain skin dependent code.', translations: [{ code: ru, label: 'Магазин использует модифицированные шаблоны, которые, возможно, содержат код, работа которого зависит от используемого скина. Это может привести к нарушению корректной работы магазина после переключения на другой скин. <a href="{{templates_url}}">Проверьте модифицированные шаблоны</a> и отключите их в случае необходимости. ' }] }
+
+  - { name: 'Flexy to twig converter', translations: [{ code: ru, label: 'Flexy to twig конвертор' }]}
+  - { name: 'Flexy-template', translations: [{ code: ru, label: 'Flexy-шаблон' }]}
+  - { name: 'Twig-template path', translations: [{ code: ru, label: 'Путь к Twig-шаблону' }]}
+  - { name: 'Template is converted', translations: [{ code: ru, label: 'Сконвертирован' }]}
+  - { name: 'Search flexy-templates', translations: [{ code: ru, label: 'Найти flexy-шаблоны' }]}
+  - { name: 'Convert templates', translations: [{ code: ru, label: 'Конвертировать' }]}
+  - { name: 'Remove flexy-templates', translations: [{ code: ru, label: 'Удалить flexy-шаблоны' }]}
+  - { name: 'No flexy-templates found.', translations: [{ code: ru, label: 'Flexy-шаблоны не найдены.' }]}
+  - { name: 'Flexy templates have been removed', translations: [{ code: ru, label: 'Flexy-шаблоны были удалены' }]}
+  - { name: 'Some flexy-templates cannot be removed. Please correct file permissions or remove them manually', translations: [{ code: ru, label: 'Некоторые flexy-шаблоны не могут быть удалены. Скорректируйте права на файлы или удалите их самостоятельно:<br />{{list}}' }]}
+  - { name: 'Check directory permissions', translations: [{ code: ru, label: 'Проверьте права на директорию' }]}
+  - { name: 'This action will remove all flexy-templates. Are you sure to proceed?', translations: [{ code: ru, label: 'Это действие удалит все Flexy-шаблоны. Вы уверены, что хотите продолжить?' }]}
+  - { name: 'Cannot get flexy content', translations: [{ code: ru, label: 'Не удалось получить содержимое Flexy-шаблона' }]}
+  - { name: 'Failure to convert flexy-template. Check for syntax errors', translations: [{ code: ru, label: 'Не удалось сконвертировать Flexy-шаблон. Проверьте его содержание на предмет синтаксических ошибок' }]}
+  - { name: 'Back to Webmaster mode', translations: [{ code: ru, label: 'Вернуться на страницу "Режим веб-мастера"' }]}
+  - { name: 'Flexy-to-twig converter warning', translations: [{ code: ru, label: 'Сконвертированные файлы не всегда могут работать корректно поскольку не все изменения могут быть правильно выполнены при автоматической конвертации. Проверьте ваши сконвертированные файлы вручную, чтобы убедиться, что все изменения перенесены верно. Больше информации о Flexy-to-Twig конверторе доступно здесь: <a href="https://xcart.github.io/flexy-to-twig/" target="_blank">https://xcart.github.io/flexy-to-twig</a>' }]}
+
+  - { name: 'Edit via Webmaster mode', translations: [{ code: ru, label: 'Редактировать в Режиме веб-мастера' }] }
+  - { name: 'Preview template', translations: [{ code: ru, label: 'Предпросмотр шаблона' }] }
+  - { name: 'No orders available. Please create at least one order.', translations: [{ code: ru, label: 'Нет ни одного заказа. Пожалуйста, создайте по крайней мере один заказ.' }] }
+  - { name: 'Back to notification settings', translations: [{ code: ru, label: 'Назад к настройкам уведомлений' }] }
+  - { name: 'Edit template based on', translations: [{ code: ru, label: 'Редактировать шаблон на основе' }] }
+  - { name: 'The test email notification has been sent to X', translations: [{ code: ru, label: 'Тестовое уведомление было послано на адрес {{email}}' }] }
+  - { name: 'Failure sending test email to X', translations: [{ code: ru, label: 'Ошибка отправки тестового уведомления на адрес {{email}}' }] }
+  - { name: 'Enter Order number', translations: [{ code: ru, label: 'Введите номер заказа' }] }
+
+  - { name: 'xlite-translation-popover.help', translations: [{ code: ru, label: 'Текст в фигурных скобках означает переменную. Не удаляйте такой текст.' }] }
+  - { name: 'itemslist.admin.template.blank', translations: [{ code: ru, label: "<p class='items-list-blank-description-heading text-center'>Нет измененных файлов.</p><p class='text-center'>Здесь вы можете узнать об отредактированных файлах шаблонов, которые были изменены в режиме «Редактора шаблонов» и вернуть шаблоны к первоначальному состоянию если допустили ошибку.</p><p class='text-center'>Чтобы приступить к изменениям, перейдите в ваш магазин и в панели управления витриной (значок шестеренки внизу слева на странице витрины) выберите «Редактор шаблонов».</p>" }]}
+  - { name: 'Pick templates from page', translations: [{ code: ru, label: 'Выбирать шаблоны на странице' }] }
+  - { name: 'Drag-n-drop blocks', translations: [{ code: ru, label: 'Перетаскивание блоков' }] }
+  - { name: 'Highlight labels', translations: [{ code: ru, label: 'Выделение меток' }] }
+  - { name: 'Layout block', translations: [{ code: ru, label: 'Блок разметки' }] }
+  - { name: 'Inline editor', translations: [{ code: ru, label: 'Контент' }] }
+  - { name: 'Go to different page to edit the content', translations: [{ code: ru, label: 'Нет редактируемого контента. Данный режим работает на странице любого товара' }] }
+  - { name: 'Open home or category pages for more opportunities to adjust the website structure', translations: [{ code: ru, label: 'На главной и странице категории есть много различных блоков разметки.' }] }
+  - { name: 'themetweaker.shortcut.switcher', translations: [{ code: ru, label: 'Горячая клавиша: Ctrl+/, ⌘+/' }] }
+  - { name: 'themetweaker.shortcut.save', translations: [{ code: ru, label: 'Горячая клавиша: Ctrl+S, ⌘+S' }] }
+  - { name: 'You have unsaved changes. Are you really sure to exit?', translations: [{ code: ru, label: 'Обнаружены несохраненные изменения. Вы точно хотите отказаться от них и уйти?' }] }
+  - { name: 'Open the storefront while logged in as administrator to change the look & feel of the store.', translations: [{ code: ru, label: '<a href="{{url}}" target="_blank">Откройте витрину магазина</a> из-под администраторского аккаунта и используйте Панель вебмастера <span class="cog-icon">{{cog}}</span> для изменения внешнего вида магазина.' }] }
+
+  - { name: 'Use the Google Tag Manager addon for more flexibility when adding JS code to your web pages.', translations: [{ code: ru, label: 'Используйте модуль Google Tag Manager для получения большей гибкости при добавлении JS кода на веб-страницы.' }] }
+  - { name: 'Learn more about Google Tag Manager', translations: [{ code: ru, label: 'Узнать больше о Диспетчере тегов Google' }] }
+  - { name: 'Tag Manager Dashboard', translations: [{ code: ru, label: 'Панель управления Диспетчера тегов' }] }
+  - { name: 'Configure Tag Manager', translations: [{ code: ru, label: 'Настроить Диспетчер тегов' }] }
+  - { name: 'Install Google Tag Manager', translations: [{ code: ru, label: 'Установить Google Tag Manager' }] }

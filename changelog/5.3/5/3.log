@@ -1,0 +1,10 @@
+Version 5.3.5.3
+
+Improvements (1)
+2018-05-04 - [Change] Added a few order status change notifications that were missing. #BUG-6328 (Shevelov Alexander) #Core #NotFinishedOrders #CustomOrderStatuses
+
+Fixes (3)
+2018-05-04 - [Bug] Minor Payment transactions page display issue when the "Vendors as separate shops" Multivendor mode was enabled and one transaction was related to multiple orders. Fixed. #BUG-6276 https://bt.x-cart.com/view.php?id=49372 (Shevelov Alexander) #Core
+2018-05-04 - [Bug] The content of the field "value" for attributes of the "checkbox" type was exported/imported incorrectly. Fixed. #BUG-6319 (Shevelov Alexander) #Core
+2018-04-27 - [Bug] Dashboard link on the home page for a Multi-vendor store did not work after switching to another language. Fixed. #BUG-6263 https://bt.x-cart.com/view.php?id=49343 (Sergey Elmanov) #Core #MultiVendor
+

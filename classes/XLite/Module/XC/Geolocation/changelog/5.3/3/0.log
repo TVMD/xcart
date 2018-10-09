@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Fixes
+2017-10-05 - [Bug] Fixed some CSS styles so they would pass w3c validation. #BUG-3825 (Michael Lipinski) #Core #SimpleCMS #ThemeTweaker #ProductComparison #ColorSchemes #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #NextPreviousProduct #Geolocation
+

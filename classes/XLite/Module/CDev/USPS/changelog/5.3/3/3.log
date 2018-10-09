@@ -1,0 +1,6 @@
+Version 5.3.3.3
+
+Fixes (2)
+2018-06-07 - [Bug] Added box dimensions for the Test rates page of the module USPS. #BUG-5922 https://bt.x-cart.com/view.php?id=48978 (Shevelov Alexander) #USPS
+2018-05-23 - [Bug] Renamed USPD STANDARD POST to USPS Retail Ground. Added the setting "Request rates for: all/online" which defines what methods should be requested from USPS - all or just the ones that can be processed online. #BUG-6151 https://bt.x-cart.com/view.php?id=49533 (Shevelov Alexander) #USPS
+

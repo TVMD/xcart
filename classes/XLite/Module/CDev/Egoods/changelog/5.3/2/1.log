@@ -1,0 +1,6 @@
+Version 5.3.2.1
+
+Fixes
+2017-05-30 - [Bug] Changed the styles of the Attachments section on the product page in the Admin area. #BUG-4985 (Sergey Elmanov) #Core #Egoods #FileAttachments
+1970-01-01 - [Bug] A file uploaded via a URL but copied onto the server could be made a paid one. #BUG-5096 (Sergey Elmanov) #Core #Egoods
+

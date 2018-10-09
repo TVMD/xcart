@@ -1,0 +1,14 @@
+{##
+ # ____file_title____
+ #
+ # @ListChild (list="marketplace.addons-filters", weight="200")
+ #}
+<div class="addons-search-box">
+  {% form 'XLite\\View\\Form\\Module\\Install' with {formMethod: 'GET', className: 'search-form'} %}
+  <input type="hidden" name="tag" value="{{ this.getTagValue() }}" />
+  <div class="substring">
+    <i class="fa fa-search" aria-hidden="true"></i>
+    {{ widget('XLite\\View\\FormField\\Input\\Text', fieldOnly='true', fieldName='substring', value=this.getSubstring(), placeholder=t('Search for modules')) }}
+  </div>
+  {% endform %}
+</div>

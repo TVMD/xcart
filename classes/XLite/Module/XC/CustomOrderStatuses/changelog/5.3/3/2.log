@@ -1,0 +1,5 @@
+Version 5.3.3.2
+
+Fixes
+2017-07-17 - [Bug] On the Order Statuses page, the number of orders was shown incorrectly for orders if the module Multi-Vendor was enabled. Fixed. #BUG-5192 (Sergey Elmanov) #CustomOrderStatuses
+

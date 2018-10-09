@@ -1,0 +1,6 @@
+Version 5.3.5.2
+
+Fixes (2)
+2018-05-22 - [Bug] Fixed the incorrect behavior in the module Free shipping: if free shipping was enabled after a shipping freight had been set for a product, the Fixed rate shipping method appeared at checkout. #BUG-6397 https://bt.x-cart.com/view.php?id=49523 (Shevelov Alexander) #FreeShipping
+2018-04-10 - [Bug] Fatal error "Call to a member function isDisplayFreeShippingUpdateNotice() on boolean" on an unsuccessful import. Fixed. #BUG-6273 (Sergey Elmanov) #FreeShipping
+

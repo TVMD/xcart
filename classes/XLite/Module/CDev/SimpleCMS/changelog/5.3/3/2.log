@@ -1,0 +1,5 @@
+Version 5.3.3.2
+
+Fixes
+2017-09-05 - [Bug] The sidebar was displayed as blank on a static page. #BUG-5241 (Michael Lipinski) #SimpleCMS
+

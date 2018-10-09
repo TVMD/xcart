@@ -1,0 +1,18 @@
+{##
+ # Install action
+ #
+ # @ListChild (list="itemsList.module.install.columns.module-main-section.actions", weight="100")
+ # @ListChild (list="itemsList.module.sales-channels.columns.module-main-section", weight="200")
+ # @ListChild (list="itemsList.module.purchased.columns.module-main-section.actions", weight="100")
+ #}
+{% if this.canInstall(this.module) %}
+  <div class="install-section">
+    <div class="install">
+      {% if this.installViaButton() %}
+        {{ widget('\\XLite\\View\\ModulesManager\\Action\\Install', moduleID=this.module.getModuleID()) }}
+      {% else %}
+        {{ widget('\\XLite\\View\\ModulesManager\\Action\\SelectToInstall', moduleID=this.module.getModuleID()) }}
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

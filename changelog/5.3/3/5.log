@@ -1,0 +1,34 @@
+Version 5.3.3.5
+
+Improvements
+2017-09-15 - [Change] Layout issues on the Installed Addons page if a module icon was missing. #BUG-5472 (Michael Lipinski) #Core
+2017-09-15 - [Change] Added missing tooltips for order action buttons on the order list page. #BUG-5412 (Michael Lipinski) #Core
+2017-09-14 - [Change] Added a Contact us page settings link onto the Company info page. #BUG-5485 (Michael Lipinski) #Core #ContactUs
+1970-01-01 - [Change] When generating XML Sitemap by cron, http was used for the URL at all times. Fixed. #BUG-5538 (Michael Lipinski) #Core #XMLSitemap #News
+
+Fixes
+2017-10-13 - [Bug] Product list display issues in the standard skin on screen widths of 1200 to 992px. Fixed. #BUG-5597 (Michael Lipinski) #Core
+2017-10-13 - [Bug] File permissions check was working incorrectly when installing an addon. Fixed. #BUG-5469 (Michael Lipinski) #Core
+2017-10-12 - [Bug] After rebuilding cache, the names of real-time shipping methods ceased being displayed in orders. Fixed. #BUG-5560 (Michael Lipinski) #Core
+2017-10-05 - [Bug] IntegrityCheck minor improvement. #BUG-5419 (Michael Lipinski) #Core
+2017-10-03 - [Bug] Changed the name of the console utility from xcart to xc5. #BUG-5552 (Sergey Elmanov) #Core
+2017-09-28 - [Bug] Cron related error if the addon GoogleProductFeed was installed. Fixed. #BUG-5537 (Sergey Elmanov) #Core #GoogleFeed
+2017-09-19 - [Bug] Checkout looped under certain conditions. Fixed. #BUG-5492 (Maxim Kuznetsov) #Core #Coupons #SalesTax #VAT #VolumeDiscounts #AvaTax #CanadianTaxes #ShopGate #TaxJar
+2017-09-18 - [Bug] "Call to a member function getCategoryId()" error when accessing a non-existent category in the Customer area. Fixed. #BUG-5504 (Maxim Kuznetsov) #Core
+2017-09-18 - [Bug] Images were not always removed if they were referred to by multiple products/images/etc. #BUG-5491 (Maxim Kuznetsov) #Core
+2017-09-18 - [Bug] Previous/Next order feature now works based on order id. #BUG-5433 (Michael Lipinski) #Core
+2017-09-15 - [Bug] Overlapping text on the search page in mobile view. Fixed. #BUG-5489 (Michael Lipinski) #Core #CrispWhiteSkin
+2017-09-15 - [Bug] Shipping options based on subtotal did not take into account coupon discounts. #BUG-5449 (Michael Lipinski) #Core
+2017-09-15 - [Bug] Images were not sharp enough in Google Chrome. #BUG-5397 (Michael Lipinski) #Core #CrispWhiteSkin
+2017-09-15 - [Bug] Improved the design of email notifications  for the default email client on iOS. #BUG-5297 (Maxim Kuznetsov) #Core
+2017-09-14 - [Bug] Code refactoring: replaced \XLite::ADMIN_SELF with \XLite::getAdminScript(). #BUG-5487 (Michael Lipinski) #Core #ProductReviews #MultiVendor
+2017-09-14 - [Bug] Category images were displayed with varying margin widths in the standard skin after moving the categories block to the left. #BUG-5456 (Michael Lipinski) #Core
+2017-09-14 - [Bug] The && symbols are ignored during an import process if they are used wrongly. #BUG-5436 (Michael Lipinski) #Core #MultiVendor #Orders Import
+2017-09-14 - [Bug] Delay when selecting modules for removal. Fixed. #BUG-5426 (Michael Lipinski) #Core
+2017-09-14 - [Bug] The Maximum order quantity (per product) warning was displayed incorrectly. #BUG-5363 (Michael Lipinski) #Core
+2017-09-14 - [Bug] Changed the layout on the user creation page in the Admin area. #BUG-5303 (Michael Lipinski) #Core
+2017-09-14 - [Bug] When editing data within a popup in the Admin area, the size of the popup changed. #BUG-4878 (Michael Lipinski) #Core
+2017-09-13 - [Bug] Layout issues in email notifications in Outlook for desktop if a large size logo image was used. #BUG-5413 (Michael Lipinski) #Core
+2017-09-11 - [Bug] Fixed the file daterangepicker.css which contained some extra styles which conflicted with the other styles. #BUG-5403 (Sergey Elmanov) #Core
+2017-09-05 - [Bug] The method XLite\Model\Payment\Base\Online->getClientIp() now supports ipv6. #BUG-5440 (Eugene Dementjev) #Core #EWAYStoredShared
+

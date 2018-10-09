@@ -1,0 +1,5 @@
+Version 5.3.5.0
+
+Improvements (1)
+2018-03-09 - [Change] Renamed the "Free Shipping" option to "Exclude from shipping cost calculation" for clarity. Added a new Free shipping mode. #XCN-8586 (Sergey Elmanov) #FreeShipping
+

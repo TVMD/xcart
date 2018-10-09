@@ -1,0 +1,6 @@
+Version 5.3.4.2
+
+Fixes (2)
+2018-06-27 - [Bug] Fixed the notice "Undefined offset: 0 in classes/XLite/Module/XC/ProductComparison/View/ComparisonTable/AttributeList.php on line 132". #BUG-6463 https://bt.x-cart.com/view.php?id=49610 (Sergey Elmanov) #ProductComparison
+2018-05-07 - [Bug] Added a link to the comparison list to the top message displayed after adding a product to a comparison. #BUG-6043 https://bt.x-cart.com/view.php?id=49125 (Sergey Elmanov) #ProductComparison #CrispWhiteSkin
+

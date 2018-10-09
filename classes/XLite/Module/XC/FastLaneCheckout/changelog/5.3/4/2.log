@@ -1,0 +1,5 @@
+Version 5.3.4.2
+
+Fixes
+2018-01-12 - [Bug] Various fixes for the module BlueSnap. #BUG-5870 (Maxim Kuznetsov) #FastLaneCheckout #BlueSnap
+

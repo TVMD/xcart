@@ -1,0 +1,5 @@
+Version 5.3.4.4
+
+Fixes
+2017-11-29 - [Bug] When installing X-Cart on a Windows server, the Environment check was performed incorrectly. Fixed. #BUG-5790 (Maxim Kuznetsov) #Core
+

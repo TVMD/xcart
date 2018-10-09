@@ -1,0 +1,8 @@
+Version 5.3.5.1
+
+Fixes (4)
+2018-06-22 - [Bug] With Multi-vendor enabled, the setting "Coupon cannot be combined with other coupons" was not taken into account. #BUG-6022 (Maxim Kuznetsov) #Coupons #MultiVendor
+2018-06-19 - [Bug] When editing an order, the recalculation of the coupon discount applied to the order is now performed at the click of the Recalculate button instead of Save. #BUG-6137 https://bt.x-cart.com/view.php?id=49218 (Shevelov Alexander) #Coupons #MultiVendor
+2018-05-10 - [Bug] Adjusted the email notification template so that coupon name would be displayed. #BUG-6346 https://bt.x-cart.com/view.php?id=49471 (Eugene Dementjev) #Core #Coupons
+2018-04-18 - [Bug] Different vendors could create coupons with the same code. Fixed. #BUG-6000 (Sergey Elmanov) #Coupons
+

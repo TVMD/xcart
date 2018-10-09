@@ -1,0 +1,4 @@
+Version 5.3.2.0
+
+Fixes
+2017-03-24 - [Bug] Added some icons and a history of unavailable files to the "Files" tab in My Account. #BUG-4479 (Sergey Elmanov) #Core #Egoods #FileAttachments #MultiVendor

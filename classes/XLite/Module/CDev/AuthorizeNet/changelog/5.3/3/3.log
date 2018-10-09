@@ -1,0 +1,5 @@
+Version 5.3.3.3
+
+Fixes
+2017-10-27 - [Bug] AuthorizeNet SIM: Added a check to verify that the operation mode enabled in the module settings (TEST/LIVE) matches the operation mode stated in the payment processor response. #BUG-5673 (Sergey Elmanov) #AuthorizeNet
+

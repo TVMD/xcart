@@ -1,0 +1,6 @@
+Version 5.3.6.4
+
+Fixes
+2017-12-07 - [Bug] An Anonymous customer was unable to complete checkout if PayPal did not return phone number and phone number was the required field. Fixed. #BUG-5818 (Michael Lipinski) #Paypal
+2017-12-07 - [Bug] Fixed error "Trying to call undefined class method; class - "XLite\Module\CDev\Paypal\Model\Payment\Processor\ExpressCheckoutMerchantAPI", function - "isRetryExpressCheckoutAllowed"". #BUG-5803 (Sergey Elmanov) #Paypal
+

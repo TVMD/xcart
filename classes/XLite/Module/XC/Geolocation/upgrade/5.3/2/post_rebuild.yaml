@@ -1,0 +1,29 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Upgrade data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: extended_database
+    category: 'XC\Geolocation'
+    type: XLite\View\FormField\FileUploader\ChunkUpload
+    orderby: 30
+    widgetParameters: { successAction: 'geolocation', extensions: '.mmdb' }
+    translations:
+      - code: en
+        option_name: 'Upload extended database'
+        option_comment: 'You can upload an extended .mmdb database to get user location by IP more accurately'
+      - code: ru
+        option_name: 'Загрузить расширенную базу данных'
+        option_comment: 'Вы можете загрузить расширенную базу данных в формате .mmdb для более точного определения местоположения'
+  - name: current_database
+    category: 'XC\Geolocation'
+    type: XLite\Module\XC\Geolocation\View\FormField\Label\CurrentDatabase
+    orderby: 40
+    translations:
+      - code: en
+        option_name: 'Used database file'
+      - code: ru
+        option_name: 'Текущая база данных'

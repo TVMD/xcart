@@ -1,0 +1,35 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * CSS classes for invoice page
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.invoice-box .addresses .wrapper {
+  height: auto !important;
+  position: static !important;
+  margin-top: 20px;
+}
+
+.invoice-box .addresses .method-box {
+  position: static !important;
+  margin-top: 20px;
+}
+
+div.xpc-card-box {
+  margin-top: 20px;
+}
+
+div.xpc-card {
+  line-height: 26px;
+}
+
+div.xpc-card .card-icon-container {
+  display: inline-block;
+  width: 42px;
+  height: 21px;
+  vertical-align: top;
+  line-height: 24px;
+}

@@ -1,0 +1,11 @@
+{##
+ # Module author
+ #
+ # @ListChild (list="itemsList.module.manage.columns.module-main-section", weight="21")
+ # @ListChild (list="itemsList.module.install.columns.module-main-section", weight="21")
+ # @ListChild (list="itemsList.module.sales-channels.columns.module-main-section", weight="21")
+ # @ListChild (list="itemsList.module.purchased.columns.module-main-section", weight="21")
+ #}
+{% if this.getAuthorEmail(this.module) %}
+  <div class="author-email"><a href="{{ this.getAuthorEmail(this.module) }}"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>
+{% endif%}

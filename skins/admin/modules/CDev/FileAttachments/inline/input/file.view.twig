@@ -1,0 +1,16 @@
+{##
+ # Inline file title field view
+ #}
+
+<span class="value">{% include 'form_field/inline/view.twig' %}</span>
+<img src="{{ asset('images/spacer.gif') }}" class="right-fade" alt="" />
+
+<div class="second-line">
+  <span class="size">{{ this.getFileSize() }}</span>
+  <span class="click-tip">
+    {% if this.getFileSize() %}
+      -
+    {% endif %}
+    {{ t('Click to edit') }}
+  </span>
+</div>

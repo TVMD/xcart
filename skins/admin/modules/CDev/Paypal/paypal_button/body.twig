@@ -1,0 +1,6 @@
+
+{% if this.isPaypalForMarketplaces() %}
+  {{ widget('\\XLite\\Module\\CDev\\Paypal\\View\\ItemsList\\Model\\PaypalButtonPFM') }}
+{% else %}
+  {{ widget('\\XLite\\Module\\CDev\\Paypal\\View\\Model\\PaypalButton') }}
+{% endif %}

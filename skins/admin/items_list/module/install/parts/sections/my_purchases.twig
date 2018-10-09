@@ -1,0 +1,11 @@
+{##
+ # ____file_title____
+ #
+ # @ListChild (list="marketplace.addons-filters", weight="250")
+ #}
+{% set purchasesCount = this.getPurchasedModulesCount() %}
+{% if purchasesCount %}
+<div class="addons-my-purchases">
+  <a href="{{ url('addons_list_purchased') }}">{{ t('My purchases') }} ({{ purchasesCount }})</a>
+</div>
+{% endif %}

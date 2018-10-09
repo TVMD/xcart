@@ -1,0 +1,167 @@
+{##
+ # Authorize.Net SIM configuration page
+ #}
+
+<style>
+  .settings-table td {
+    position: relative;
+  }
+
+  .settings-table td:nth-child(2) {
+    min-width: 250px;
+  }
+
+  .settings-table input + .tooltip-main {
+    position: absolute;
+    right: -30px;
+    top: 10px;
+  }
+
+  .settings-table input + .tooltip-main li {
+    list-style: disc;
+    margin-left: 20px;
+  }
+
+  .settings-table .note {
+    font-size: 14px;
+    margin-bottom: 14px;
+    float: none;
+  }
+
+  .settings-table .note + .tooltip-main {
+    position: absolute;
+    right: -30px;
+    top: 2px;    
+  }
+
+  .settings-table .webhook {
+    margin-bottom: 13px;
+  }
+
+  .settings-table .webhook .url {
+    font-size: 16px;
+    padding: 7px 18px 7px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border: solid 1px #efefef;
+    background: #f8f8f8;
+    color: #8f8f8f;
+    width: auto;
+    display: inline-block;
+    white-space: nowrap;
+    float: none;
+  }
+
+  .settings-table .webhook .copy-link {
+    margin-left: 12px;
+  }
+
+</style>
+
+<table cellspacing="1" cellpadding="5" class="settings-table">
+  <tr>
+    <td colspan="2">
+      <p class="note">{{ t('Dont have an account? Sign Up Now', { link: 'http://reseller.authorize.net/application/?resellerId=20961'})|raw }}</p>
+    </td>
+  </tr>
+
+  <tr>
+      <td colspan="2">
+          <p class="note">{{ t('Relay Response URL note')|raw }}</p>
+          {{ widget('XLite\\View\\Tooltip', id='relay_response_help', text=t('relay_response_help')|raw, caption='', isImageTag='true', className='help-icon') }}
+          <div class="webhook">
+              <div class="url">
+                  {{ this.paymentMethod.processor.getWebhookURL() }}
+                  {{ widget('XLite\\View\\Button\\CopyLink', copy=this.paymentMethod.processor.getWebhookURL()) }}
+              </div>
+          </div>
+      </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+    <label for="settings_login">{{ t('API Login ID') }}</label>
+    </td>
+    <td>
+    <input type="text" id="settings_login" name="settings[login]" value="{{ this.paymentMethod.getSetting('login') }}" class="validate[required,maxSize[255]]" />
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+    <label for="settings_key">{{ t('Transaction key') }}</label>
+    </td>
+    <td>
+    <input type="text" id="settings_key" class="setting-with-help" name="settings[key]" value="{{ this.paymentMethod.getSetting('key') }}" class="validate[required,maxSize[255]]" />
+    {{ widget('XLite\\View\\Tooltip', id='settings_key_help', text=t('authorize_key_help')|raw, caption='', isImageTag='true', className='help-icon') }}
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+    <label for="settings_signature">{{ t('Signature key') }}</label>
+    </td>
+    <td>
+    <input type="text" id="settings_signature" class="setting-with-help" name="settings[signature]" value="{{ this.paymentMethod.getSetting('signature') }}" class="validate[maxSize[255]]" />
+      {{ widget('XLite\\View\\Tooltip', id='settings_signature_help', text=t('Required for SHA512 hash protection.')|raw, caption='', isImageTag='true', className='help-icon') }}
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+    <label for="settings_hash_key">{{ t('MD5 Hash protection') }}</label>
+    </td>
+    <td>
+    <input type="text" id="settings_hash_key" class="setting-with-help" name="settings[hash_key]" value="{{ this.paymentMethod.getSetting('hash_key') }}" class="validate[required,maxSize[255]]" />
+    {{ widget('XLite\\View\\Tooltip', id='settings_prefix_help', text=t('authorize_md5_key_help')|raw, caption='', isImageTag='true', className='help-icon') }}
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+    <label for="settings_type">{{ t('Hash protection type') }}</label>
+    </td>
+    <td>
+    <select id="settings_hash_type" name="settings[hash_type]">
+      <option value="md5" {% if this.isSelected(this.paymentMethod.getSetting('hash_type'), 'md5') %} selected="selected" {% endif %}>MD5</option>
+      <option value="sha512" {% if this.isSelected(this.paymentMethod.getSetting('hash_type'), 'sha512') %} selected="selected" {% endif %}>SHA512</option>
+    </select>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+    <label for="settings_type">{{ t('Transaction type') }}</label>
+    </td>
+    <td>
+    <select id="settings_type" name="settings[type]">
+      <option value="sale" {% if this.isSelected(this.paymentMethod.getSetting('type'), 'sale') %} selected="selected" {% endif %}>Auth and Capture</option>
+      <option value="auth" {% if this.isSelected(this.paymentMethod.getSetting('type'), 'auth') %} selected="selected" {% endif %}>Auth only</option>
+    </select>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+    <label for="settings_test">{{ t('Test/Live mode') }}</label>
+    </td>
+    <td>
+    <select id="settings_test" name="settings[test]">
+      <option value="1" {% if this.isSelected(this.paymentMethod.getSetting('test'), '1') %} selected="selected" {% endif %}>{{ t('Test mode: Test') }}</option>
+      <option value="0" {% if this.isSelected(this.paymentMethod.getSetting('test'), '0') %} selected="selected" {% endif %}>{{ t('Test mode: Live') }}</option>
+    </select>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="setting-name">
+    <label for="settings_prefix">{{ t('Invoice number prefix') }}</label>
+    </td>
+    <td>
+    <input type="text" id="settings_prefix" class="setting-with-help" value="{{ this.paymentMethod.getSetting('prefix') }}" name="settings[prefix]" />
+    {{ widget('XLite\\View\\Tooltip', id='settings_prefix_help', text=t('It\'s recommended to limit the length of invoice prefix to 9 characters'), caption='', isImageTag='true', className='help-icon') }}
+    </td>
+  </tr>
+
+</table>

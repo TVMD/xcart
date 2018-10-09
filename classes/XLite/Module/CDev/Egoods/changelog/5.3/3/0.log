@@ -1,0 +1,9 @@
+Version 5.3.3.0
+
+Improvements
+2017-07-20 - [Change] X-Sendfile can now be used to download heavy file attachments on servers that support this feature. #BUG-5181 (Eugene Dementjev) #Core #Egoods
+2017-06-21 - [Change] Amazon S3 Signed Urls can now be used for Egoods files uploaded as amazon s3 url. #XCN-8079 (Eugene Dementjev) #Egoods
+
+Fixes
+2017-07-19 - [Bug] Fatal error on cart.php?target=ordered_files if the purchased file had been removed from the product. Fixed. #BUG-5202 (Sergey Elmanov) #Egoods
+

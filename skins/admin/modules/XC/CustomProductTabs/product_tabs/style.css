@@ -1,0 +1,38 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Tabs styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.items-list.product_tabs .list-header .button-container {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.items-list.product_tabs .line.global-tab .cell.name {
+  position: relative;
+}
+
+.items-list.product_tabs .line.global-tab .cell.name .plain-value {
+  position: relative;
+  padding-right: 0;
+}
+
+.items-list.product_tabs .line.global-tab .cell.name .global-tab-label {
+  color: #E57C32;
+  font-style: italic;
+  font-size: 12px;
+  position: absolute;
+  left: 100%;
+  display: inline-block;
+  margin-top: -4px;
+  margin-left: 5px;
+}
+
+a.manage-global-tabs {
+  font-size: 14px;
+  vertical-align: middle;
+}

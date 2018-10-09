@@ -1,0 +1,86 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+/**
+ * Styles
+ *
+ * Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+ * See https://www.x-cart.com/license-agreement.html for license details.
+ */
+
+.menu.selector {
+  position: relative;
+
+  .title {
+    cursor: pointer;
+    line-height: 35px;
+    color: #416477;
+  }
+
+  .fa {
+    content: "";
+    display: inline-block;
+    color: #708692;
+    margin-left: 10px;
+    text-align: center;
+    transition: transform ease-in-out .25s;
+  }
+
+  .box {
+    left: -10px;
+    top: 35px;
+    position: absolute;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .25s ease-in-out, visibility .25s step-end;
+  }
+
+  .menu {
+    .rounded(6px);
+    .box-shadow(0 4px 20px 0 rgba(0, 0, 0, 0.16));
+
+    background-color: #fff;
+    border: solid 1px #d9d9d9;
+    padding: 20px;
+    column-count: 1;
+    column-width: 150px;
+    column-gap: 40px;
+    width: 150px;
+
+    .link {
+      .flex-display();
+      .align-items(center);
+
+      min-height: 20px;
+      margin-bottom: 10px;
+    }
+
+    li:last-child .link {
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover {
+    .title,
+    .fa {
+      color: #1cbbe8;
+    }
+  }
+
+  &.expanded {
+    .title,
+    .fa {
+      color: #1cbbe8;
+    }
+
+    .fa {
+      .transform(rotate(90deg) translate(2px, 1px));
+    }
+
+    .box {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity .25s ease-in-out, visibility .25s step-start;
+    }
+  }
+}

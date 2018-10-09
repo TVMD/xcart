@@ -1,0 +1,6 @@
+Version 5.3.6.0
+
+Fixes (2)
+2018-03-26 - [Bug] Internal Server Error when exporting/importing reviews. Fixed. #BUG-6154 (Sergey Elmanov) #ProductReviews
+2018-03-13 - [Bug] Added a separate permission "Manage reviews" so that the root administrator could give the permission to work on reviews to other administrators. #BUG-5754 (Sergey Elmanov) #ProductReviews #MultiVendor
+

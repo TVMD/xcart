@@ -1,0 +1,5 @@
+Version 5.3.6.0
+
+Improvements (1)
+2018-04-24 - [Change] Added the Reply-To field with the customer's address to admin notifiications about orders/contact us messages. #XCN-8839 (Sergey Elmanov) #Core #ContactUs #PINCodes #ProductReviews #WebmasterKit #MultiVendor
+

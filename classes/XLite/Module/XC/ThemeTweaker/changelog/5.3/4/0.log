@@ -1,0 +1,10 @@
+Version 5.3.4.0
+
+Improvements
+2017-10-27 - [Change] 'Description editor' in customer area works now for categories and static pages. #BUG-5664 (Eugene Dementjev) #Core #SimpleCMS #ThemeTweaker #CrispWhiteSkin
+2017-09-27 - [Change] Edited templates from the Look & Feel -> Edited templates section can now be disabled. #BUG-5508 (Sergey Elmanov) #ThemeTweaker
+
+Fixes
+2017-10-05 - [Bug] Fixed some CSS styles so they would pass w3c validation. #BUG-3825 (Michael Lipinski) #Core #SimpleCMS #ThemeTweaker #ProductComparison #ColorSchemes #FastLaneCheckout #CrispWhiteSkin #MultiVendor #ShippingCalc #NextPreviousProduct #Geolocation
+2017-09-29 - [Bug] Improved the UI for text label editing in the Customer area. #BUG-5543 (Sergey Elmanov) #ThemeTweaker
+

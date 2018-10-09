@@ -1,0 +1,26 @@
+{##
+ # Position header
+ #}
+
+{% set column = this.column %}
+
+{% if column.sort %}
+  <div class="header-sort">
+    <a href="{{ url(this.getTarget(), '', {'sortBy': column.sort}) }}"
+        data-sort="{{ column.sort }}"
+        data-direction="{{ this.getSortOrder() }}"
+        class="{{ this.getSortLinkClass(column) }}">
+      <span class="head-position no-position">{{ t('Sort') }}</span>
+    </a>
+    {% if this.isColumnSorted(column) %}
+      {% if 'desc' == this.getSortOrder() %}
+        <span class="dir desc-order">&uarr;</span>
+      {% endif %}
+      {% if 'asc' == this.getSortOrder() %}
+        <span class="dir asc-order">&darr;</span>
+      {% endif %}
+    {% endif %}
+  </div>
+{% else %}
+  <span class="head-position no-position">&nbsp;</span>
+{% endif %}

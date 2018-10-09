@@ -1,0 +1,10 @@
+Version 5.3.4.2
+
+Improvements
+2017-11-17 - [Change] "pageId" parameter has been removed from categories canonical urls. #BUG-5760 (Eugene Dementjev) #Core
+2017-11-20 - [Change] "Transaction is in progress, please wait..." text has been added on the splash screen when "Place order" button clicked. #BUG-5707 (Eugene Dementjev) #Core #ThemeTweaker #FastLaneCheckout #CrispWhiteSkin
+
+Fixes
+2017-11-15 - [Bug] Under certain conditions (go to an online payment gateway -> return without payment -> choose a different payment method), a wrong payment method was shown on the invoice. #BUG-5745 (Sergey Elmanov) #Core
+2017-11-14 - [Bug] Image upload via url without copying to the server did not work. Fixed. #BUG-5749 (Sergey Elmanov) #Core
+2017-11-08 - [Bug] Removed Optimistick lock from the product stock update function. #BUG-5731 (Sergey Elmanov) #Core

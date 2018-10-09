@@ -1,0 +1,7 @@
+Version 5.3.2.0
+
+Improvements
+2017-04-13 - [Change] In the USPS module, it is now possible to get rates not from USPS directly, but via Pitney Bowes. Also, if Pitney Bowes is selected as provider, it is possible to create shipments for orders and to print shipping labels. #XCN-7455 (Maxim Kuznetsov) #Core #USPS
+
+Fixes
+2017-01-09 - [Bug] Resolved the Puerto Rico vs Realtime shipping problem: now it is a state of the USA or a separate country depending on what a specific shipping method deems is correct. #BUG-4404 (Maxim Kuznetsov) #USPS #CanadaPost #UPS #EMS #ShippingCalc #DHL

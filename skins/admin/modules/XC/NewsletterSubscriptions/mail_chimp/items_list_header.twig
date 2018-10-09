@@ -1,0 +1,38 @@
+{##
+ # Just a template for settings. We need it since we do not implement decorator for modules now
+ #}
+
+{% set mailchimpSignupLink = 'https://login.mailchimp.com/signup?source=website&pid=xcart' %}
+{% set oauthLink = url('mailchimp_options', 'authenticate') %}
+{% set installAddonLink = this.getAddonLink() %}
+
+<div class="admin-welcome root mailchimp-welcome {{ this.isMailChimpInstalled() ? 'configured' : '' }}">
+  <div class="mailchimp-logo" align="center">
+    <a href="https://login.mailchimp.com/signup?source=website&pid=xcart" target="_blank">
+      <img src="{{ this.getLogoUrl() }}" alt="{{ t('MailChimp') }}" class="logo" />
+    </a>
+  </div>
+  <div class="mailchimp-additional-header">
+    <div class="mailchimp-options-header">
+      {% if this.isMailChimpConfigured() %}
+        <p>{{ t('You have configured MailChimp as your primary email newsletter tool. New subscribers will be added directly to your MailChimp lists (this X-Cart list will be skipped). You can manage your subscriber lists under your MailChimp account') }}</p>
+      {% else %}
+        <p>{{ t('mailchimp_settings_promo_text') }}</p>
+        <div>
+          {{ widget('\\XLite\\View\\Button\\SimpleLink', label=t('Sign Up'), blank=true, location=mailchimpSignupLink, style='btn regular-main-button') }}
+          {% if this.isMailChimpInstalled() %}
+            {{ widget('\\XLite\\View\\Button\\SimpleLink', label=t('Connect with your MailChimp account'), location=oauthLink, style='btn regular-button always-enabled link') }}
+          {% else %}
+            {{ widget('XLite\\View\\Button\\SimpleLink', label=t('Install Mailchimp addon'), blank=true, location=installAddonLink, style='btn regular-button always-enabled link') }}
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if not this.isItemsListEmpty() %}
+      <div class="mailchimp-options-header">
+        {{ t('To move your existing subscribers to MailChimp lists, <export your subscribers data> from X-Cart and use the import feature under your MailChimp account.', {link: this.getExportSubscribersLink() })|raw }}
+      </div>
+    {% endif %}
+  </div>
+</div>

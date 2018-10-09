@@ -1,0 +1,5 @@
+Version 5.3.4.1
+
+Improvements
+2017-11-20 - [Change] "Transaction is in progress, please wait..." text has been added on the splash screen when "Place order" button clicked. #BUG-5707 (Eugene Dementjev) #Core #ThemeTweaker #FastLaneCheckout #CrispWhiteSkin
+

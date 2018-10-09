@@ -1,0 +1,5 @@
+Version 5.3.2.5
+
+Fixes (1)
+2018-05-07 - [Bug] If a product attachment was edited in Multivendor, an error was logged. Fixed. #BUG-5943 (Sergey Elmanov) #FileAttachments
+

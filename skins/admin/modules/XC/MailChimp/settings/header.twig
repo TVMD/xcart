@@ -1,0 +1,27 @@
+{##
+ # Just a template for settings. We need it since we do not implement decorator for modules now
+ #}
+
+{% set mailchimpSignupLink = 'https://login.mailchimp.com/signup?source=website&pid=xcart' %}
+{% set oauthLink = url('mailchimp_options', 'authenticate') %}
+
+<div class="admin-welcome root mailchimp-welcome">
+  <div class="mailchimp-logo" align="center">
+    <a href="https://login.mailchimp.com/signup?source=website&pid=xcart" target="_blank">
+      <img src="skins/admin/{{ this.getDir() }}/images/logo.png" alt="{{ t('MailChimp') }}" class="logo"/>
+    </a>
+  </div>
+  <div class="mailchimp-options-header">
+    <p>{{ t('mailchimp_settings_promo_text') }}</p>
+    <div>
+      {{ widget('\\XLite\\View\\Button\\SimpleLink', label=t('Sign Up'), blank=true, location=mailchimpSignupLink, style='btn regular-main-button') }}
+      {{ widget('\\XLite\\View\\Button\\SimpleLink', label=t('Connect with your MailChimp account'), location=oauthLink, style='btn regular-button always-enabled link') }}
+      <span class="separator">
+        {{ t('or') }}
+      </span>
+      {% form 'XLite\\Module\\XC\\MailChimp\\View\\Form\\MailChimpHeader' with {className: 'manual-api-key-form'} %}
+      {{ widget('\\XLite\\View\\FormField\\Input\\Text', fieldName='mailchimp_key', fieldOnly=true, placeholder=t('Enter your MailChimp API key manually')) }}
+      {% endform %}
+    </div>
+  </div>
+</div>

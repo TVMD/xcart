@@ -1,0 +1,5 @@
+Version 5.3.2.0
+
+Fixes
+2017-05-25 - [Bug] Added repositories for all the modules that did not have one (so that 3rd party modules can override the repositories of these modules). #BUG-5019 (Michael Lipinski) #Core #Coupons #SalesTax #SimpleCMS #VAT #CanadaPost #Add2CartPopup #PitneyBowes #NewsletterSubscriptions #Mandrill #VendorMessages #CanadianTaxes
+

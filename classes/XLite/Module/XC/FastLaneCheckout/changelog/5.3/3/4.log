@@ -1,0 +1,4 @@
+Version 5.3.3.4
+
+Fixes
+2017-09-26 - [Bug] Real-time shipping methods did not work with Fast Lane checkout. Fixed. #BUG-5535 (Sergey Elmanov) #FastLaneCheckout

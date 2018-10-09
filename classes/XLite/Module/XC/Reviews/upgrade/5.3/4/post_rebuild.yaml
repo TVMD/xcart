@@ -1,0 +1,61 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Notification:
+  - templatesDirectory: modules/XC/Reviews/new_review
+    position: 1000
+
+XLite\Model\Config:
+  - name: enableCustomersFollowup
+    category: 'XC\Reviews'
+    type: \XLite\View\FormField\Input\Checkbox\OnOff
+    orderby: 50
+    translations:
+      - code: en
+        option_name: 'Request customers to review the purchased products after successful orders'
+        option_comment: 'A successful order means an order that has been paid for and delivered.'
+      - code: ru
+        option_name: 'Отправлять покупателям приглашение оставить отзыв о купленных товарах после успешного заказа'
+        option_comment: 'Успешным заказом считается заказ, оплаченный и доставленный покупателю.'
+  - name: followupTimeout
+    category: 'XC\Reviews'
+    type: \XLite\View\FormField\Input\Text\Integer
+    widgetParameters: { min: 0 }
+    orderby: 60
+    value: 15
+    translations:
+      - code: en
+        option_name: 'How many days later to send a review request'
+      - code: ru
+        option_name: 'Через сколько дней отправлять приглашение оставить отзыв'
+
+XLite\Model\Task:
+  - owner: XLite\Module\XC\Reviews\Core\Task\SendReviewKeys
+
+XLite\Model\Notification:
+  - templatesDirectory: modules/XC/Reviews/review_key
+    availableForAdmin: false
+    availableForCustomer: false
+    enabledForAdmin: false
+    enabledForCustomer: true
+    adminHeaderEnabled: false
+    adminGreetingEnabled: false
+    adminSignatureEnabled: false
+    customerHeaderEnabled: true
+    customerGreetingEnabled: true
+    customerSignatureEnabled: true
+    translations:
+      - code: en
+        name: "Request to review purchased products - (Product Reviews module)"
+        description: "This message is used to invite customers to leave feedback on the products they have purchased."
+        customerSubject: "Please review your purchase"
+        customerText: ""
+      - code: ru
+        name: "Приглашение оставить отзыв на купленные товары - (модуль Product Reviews)"
+        description: "Данное сообщение используется для отправки покупателю приглашения оставить отзыв о купленных им товарах."
+        customerSubject: "Пожалуйста, оставьте отзыв о купленных товарах"
+        customerText: ""

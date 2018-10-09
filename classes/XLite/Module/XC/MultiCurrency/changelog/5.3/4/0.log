@@ -1,0 +1,5 @@
+Version 5.3.4.0
+
+Improvements
+2017-07-17 - [Change] Currencies are now associated with specific countries. #XCN-8015 (Sergey Elmanov) #Core #MultiCurrency
+

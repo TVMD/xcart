@@ -1,0 +1,6 @@
+Version 5.3.3.4
+
+Fixes
+2017-09-14 - [Bug] The url of the module settings page is now formed correctly if the admin endpoint has been changed from admin.php to something different. #BUG-5486 (Michael Lipinski) #MailChimp
+2017-08-07 - [Bug] In developer mode, removing the module MailChimp caused a fatal error. #BUG-5263 (Michael Lipinski) #MailChimp
+

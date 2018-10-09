@@ -1,0 +1,20 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: url_part_type
+    category: 'XC\ProductFilter'
+    type: 'XLite\Module\XC\ProductFilter\View\FormField\Select\UrlPartType'
+    orderby: 700
+    value: H
+    translations:
+      - code: en
+        option_name: 'Generate the URL query string for filter with'
+        option_comment: 'This setting defines how the URL query string should be assembled when selecting the parameters that will be used to filter products.'
+      - code: ru
+        option_name: 'Generate the URL query string for filter with'
+        option_comment: 'This setting defines how the URL query string should be assembled when selecting the parameters that will be used to filter products.'

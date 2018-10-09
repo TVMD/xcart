@@ -1,0 +1,5 @@
+Version 5.3.3.3
+
+Fixes
+2017-08-09 - [Bug] Search by tags in the sidebar did not work. #BUG-5321 (Sergey Elmanov) #ProductTags
+

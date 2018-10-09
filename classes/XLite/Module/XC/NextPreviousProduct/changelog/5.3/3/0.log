@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Fixes
+2017-06-20 - [Bug] Fixed small issue on a product page when Related Products and Next/Previous products are enabled. #BUG-5124 (Sergey Elmanov) #NextPreviousProduct
+

@@ -1,0 +1,16 @@
+{##
+ # iframe 
+ #
+ #
+ # @ListChild (list="admin.account.saved_cards.table", weight="100")
+ #}
+
+<div>
+
+{% form '\\XLite\\Module\\CDev\\XPaymentsConnector\\View\\Form\\SavedCards' %}
+
+{{ widget('XLite\\Module\\CDev\\XPaymentsConnector\\View\\ItemsList\\Model\\SavedCards') }}
+
+{% endform %}
+
+</div>

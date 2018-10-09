@@ -1,0 +1,17 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Upgrade data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: 'analytics360enabled'
+    category: XC\MailChimp
+    type: \XLite\View\FormField\Input\Checkbox\OnOff
+  - name: 'abandonedCartEnabled'
+    category: XC\MailChimp
+    type: \XLite\View\FormField\Input\Checkbox\OnOff
+  - name: 'doubleOptinDisabled'
+    category: XC\MailChimp
+    type: \XLite\View\FormField\Input\Checkbox\OnOff

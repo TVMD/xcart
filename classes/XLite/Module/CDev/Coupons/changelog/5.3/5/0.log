@@ -1,0 +1,5 @@
+Version 5.3.5.0
+
+Fixes (1)
+2018-04-09 - [Bug] The Calendar widget on the coupon creation page now has a translation into all the languages. #BUG-6268 (Shevelov Alexander) #Core #Coupons
+

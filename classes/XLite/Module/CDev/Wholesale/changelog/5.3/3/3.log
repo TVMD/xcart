@@ -1,0 +1,6 @@
+Version 5.3.3.3
+
+Fixes (2)
+2018-06-14 - [Bug] Wholesale price selection did not take into account the price type ($ or %); as a result, incorrect prices were shown sometimes. Fixed. #BUG-6473 (Shevelov Alexander) #Wholesale
+2018-06-08 - [Bug] Wholesale prices set as percentage discounts are now rounded correctly. #BUG-6064 (Shevelov Alexander) #Wholesale
+

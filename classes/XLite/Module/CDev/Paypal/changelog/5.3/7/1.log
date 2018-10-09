@@ -1,0 +1,8 @@
+Version 5.3.7.1
+
+Improvements (1)
+2018-06-18 - [Change] Improved the UI of the PayPal Smart buttons setup tab. #BUG-6464 (Maxim Kuznetsov) #Paypal
+
+Fixes (1)
+2018-04-18 - [Bug] The recent flag was not reset for an order if the administrator issued a refund and the payment method was PayPal. Fixed. #BUG-6010 https://bt.x-cart.com/view.php?id=49059 (Sergey Elmanov) #Paypal
+

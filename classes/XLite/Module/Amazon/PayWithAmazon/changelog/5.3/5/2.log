@@ -1,0 +1,6 @@
+Version 5.3.5.2
+
+Fixes
+2017-10-17 - [Bug] Wrong endpoints were used for UK and DE accounts. #BUG-5628 (Michael Lipinski) #AmazonPay
+2017-10-02 - [Bug] AmazonPay is now a full-featured payment method (displayed among the other payment methods on the Payment methods page). #BUG-5224 (Eugene Dementjev) #AmazonPay
+

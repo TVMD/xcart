@@ -1,0 +1,22 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - name: fb_title
+    category: CDev\SocialLogin
+    widgetParameters: { kbLink: "http://kb.x-cart.com/en/modules/social_login/setting_up_facebook_login_for_your_store.html" }
+  - name: fb_request_location
+    category: CDev\SocialLogin
+    type: checkbox
+    orderby: 7
+    value: 'Y'
+    translations:
+      - code: en
+        option_name: 'Request user location'
+  - name: gg_title
+    category: CDev\SocialLogin
+    widgetParameters: { kbLink: "http://kb.x-cart.com/en/modules/social_login/setting_up_google_login_for_your_store.html" }

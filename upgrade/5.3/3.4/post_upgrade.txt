@@ -1,0 +1,29 @@
+This upgrade fixes a security vulnerability in the FileAttachments addon, which can be exploited by uploading file with malicious PHP code by trying to create new attachment via URL with "Copy to server" tick enabled.
+
+If you have an nginx-powered server, you should apply the latest configuration from the article: http://kb.x-cart.com/en/setting_up_x-cart_5_environment/secure_configuration.html
+
+For Apache users the fix replaces the .htaccess files in <X-Cart Root>/files/attachments/ folder and <X-Cart Root>/files/vendor*/attachments/ folders.
+
+Existing .htaccess content in the aforementioned files is replaced by this code:
+
+----------------
+Options -Indexes
+
+<Files "*.php">
+Deny from all
+</Files>
+
+<Files "*.php3">
+Deny from all
+</Files>
+
+<Files "*.pl">
+Deny from all
+</Files>
+
+<Files "*.py">
+Deny from all
+</Files>
+
+Allow from all
+----------------

@@ -1,0 +1,4 @@
+{##
+ # Email subject
+ #}
+{% if this.subject %}{{ this.subject }}{% else %}{{ this.getNotificationSubject() }}{% endif %}

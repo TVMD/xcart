@@ -1,0 +1,4 @@
+Version 5.3.6.6
+
+Fixes
+2018-02-08 - [Bug] Fatal error in Paypal module in PHP 5.4. Fixed. #BUG-6018 (Sergey Elmanov) #Paypal

@@ -1,0 +1,11 @@
+Version 5.3.5.0
+
+Improvements
+2017-08-10 - [Change] PayPal Adaptive payment refunds can now be handled via the Admin and Vendor area. #XCN-8103 (Michael Lipinski) #Paypal #MultiVendor
+
+Fixes
+2017-09-14 - [Bug] Constant 1 instead of 6 is used for CURLOPT_SSLVERSION (otherwise TLSv1.2 is not supported). #BUG-5490 (Maxim Kuznetsov) #Paypal
+2017-09-07 - [Bug] The button "Launch PayPal" was not working correctly. Fixed. #BUG-5296 (Kirill Stadler) #Paypal
+2017-09-04 - [Bug] Fixed PHP 5.4 compatibility errors/warnings. #BUG-5439 (Eugene Dementjev) #Core #AmazonS3Images #Egoods #Paypal #RESTAPI #PINCodes #PitneyBowes #CustomerAttachments #VendorMessages
+2017-08-15 - [Bug] Fatal error in the method getPaymentMethod under certain conditions. Fixed. #BUG-5367 (Michael Lipinski) #Paypal
+

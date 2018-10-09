@@ -1,0 +1,29 @@
+Данное обновление исправляет уязвимость безопасности в модуле FileAttachments. Эта уязвимость могла быть использована для того, чтобы загрузить на сервер исполняемый файл с вредоносным PHP кодом через добавление к продукта прикрепленного файла по URL.
+
+Если вы используете nginx в качестве сервера, вам необходимо применять защищенную конфигурацию, описанную в статье: https://kb.x-cart.com/en/setting_up_x-cart_5_environment/secure_configuration.html
+
+Для пользователей Apache данное обновление исправляет файлы .htaccess внутри папок <X-Cart Root>/files/attachments/ и <X-Cart Root>/files/vendor*/attachments/.
+
+Существующий код .htaccess был заменен следующим кодом:
+
+----------------
+Options -Indexes
+
+<Files "*.php">
+Deny from all
+</Files>
+
+<Files "*.php3">
+Deny from all
+</Files>
+
+<Files "*.pl">
+Deny from all
+</Files>
+
+<Files "*.py">
+Deny from all
+</Files>
+
+Allow from all
+----------------

@@ -1,0 +1,5 @@
+Version 5.3.3.2
+
+Fixes
+2017-07-20 - [Bug] Product search by the tag was working incorrectly. Fixed. #BUG-5228 (Sergey Elmanov) #ProductTags
+

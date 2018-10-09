@@ -1,0 +1,15 @@
+Version 5.3.3.3
+
+Improvements
+2017-08-10 - [Change] If the setting "Force customer to choose product options before adding a product to cart" is enabled, the default product image is no longer replaced by the image of the default variant. #BUG-5345 (Sergey Elmanov) #ProductVariants
+
+Fixes
+2017-09-15 - [Bug] Local images were not getting imported for variants. Fixed. #BUG-5495 (Maxim Kuznetsov) #Core #AmazonS3Images #ProductVariants
+2017-09-12 - [Bug] Orders containing product variants with SKU could not be imported correctly. #BUG-5383 (Sergey Elmanov) #ProductVariants #Orders Import
+2017-09-05 - [Bug] In the quick view popup, variant images could not be switched. Fixed. #BUG-5365 (Sergey Elmanov) #Core #ProductVariants
+2017-09-05 - [Bug] Added the option to clear QTY and disble inventory tracking for variants. #BUG-5274 (Sergey Elmanov) #ProductVariants
+2017-09-04 - [Bug] When using ProductVariants+NotFinishedOrders, incorrect variant SKUs were displayed in the order. #BUG-5194 (Sergey Elmanov) #ProductVariants
+2017-08-29 - [Bug] After removing product attributes, the records of variants based on those attributes remained in the database. #BUG-5260 (Michael Lipinski) #ProductVariants
+2017-08-23 - [Bug] The "Variant low limit warning" notifictaion could not be disabled via Store setup -> Email notifications. Fixed. #BUG-5417 (Michael Lipinski) #ProductVariants
+2017-08-17 - [Bug] Fatal error on the category page if Product Variants is enabled, the setting "How to show variant prices in product lists" is set to "Price range", sorting is done by price and the customer has a non-default membership. Fixed. #BUG-5377 (Michael Lipinski) #ProductVariants
+

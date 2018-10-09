@@ -1,0 +1,5 @@
+Version 5.3.2.3
+
+Fixes
+2017-10-09 - [Bug] Improved the way the subscription block is displayed in the Customer area. #BUG-5542 (Michael Lipinski) #CrispWhiteSkin #NewsletterSubscriptions
+

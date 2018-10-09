@@ -1,0 +1,9 @@
+{##
+ # Date picker
+ #}
+
+<span class="date-picker-widget">
+  {{ this.displayCommentedData(this.getDatePickerOptions()) }}
+  <input type="text" id="{{ this.getFieldId() }}" name="{{ this.getParam('fieldName') }}" autocomplete='off' value="{{ this.getValueAsString() }}" class="date-picker form-control {{ this.getClassName() }}" />
+  <input type="hidden" id="{{ this.getFieldId() }}_hidden_value" name="{{ this.getParam('fieldName') }}" value="{{ this.getValueAsString() }}" class="datepicker-value-input" />
+</span>

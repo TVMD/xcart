@@ -1,0 +1,15 @@
+To reduce server load which may be caused by requests for images and files that are missing from the server, edit the file .htaccess in the root of your X-Cart directory to insert the following configuration directives:
+1. In the .htaccess file, find the below code block:
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ cart.php?url=$1 [NC,L,QSA]
+
+2. Replace it with the following code block:
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^((?!images/|files/|var/theme/images/).*)$ cart.php?url=$0 [NC,L,QSA]
+
+If you are using nginx, please make changes to nginx.conf according to the recommendations in the article
+https://kb.x-cart.com/en/general_setup/setting_up_seo-friendly_urls.html#setting-up-nginx

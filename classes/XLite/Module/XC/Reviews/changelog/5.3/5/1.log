@@ -1,0 +1,6 @@
+Version 5.3.5.1
+
+Fixes
+2017-12-26 - [Bug] A vendor could create a product review without tying it to a product. Fixed. #BUG-5876 (Sergey Elmanov) #ProductReviews
+2017-12-20 - [Bug] Changed the look of the add review popup in the Admin area. #BUG-5842 (Maxim Kuznetsov) #ProductReviews
+

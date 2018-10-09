@@ -1,0 +1,6 @@
+Version 5.3.3.1
+
+Fixes
+2017-06-07 - [Bug] Fatal error when upgrading from 5.2.22 to 5.3.3.x with the module Order messages enabled. #BUG-5092 (Sergey Elmanov) #VendorMessages
+2017-05-25 - [Bug] Added repositories for all the modules that did not have one (so that 3rd party modules can override the repositories of these modules). #BUG-5019 (Michael Lipinski) #Core #Coupons #SalesTax #SimpleCMS #VAT #CanadaPost #Add2CartPopup #PitneyBowes #NewsletterSubscriptions #Mandrill #VendorMessages #CanadianTaxes
+

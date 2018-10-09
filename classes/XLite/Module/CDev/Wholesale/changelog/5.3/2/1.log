@@ -1,0 +1,7 @@
+Version 5.3.2.1
+
+Fixes
+2017-06-22 - [Bug] The % off was rounded incorrectly when displaying the wholesale discount on the storefront. #BUG-5134 (Michael Lipinski) #Wholesale
+2017-06-15 - [Bug] Upgrade hook fix in the module Wholesale for version 5.3.2.0. #BUG-5113 (Michael Lipinski) #Wholesale
+2017-06-06 - [Bug] Added the Price and Save fields for Wholesale. #BUG-4938 (Sergey Elmanov) #Core #Wholesale
+

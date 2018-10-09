@@ -1,0 +1,5 @@
+Version 5.3.2.4
+
+Fixes
+2017-11-22 - [Bug] When a customer was redirected to PayPal Express Checkout, the order created by NFO was lacking all useful information. Fixed. #BUG-5601 (Sergey Elmanov) #Paypal #NotFinishedOrders
+

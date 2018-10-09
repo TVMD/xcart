@@ -1,0 +1,9 @@
+Version 5.3.4.0
+
+Improvements
+2017-08-24 - [Change] Message statuses in the module Vendor messages can now be bulk edited. #BUG-5218 (Sergey Elmanov) #VendorMessages
+
+Fixes
+2017-09-04 - [Bug] Fixed PHP 5.4 compatibility errors/warnings. #BUG-5439 (Eugene Dementjev) #Core #AmazonS3Images #Egoods #Paypal #RESTAPI #PINCodes #PitneyBowes #CustomerAttachments #VendorMessages
+2017-08-24 - [Bug] Fixed some layout related issues in Safari. #BUG-5298 (Michael Lipinski) #VendorMessages
+

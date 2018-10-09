@@ -1,0 +1,5 @@
+Version 5.3.3.0
+
+Fixes
+2017-05-10 - [Bug] Updated the description in the module Social login; added some links to the articles in the Knowledge Base. Added a setting for user_location permission request. #BUG-4818 (Michael Lipinski) #Core #SocialLogin
+2017-03-16 - [Bug] Users registered via SocialLogin could not login. #BUG-4488 (Sergey Elmanov) #SocialLogin

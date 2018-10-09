@@ -1,0 +1,7 @@
+Version 5.3.4.4
+
+Fixes (3)
+2018-06-26 - [Bug] In Multivendor in the Vendors as separate shops mode, on the file download history page, the order number was not displayed and an incorrect order link was provided. Fixed. #BUG-5979 (Sergey Elmanov) #Egoods #MultiVendor
+2018-05-08 - [Bug] The membership was shown incorrectly for product files. Fixed. #BUG-5875 (Sergey Elmanov) #Egoods
+2018-05-07 - [Bug] Vendors had access to user profiles via links in the History of downloads. Fixed. #BUG-5945 (Sergey Elmanov) #Egoods
+

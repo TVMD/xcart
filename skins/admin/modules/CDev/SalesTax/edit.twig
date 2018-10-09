@@ -1,0 +1,25 @@
+{##
+ # Tax edit page
+ #}
+
+{% form '\\XLite\\Module\\CDev\\SalesTax\\View\\Form\\EditTax' %}
+
+<div class="taxes-top-block">
+
+  <div class="taxes-top-block-left">
+
+    {{ widget_list('taxes.top.section') }}
+
+    {% include 'modules/CDev/SalesTax/settings.twig' %}
+
+  </div>
+
+  <div class="taxes-top-block-right">
+    {{ widget_list('taxes.help.section') }}
+  </div>
+
+</div>
+
+{% include 'modules/CDev/SalesTax/rates.twig' %}
+
+{% endform %}

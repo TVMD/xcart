@@ -1,0 +1,9 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Upgrade data
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+XLite\Model\Config:
+  - { name: 'subscriptionElementType', category: 'XC\MailChimp', translations: [{ code: en, option_name: 'Subscription select element type', option_comment: 'This option controls the way your customers select a subscription. Select box allows subscription to only one mail list while check box allows subscription to multiple lists. For Checkout page always stays checkbox.'}, { code: ru, option_name: 'Тип элемента выбора подписки', option_comment: 'Эта опция управляет тем, как ваши клиенты выбирают подписку на рассылку. Список позволяет подписаться только на одну рассылку из списка за раз, когда как галочка позволяет подписаться на несколько рассылок сразу. Для страницы оплаты всегда остаётся галочка.'}] }

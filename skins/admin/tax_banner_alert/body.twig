@@ -1,0 +1,22 @@
+{##
+ # Tax banner page template
+ #}
+
+<div class="admin-welcome tax-banner-welcome root">
+  <div class="tax-banner-logo" align="center">
+    {% if this.getModuleLink() %}
+    <a href="{{ this.getModuleLink() }}" target="_blank">
+      {% endif %}
+      <img src="{{ this.getLogoUrl() }}" alt="{{ t('AvaTax') }}" class="logo"/>
+      {% if this.getModuleLink() %}
+    </a>
+    {% endif %}
+  </div>
+  <div class="tax-banner-additional-header">
+    <div class="tax-banner-options-header">
+      <p class="semibold">{{ t('Avalara, a leader in US sales tax automation, provides a solution that can make your life easier by providing accurate and up-to-date tax rates for products you sell.')|raw }}</p>
+      <p>{{ t('New to Avalara?')|raw }}</p>
+      <p>{{ t('Existing Avalara user?', {'moduleSettings': this.getModuleLink()})|raw }}</p>
+    </div>
+  </div>
+</div>

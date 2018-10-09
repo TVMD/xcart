@@ -1,0 +1,73 @@
+Version 5.3.5.5
+
+Improvements (5)
+2018-06-20 - [Change] Added an information message that NFO orders may not be exported. #BUG-6277 https://bt.x-cart.com/view.php?id=49370 (Shevelov Alexander) #Core #NotFinishedOrders
+2018-06-14 - [Change] Added redis support as a cache provider. #BUG-6211 https://bt.x-cart.com/view.php?id=49301 (Eugene Dementjev) #Core
+2018-06-04 - [Change] Added the setting use_unicode = "N" in etc/config.php which toggles the use of unicode for the auto-generation of clean urls. #BUG-6441 (Maxim Kuznetsov) #Core
+2018-05-30 - [Change] Added js confirm to the remove order icon. #BUG-5923 https://bt.x-cart.com/view.php?id=48979 (Eugene Dementjev) #Core
+2018-04-16 - [Change] Updated the phpmailer library to version 5.2.26 #BUG-6288 (Sergey Elmanov) #Core
+
+Fixes (62)
+2018-07-04 - [Bug] Runtime cache added for \XLite\Core\Cache\CacheKeyPartsGenerator. #BUG-6526 (Sergey Elmanov) #Core
+2018-07-04 - [Bug] Fixed a few layout issues at checkout for the Russian language. #BUG-6385 https://bt.x-cart.com/view.php?id=49508 (Sergey Elmanov) #Core
+2018-06-29 - [Bug] Applied a fix for the dompdf library to enable support of the Arabian language in pdf attachments. #BUG-6232 (Shevelov Alexander) #Core
+2018-06-25 - [Bug] Incorrect cache fallback. Fixed. #BUG-6162 https://bt.x-cart.com/view.php?id=49246 (Sergey Elmanov) #Core
+2018-06-21 - [Bug] There was no border on text inputs in IE 11. Fixed. #BUG-5965 https://bt.x-cart.com/view.php?id=49040 (Shevelov Alexander) #Core
+2018-06-20 - [Bug] Product list display issues in the 3-column layout in standard skin. Fixed. #BUG-6314 https://bt.x-cart.com/view.php?id=49418 (Eugene Dementjev) #Core
+2018-06-19 - [Bug] Improvements for the display of errors on the Sign Up popup. #BUG-6477 (Eugene Dementjev) #Core #CrispWhiteSkin
+2018-06-19 - [Bug] In the Customer area, in categories that do not contain any products, a message is now displayed saying that no products have been added to this category yet. #BUG-6120 (Eugene Dementjev) #Core #ProductFilter #CrispWhiteSkin
+2018-06-19 - [Bug] With Multivendor enabled, payment transactions for NFO orders were duplicated. Fixed. #BUG-6051 (Shevelov Alexander) #Core #MultiVendor
+2018-06-18 - [Bug] The Test email notifications form did not function correctly if the address for the From field was selected from a set of addresses. Fixed. #BUG-6478 https://bt.x-cart.com/view.php?id=49627 (Eugene Dementjev) #Core
+2018-06-14 - [Bug] The Arrival date of a product was not updated correctly if the server time zone did not match the store time zone. Fixed. #BUG-6015 https://bt.x-cart.com/view.php?id=49036 (Maxim Kuznetsov) #Core
+2018-06-14 - [Bug] The folders images, files, var/theme/images were excluded from RewriteRule for htaccess. #BUG-5811 https://bt.x-cart.com/view.php?id=48784 (Maxim Kuznetsov) #Core
+2018-06-13 - [Bug] The date was set incorrectly for News and Coupons if the date was entered manually instead of being selected from the date picker widget. Fixed. #BUG-6449 (Shevelov Alexander) #Core
+2018-06-13 - [Bug] Fixed the warning "Warning: A non-numeric value encountered in /classes/XLite/Core/ConverterAbstract.php on line 1078 в PHP 7.1". #BUG-6392 https://bt.x-cart.com/view.php?id=49514 (Eugene Dementjev) #Core
+2018-06-13 - [Bug] An incorrect price was set for a product after the options were changed during an order edit in the Admin area. Fixed. #BUG-5906 (Shevelov Alexander) #Core
+2018-06-12 - [Bug] Markup error in search form. Fixed. #BUG-6227 https://bt.x-cart.com/view.php?id=49308 (Eugene Dementjev) #Core
+2018-06-12 - [Bug] Vendor commission was recalculated incorrectly when editing an order. Fixed. #BUG-6025 (Maxim Kuznetsov) #Core #MultiVendor
+2018-06-11 - [Bug] Added translations and pluralization for the label "X days" used for realtime shipping methods. #BUG-5918 (Shevelov Alexander) #Core #DHL
+2018-06-08 - [Bug] Improved the routine of sending the same messages to multiple addressees. #BUG-6438 (Eugene Dementjev) #Core #PINCodes #ProductVariants #ProductReviews #MultiVendor #TrustedVendors
+2018-06-08 - [Bug] Fixed the description of the Order created notification. #BUG-6305 (Eugene Dementjev) #Core
+2018-06-08 - [Bug] $cart->isOpen() may give incorrect result for 0.01 total. Fixed. #BUG-6269 https://bt.x-cart.com/view.php?id=49357 (Sergey Elmanov) #Core
+2018-06-08 - [Bug] Force float casting on shipping rates #BUG-6237 https://bt.x-cart.com/view.php?id=49330 (Eugene Dementjev) #Core
+2018-06-08 - [Bug] The "Select one" text label displayed in the country/state select boxes could not be translated into other languages. Fixed. #BUG-6201 https://bt.x-cart.com/view.php?id=49286 (Eugene Dementjev) #Core #Geolocation
+2018-06-07 - [Bug] An administrator could not edit/create discounts if different vendors had the same subtotal for discounts. Fixed. #BUG-5976 (Shevelov Alexander) #Core #MultiVendor
+2018-06-07 - [Bug] JS error if clicking the Cancel button during a data export. Fixed. #BUG-5881 (Maxim Kuznetsov) #Core
+2018-06-06 - [Bug] An expired password reset link redirected the user to a blank page instead of the login page with the message informing the user that the link had expired. Fixed. #BUG-6413 https://bt.x-cart.com/view.php?id=49551 (Sergey Elmanov) #Core
+2018-06-06 - [Bug] Excluded the product tabs visited by a user on a product page from the browser history. #BUG-6399 https://bt.x-cart.com/view.php?id=49515 (Sergey Elmanov) #Core #CustomProductTabs #ShopperApproved
+2018-06-06 - [Bug] Fixed some minor display bugs in the add payment method popup that appeared when deactivating a payment method. #BUG-6368 (Sergey Elmanov) #Core
+2018-06-05 - [Bug] System logs page display issue (Admin area). Fixed. #BUG-6117 (Sergey Elmanov) #Core
+2018-06-05 - [Bug] Fixed the way customer address widget is displayed on the order page in the Admin area. #BUG-5869 (Maxim Kuznetsov) #Core
+2018-06-01 - [Bug] A wrong replyTo field was set for the new vendor registration notification. Fixed. #BUG-6444 (Maxim Kuznetsov) #Core
+2018-06-01 - [Bug] The pager widget was misplaced on the category page in the Customer area in Standard skin. Fixed. #BUG-6417 https://bt.x-cart.com/view.php?id=49559 (Sergey Elmanov) #Core #CrispWhiteSkin
+2018-06-01 - [Bug] Added a pluralization for the "X items" text label on the orders page in customer profile. #BUG-5808 (Maxim Kuznetsov) #Core
+2018-06-01 - [Bug] The free shipping label for a product was displayed incorrectly. Fixed. #BUG-5603 (Maxim Kuznetsov) #Core #CrispWhiteSkin
+2018-05-31 - [Bug] In payment card type verification by the card number, JCB and Discover were confused. Fixed. #BUG-5874 (Shevelov Alexander) #Core
+2018-05-31 - [Bug] The date was only printed on the last invoice of a batch. Fixed. #BUG-5856 https://bt.x-cart.com/view.php?id=48888 (Shevelov Alexander) #Core
+2018-05-31 - [Bug] The editable option for the textarea attribute is now disabled by default. #BUG-5854 (Sergey Elmanov) #Core
+2018-05-30 - [Bug] The Change password form in the Customer area is now displayed in a popup. #BUG-6414 https://bt.x-cart.com/view.php?id=49427 (Sergey Elmanov) #Core #CrispWhiteSkin
+2018-05-30 - [Bug] The Terms & Conditions popup was working incorrectly at checkout if the store had more that one languages and a non-default language was selected. Fixed. #BUG-6396 (Eugene Dementjev) #Core
+2018-05-29 - [Bug] Removed the unused category field lastUsage; this field is no longer updated. #BUG-6404 https://bt.x-cart.com/view.php?id=49527 (Sergey Elmanov) #Core
+2018-05-29 - [Bug] On the order page in the Admin area not all the available shipping methods were shown. Fixed. #BUG-6395 https://bt.x-cart.com/view.php?id=49525 (Sergey Elmanov) #Core
+2018-05-29 - [Bug] The checkbox option "Do not verify images to run the process faster" did not work: there was no image verification if the checkbox was disabled. Fixed. #BUG-6393 (Eugene Dementjev) #Core
+2018-05-29 - [Bug] During product import, specifying an absolute path to an image that was missing resulted in a fatal error. Fixed. #BUG-6355 https://bt.x-cart.com/view.php?id=49440 (Eugene Dementjev) #Core
+2018-05-29 - [Bug] Added a few text labels to the database. #BUG-6130 https://bt.x-cart.com/view.php?id=49486 (Shevelov Alexander) #Core
+2018-05-25 - [Bug] PNG images with a transparent background were resized incorrectly if gd lib was used and the setting Apply unsharp mask filter on resize was enabled. Fixed. #BUG-6356 https://bt.x-cart.com/view.php?id=49473 (Shevelov Alexander) #Core
+2018-05-22 - [Bug] Some images were getting mirror flipped during upload, although no request to flip them was made. Fixed. #BUG-6405 (Shevelov Alexander) #Core
+2018-05-18 - [Bug] When a logged in user changed their email address during an OPC checkout, the Inital order notification went to the user's previous address. Fixed. #BUG-6363 https://bt.x-cart.com/view.php?id=49371 (Eugene Dementjev) #Core
+2018-05-18 - [Bug] Logs on win servers were stored in incorrect directories. Fixed. #BUG-6024 https://bt.x-cart.com/view.php?id=49099 (Sergey Elmanov) #Core
+2018-05-16 - [Bug] If the quantity in stock of a product variant was 1, adding it to cart resulted in that another variant of the same product (based on the same option) automatically showed as out of stock until the user re-selected the variant. Fixed. #BUG-6351 (Eugene Dementjev) #Core
+2018-05-15 - [Bug] Fatal error if a product's arrival date was specified incorrectly. #BUG-6338 https://bt.x-cart.com/view.php?id=49450 (Eugene Dementjev) #Core
+2018-05-14 - [Bug] New values could not be added for a product attribute if the product had variants based on this attribute. Fixed. #BUG-6342 https://bt.x-cart.com/view.php?id=49464 (Eugene Dementjev) #Core
+2018-05-10 - [Bug] Adjusted the email notification template so that coupon name would be displayed. #BUG-6346 https://bt.x-cart.com/view.php?id=49471 (Eugene Dementjev) #Core #Coupons
+2018-05-08 - [Bug] If, according to the front page settings, subcategories were hidden, an empty block was displayed on the front page. Fixed. #BUG-5969 https://bt.x-cart.com/view.php?id=49047 (Sergey Elmanov) #Core
+2018-05-04 - [Bug] The alt text input field for an image can now be closed by pressing Enter. #BUG-6325 (Sergey Elmanov) #Core
+2018-04-26 - [Bug] Shipping cost was not always displayed correctly if the store had only realtime shipping methods configured. Fixed. #BUG-6163 https://bt.x-cart.com/view.php?id=49248 (Shevelov Alexander) #Core
+2018-04-19 - [Bug] If an order was created with the status "Authorized", the Order changed notification was sent instead of Order created. Fixed. #BUG-6299 (Sergey Elmanov) #Core
+2018-04-18 - [Bug] Fixed the PHP 7.1 warning "Warning: mt_srand() expects parameter 1 to be integer, float given in /classes/XLite/Core/Operator.php on line 424". #BUG-5989 (Sergey Elmanov) #Core
+2018-04-18 - [Bug] Fixed the error "\Memcached::addServer() expects at least 2 parameters". #BUG-5978 (Sergey Elmanov) #Core
+2018-04-17 - [Bug] Files and folders can now be sorted in the popup where a file attachment is added from the server. #BUG-5909 (Sergey Elmanov) #Core
+2018-04-10 - [Bug] Added a special symbol (₽) for the Russian ruble currency. #BUG-6266 (Sergey Elmanov) #Core
+2018-04-10 - [Bug] When importing customers, the customer address state was not imported correctly if the state field preceded the country field in the csv import file. Fixed. #BUG-6215 https://bt.x-cart.com/view.php?id=49279 (Sergey Elmanov) #Core
+2018-03-28 - [Bug] Password recovery email named "Dear customer" as the addressee. Fixed. #BUG-6202 https://bt.x-cart.com/view.php?id=49284 (Shevelov Alexander) #Core
+

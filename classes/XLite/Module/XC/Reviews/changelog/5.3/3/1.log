@@ -1,0 +1,6 @@
+Version 5.3.3.1
+
+Fixes
+2017-06-26 - [Bug] Fatal error when accessing a product page as an anonymous user with the option "Only registered customers who purchased this product can leave feedback" enabled. Fixed. #BUG-5142 (Michael Lipinski) #ProductReviews
+2017-06-16 - [Bug] On mobile devices, the dropdown menu on the reviews tab was cut and not fully visible. #BUG-4979 (Sergey Elmanov) #Core #ProductReviews
+

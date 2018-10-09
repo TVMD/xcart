@@ -1,0 +1,8 @@
+Version 5.3.4.0
+
+Improvements
+2017-07-20 - [Change] Added a new setting - Show email - onto the Contact Us page; this setting determines whether the email address should be displayed on the Contact Us page in the Customer area. #BUG-5225 (Maxim Kuznetsov) #ContactUs #CrispWhiteSkin
+
+Fixes
+2017-07-17 - [Bug] Changed the Contact Us page layout. #BUG-5164 (Sergey Elmanov) #ContactUs
+

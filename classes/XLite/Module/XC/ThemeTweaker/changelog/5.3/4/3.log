@@ -1,0 +1,5 @@
+Version 5.3.4.3
+
+Fixes (1)
+2018-02-09 - [Bug] When a customer opened a preview product page, the description editor mode was enabled but the edit panel was not opened. Fixed. #BUG-5637 (Shevelov Alexander) #ThemeTweaker
+

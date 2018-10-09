@@ -1,0 +1,15 @@
+{##
+ # "Module upgrade needed"
+ #
+ # @ListChild (list="itemsList.module.manage.columns.module-main-section", weight="40")
+ # @ListChild (list="itemsList.module.install.columns.module-main-section", weight="40")
+ # @ListChild (list="itemsList.module.sales-channels.columns.module-main-section", weight="40")
+ # @ListChild (list="itemsList.module.purchased.columns.module-main-section", weight="40")
+ #}
+{% if this.hasErrors(this.module) and this.isUpgradeRequestAvailable(this.module) %}
+    <div class="request-for-upgrade" data-module-id="{{ this.module.getModuleId() }}">
+        {{  widget('XLite\\View\\Button\\ProgressState',
+        label=t('Request for upgrade'),
+        style='btn regular-button always-enabled') }}
+    </div>
+{% endif %}
