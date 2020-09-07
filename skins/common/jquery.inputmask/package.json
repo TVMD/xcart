@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/RobinHerbots/jquery.inputmask",
   "dependencies": {
-    "jquery": "^2.2.3"
+    "jquery": "^3.5.1"
   },
   "devDependencies": {
     "browserify": "^11.1.0",
